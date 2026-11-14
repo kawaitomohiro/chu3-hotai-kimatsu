@@ -1049,7 +1049,32 @@ var ST = (function () { try { var s = JSON.parse(localStorage.getItem(KEY)); if 
 function save() { try { localStorage.setItem(KEY, JSON.stringify(ST)); } catch (e) { } }
 function stat(it) { if (!ST.it[it.id]) ST.it[it.id] = { n: 0, ok: 0, need: 0, w: 0 }; return ST.it[it.id]; }
 var app = document.getElementById('app');
-var ITEMS = D.filter(function (x) { return x.k !== 'e'; }), ESSAYS = D.filter(function (x) { return x.k === 'e'; });
+var ALLQ = D.filter(function (x) { return x.k !== 'e'; }), ESSAYS = D.filter(function (x) { return x.k === 'e'; });
+/* 前回のテストの配点（保健54・バスケ22・体育理論10・アルティメット8・水泳6）に合わせて、約半分にしぼる。
+   単元ごとの数を決め、★（プリントの空欄・バスケのオレンジ）を先に、テストに出る形を多めに、単元の前から後ろまでまんべんなく選ぶ。 */
+var QUOTA = { 14: 30, 15: 88, 16: 24, 17: 14 }, HOKEN = 200;
+var KW = { hoken: { c: 3, t: 2, l: 2, o: 2 }, sport: { o: 3, l: 2, t: 2, c: 1 } };
+function spread(a, k) { var r = []; for (var i = 0; i < k; i++) r.push(a[Math.floor(i * a.length / k)]); return r; }
+function pickTier(list, k, w) {
+  var by = {}, out = [], kinds = Object.keys(w); list.forEach(function (x) { (by[x.k] = by[x.k] || []).push(x); });
+  var want = {}, left = k, room = kinds.filter(function (q) { return by[q]; });
+  while (left > 0 && room.length) {
+    var sw = room.reduce(function (a, q) { return a + w[q]; }, 0), give = 0;
+    room.forEach(function (q) { var add = Math.max(1, Math.round(left * w[q] / sw)), have = want[q] || 0; add = Math.min(add, by[q].length - have, left - give); if (add > 0) { want[q] = have + add; give += add; } });
+    left -= give; room = room.filter(function (q) { return (want[q] || 0) < by[q].length; }); if (!give) break;
+  }
+  kinds.forEach(function (q) { if (want[q]) out = out.concat(spread(by[q], want[q])); }); return out;
+}
+var ITEMS = (function () {
+  var hk = ALLQ.filter(function (x) { return x.u <= 13; }).length, keep = {};
+  for (var u = 1; u <= 17; u++) {
+    var list = ALLQ.filter(function (x) { return x.u === u; }), k = QUOTA[u] || Math.round(list.length * HOKEN / hk), w = u <= 13 ? KW.hoken : KW.sport;
+    var st = list.filter(function (x) { return x.s; }), ns = list.filter(function (x) { return !x.s; });
+    var got = st.length <= k ? st : pickTier(st, k, w); if (got.length < k) got = got.concat(pickTier(ns, k - got.length, w));
+    got.forEach(function (x) { keep[x.id] = 1; });
+  }
+  return ALLQ.filter(function (x) { return keep[x.id]; });
+})();
 var YOMI = {}; D.forEach(function (x) { if (x.k === 't' && x.y) YOMI[x.term] = x.y; });
 var S = { q: null, queue: [], mode: null, param: null, done: 0, right: 0, total: 0 };
 
@@ -1071,7 +1096,7 @@ function cheer(g) {
 
 /* ---------- 1問を作る ---------- */
 function qdef(it) { return it.g === 'byo' ? it.def.replace(/^病原体は[^。]*。/, '') : it.def; }
-function others(it) { var a = ITEMS.filter(function (x) { return x.k === 't' && x.g === it.g && x.u === it.u && x.term !== it.term; }); if (a.length < 3) a = a.concat(ITEMS.filter(function (x) { return x.k === 't' && x.u === it.u && x.g !== it.g && x.term !== it.term; })); return a; }
+function others(it) { var a = ALLQ.filter(function (x) { return x.k === 't' && x.g === it.g && x.u === it.u && x.term !== it.term; }); if (a.length < 3) a = a.concat(ALLQ.filter(function (x) { return x.k === 't' && x.u === it.u && x.g !== it.g && x.term !== it.term; })); return a; }
 function termAns(it) { return [it.term].concat(it.y ? [it.y] : [], it.alt); }
 function parseCloze(it) {
   var blanks = [], parts = it.text.split(/\[\[(.*?)\]\]/);
@@ -1116,7 +1141,7 @@ function record(q) {
 function home() {
   S.mode = null; S.q = null;
   var st = prog(starItems()), all = prog(ITEMS), need = needList().length, best = ST.tests.reduce(function (a, t) { return Math.max(a, t.score); }, 0);
-  var h = '<header class="hd"><h1>がんばれ芭ちゃん！<span class="ttl2">テストまんてん講座</span><span class="ttl3">中3 保健体育・期末</span></h1><p>保健（感染症・保健医療機関・医薬品・環境）／体育理論／バスケットボール／アルティメット／水泳　<span class="sm">全 ' + ITEMS.length + ' 問</span></p></header>';
+  var h = '<header class="hd"><h1>がんばれ芭ちゃん！<span class="ttl2">テストまんてん講座</span><span class="ttl3">中3 保健体育・期末</span></h1><p>保健（感染症・保健医療機関・医薬品・環境）／体育理論／バスケットボール／アルティメット／水泳　<span class="sm">テストの出し方からえらんだ ' + ITEMS.length + ' 問</span></p></header>';
   h += '<div class="goal' + (st.left ? '' : ' done') + '">';
   if (st.left) {
     h += '<div class="gh"><h2>ゴール①　いちばん出る所（★）</h2><span class="gp"><b>' + st.pct + '</b>%</span></div>' + meterBar(st.pct) +
