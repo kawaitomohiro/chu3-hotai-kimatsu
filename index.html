@@ -237,6 +237,11 @@ textarea{font:inherit;font-size:18px;width:100%;border:2px solid #1f4e9c;border-
 
 .hd h1{color:#d9482b;font-size:34px}.hd h1 .ttl2{color:#1c2330;margin-left:10px}.hd h1 .ttl3{font-size:16px;color:#667;font-weight:normal;margin-left:14px}
 
+.expl .full{font-size:19px;line-height:2.1;margin-top:4px}
+.expl .ans{font-weight:bold;color:#12784a;background:#dff5ea;border-radius:6px;padding:1px 8px;margin:0 3px;white-space:nowrap}
+.expl .ans.x{color:#a52a1a;background:#fde0dc;outline:2px solid #c33}
+.missl{margin:8px 0 2px;padding-left:22px;font-size:17px;line-height:1.7}.missl li{margin-bottom:6px}
+
 </style>
 </head>
 <body>
@@ -1200,6 +1205,22 @@ function clozeHtml(q) {
   }
   return h;
 }
+function clozeAnswer(q) {
+  var c = q.cl, h = '<div class="expl"><b>答えと解説</b><div class="full">', k = 0, miss = [];
+  for (var i = 0; i < c.parts.length; i++) {
+    if (i % 2 === 0) { h += esc(c.parts[i]); continue; }
+    h += '<span class="ans' + (q.res[k] ? '' : ' x') + '">' + '①②③④⑤⑥⑦⑧⑨'[k] + ' ' + esc(c.blanks[k][0]) + '</span>';
+    if (!q.res[k]) miss.push([k, c.blanks[k][0], q.form === 'sel' ? (q.ans[k] >= 0 ? q.pool[q.ans[k]] : '') : q.ans[k]]);
+    k++;
+  }
+  h += '</div>';
+  if (miss.length) h += '<ul class="missl">' + miss.map(function (m) {
+    var t = D.filter(function (x) { return x.k === 't' && x.term === m[1]; }), d = t.filter(function (x) { return x.u === q.it.u; })[0] || t[0];
+    var w = D.filter(function (x) { return x.k === 't' && m[2] && norm(x.term) === norm(m[2]); }), wd = w.filter(function (x) { return x.u === q.it.u; })[0] || w[0];
+    return '<li><b>' + '①②③④⑤⑥⑦⑧⑨'[m[0]] + ' 正しくは「' + esc(m[1]) + '」</b>' + (m[2] ? '（あなたの答え：' + esc(m[2]) + '）' : '（書いていない）') + (d ? '<br>「' + esc(d.term) + '」＝' + esc(d.def) : '') + (wd && wd !== d ? '<br>「' + esc(wd.term) + '」は、' + esc(wd.def) + ' のこと。' : '') + '</li>';
+  }).join('') + '</ul>';
+  return h + '</div>';
+}
 function qBody(q, idx) {
   var h = '', d = q.judged ? ' disabled' : '', p = idx == null ? '' : ' data-q="' + idx + '"';
   if (q.kind === 'cl') {
@@ -1226,7 +1247,7 @@ function draw() {
   h += '<div class="card"><div class="qhead"><span class="un">' + UNITS[it.u] + '</span>' + (it.s ? '<span class="bd w">★ よく出る</span>' : '') + (s.need ? '<span class="bd n">やり直し あと' + s.need + '回</span>' : '') + '</div>' + qBody(q);
   if (q.kind === 'cl' && !q.judged) h += '<div class="actions"><button class="btn big" data-act="judge">判定する</button><button class="btn ghost" data-act="giveup">わからない</button></div>';
   if (q.judged) {
-    h += (q.kind === 'cl' ? '<div class="res ' + (q.ok ? 'ok' : 'ng') + '"><b>' + (q.ok ? '○ ぜんぶ正解' : '× ' + q.res.filter(function (x) { return !x; }).length + ' か所まちがい') + '</b></div>' : resultHtml(q));
+    h += (q.kind === 'cl' ? '<div class="res ' + (q.ok ? 'ok' : 'ng') + '"><b>' + (q.ok ? '○ ぜんぶ正解' : '× ' + q.res.filter(function (x) { return !x; }).length + ' か所まちがい') + '</b></div>' + clozeAnswer(q) : resultHtml(q));
     var g = prog(S.pool);
     h += '<div class="info ' + (q.ok ? 'ok' : 'ng') + (q.justM ? ' star' : '') + '">' + (q.ok ? (q.justM ? '★ この問題は「できた」になりました。（' + g.m + ' / ' + g.n + '）' : mastered(it) ? 'この問題は、もう「できた」です。' : s.need ? 'あと ' + s.need + ' 回続けて正解すると「できた」になります。少しあとでもう一度出ます。' : 'えらぶ形では正解。<b>自分で書けたら</b>「できた」になります。少しあとで書く形で出ます。') : (q.lostM ? '「できた」がいったん外れました。' : '') + 'この問題は、2回続けて正解するまで出ます。') + '</div>';
     h += '<div class="actions"><button class="btn big" data-act="next">次の問題へ（Enter）</button></div>';
@@ -1283,7 +1304,7 @@ function drawTest() {
   if (T2.graded) h += '<div class="card"><div class="score"><b>' + T2.score + '</b> 点<span>（100点満点）' + (T2.score >= 100 ? '　芭ちゃん、まんてん！' : T2.score >= 90 ? '　まんてんまで、あと少し！' : '　まちがえた所を直せば、まんてんに近づくよ') + '</span></div><div class="actions">' + (needList().length ? '<button class="btn big" data-act="go" data-m="fix">まちがえた問題をやり直す</button>' : '') + '<button class="btn" data-act="home">ホームへ</button></div></div>';
   T2.secs.forEach(function (s, si) {
     h += '<div class="card tsec"><h3>' + (si + 1) + '　' + esc(s.title) + '</h3>';
-    s.qs.forEach(function (q) { k++; h += '<div class="tq' + (q.judged ? (q.ok ? ' o' : ' x') : '') + '"><div class="tnum">' + (s.qs.length > 1 ? '(' + k + ')' : '') + (q.judged ? '<b>' + (q.ok ? '○' : '×') + '</b>' : '') + '</div><div class="tbody">' + qBody(q, idx) + (q.judged ? (q.kind === 'cl' ? '' : resultHtml(q)) : '') + '</div></div>'; idx++; });
+    s.qs.forEach(function (q) { k++; h += '<div class="tq' + (q.judged ? (q.ok ? ' o' : ' x') : '') + '"><div class="tnum">' + (s.qs.length > 1 ? '(' + k + ')' : '') + (q.judged ? '<b>' + (q.ok ? '○' : '×') + '</b>' : '') + '</div><div class="tbody">' + qBody(q, idx) + (q.judged ? (q.kind === 'cl' ? clozeAnswer(q) : resultHtml(q)) : '') + '</div></div>'; idx++; });
     k = 0;
     h += '</div>';
   });
