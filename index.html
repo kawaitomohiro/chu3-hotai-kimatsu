@@ -242,6 +242,12 @@ textarea{font:inherit;font-size:18px;width:100%;border:2px solid #1f4e9c;border-
 .expl .ans.x{color:#a52a1a;background:#fde0dc;outline:2px solid #c33}
 .missl{margin:8px 0 2px;padding-left:22px;font-size:17px;line-height:1.7}.missl li{margin-bottom:6px}
 
+.pool small{display:block;width:100%;color:#667;font-size:13px}
+.pool .pl{font:inherit;font-size:16px;background:#fff;border:1.5px solid #9ab;border-radius:999px;padding:5px 12px;cursor:pointer}
+.pool .pl:hover:not([disabled]){background:#e8f0fc;border-color:#1f4e9c}
+.pool .pl[disabled]{cursor:default;color:#333}
+.blank.fl select{background:#fff6c8;transition:background .3s}
+
 </style>
 </head>
 <body>
@@ -322,7 +328,7 @@ C(1, '風しんのおもな症状として正しいものはどれか。', ['発
 CL(1, '感染症と病原体', '病気を引き起こす微生物などを[[病原体]]という。これが人の体の中に入って、体内で増え始めることを[[感染]]といい、その結果、体に異常があらわれることを[[発病]]という。このような病気を[[感染症]]という。', ['免疫', '抵抗力', '発生源'], 1);
 CL(1, '感染経路', '咳やくしゃみの飛沫が粘膜から入るのが[[飛沫感染]]、飛沫の水分が蒸発した飛沫核を吸いこむのが[[空気感染]]、皮膚や粘膜の接触や手すりなどを介するのが[[接触感染]]、汚染された水や食品、昆虫などを介するのが[[媒介物感染]]である。', ['母子感染', '血液感染'], 1);
 CL(1, '飛沫と飛沫核', '飛沫は水分をふくみ、大きく重いので、飛距離は[[1]]m程度である。飛沫の水分が蒸発したものを[[飛沫核]]といい、小さく軽いため空気中で気流に乗り、[[長時間|ちょうじかん|長い時間|長く]]ただよう。', ['10', '短時間', '病原体'], 0);
-W(1, 'ノロウイルス予防の4原則は「もちこまない・ひろげない・つけない・（　　）」である。（　　）に入ることばを書きなさい。', ['やっつける'], 'やっつける＝十分な加熱処理。もちこまない＝健康状態の把握、ひろげない＝消毒、つけない＝手洗い。');
+C(1, 'ノロウイルス予防の4原則は「もちこまない・ひろげない・つけない・（　　）」である。（　　）に入ることばはどれか。', ['やっつける', 'うつさない', 'ふやさない'], 'やっつける＝十分な加熱処理。もちこまない＝健康状態の把握、ひろげない＝消毒、つけない＝手洗い。');
 
 /* ---- 2 感染症と体の抵抗力 ---- */
 T(2, 'teiko', '抵抗力', '病原体の侵入を防いだり、排除したりする力', { y: 'ていこうりょく', s: 1 });
@@ -394,7 +400,7 @@ C(3, '3つの咳エチケットとして正しいものはどれか。', ['マ�
 CL(3, '発生源への対策', '病原体に汚染された食品や器具などを[[発生源]]という。加熱すべき食品の[[加熱|かねつ]]、調理器具の熱湯やアルコールなどでの[[殺菌]]など、適切な殺菌や[[消毒|しょうどく]]によって、これをなくす。', ['換気', '冷却', '感染経路'], 1);
 CL(3, 'かかった場合の対応', '大きな流行になったときは、[[学級閉鎖]]などがおこなわれる場合がある。インフルエンザは、発熱後[[5]]日、かつ熱が下がってから[[2]]日たつまで登校できない。', ['3', '7', '予防接種'], 1);
 CL(3, '3つの対策', '感染症のリスクを減らす対策は、[[発生源]]をなくす、[[感染経路]]を断つ、体の[[抵抗力]]を高める、の3つである。', ['潜伏期間', '副作用'], 1);
-W(3, '「抗菌→除菌→殺菌→（　　）」の順に、菌を減らす強さが強くなる。菌を限りなくゼロに近づけることを何というか。', ['滅菌', 'めっきん'], '抗菌＝増殖を抑える、除菌＝取り除いて減らす、殺菌＝菌を殺す、滅菌＝限りなくゼロに近づける。');
+C(3, '「抗菌→除菌→殺菌→（　　）」の順に、菌を減らす強さが強くなる。菌を限りなくゼロに近づけることを何というか。', ['滅菌', '消毒', '抗菌'], '抗菌＝増殖を抑える、除菌＝取り除いて減らす、殺菌＝菌を殺す、滅菌＝限りなくゼロに近づける。');
 
 /* ---- 4 性感染症とその予防 ---- */
 T(4, 'sei', '性感染症', '性的接触により直接感染する感染症', { y: 'せいかんせんしょう' });
@@ -564,10 +570,10 @@ CL(8, '医薬品の形', '口から飲む薬を[[内用剤]]、皮膚や粘膜�
 CL(8, '正しい使用方法', '安全に、もっとも効果が発揮されるように、[[使用量|しようりょう]]、[[使用回数|しようかいすう]]、[[使用時間|しようじかん]]などが決められている。指示とは異なった飲み方をすると、医薬品の[[効果|こうか|効き目]]が損なわれたり、[[害|がい]]になったりすることもある。', ['値段', '色', '副作用', '得'], 1);
 CL(8, '使用上の注意', 'たとえ症状が消えても、[[細菌|さいきん|菌]]が完全に死滅していない場合があり、その医薬品に抵抗力をもった[[薬剤耐性菌]]が生じてしまう。どのような医薬品であっても、[[医師|いし|医者]]・[[薬剤師|やくざいし]]の指示や説明書の注意事項を守る。薬は[[水|みず]]やお湯で飲み、処方された薬を[[他の人|ほかの人|他人]]にあげない。', ['ウイルス', '友だち', '牛乳', '家族'], 1);
 CL(8, '安静と自然治癒力', '薬の力だけでなく、安静にして[[栄養|えいよう]]・[[休養|きゅうよう]]・[[睡眠|すいみん]]を十分にとることも、自然治癒力を高めるために大切である。', ['運動', '勉強', '入浴'], 1);
-W(1, '結核の病原体の名前を書きなさい。', ['結核菌', 'けっかくきん'], '結核菌（細菌）。咳・痰・発熱がおもな症状で、潜伏期間は1か月〜10年以上。');
-W(1, 'マラリアの病原体の名前を書きなさい。', ['マラリア原虫', 'まらりあげんちゅう'], 'マラリア原虫。蚊を介して感染します（媒介物感染）。');
-W(1, '感染性胃腸炎のおもな病原体であるウイルスの名前を書きなさい。', ['ノロウイルス'], 'ノロウイルスなど。下痢・嘔吐・発熱がおもな症状です。');
-W(1, 'COVID-19の病原体の名前を書きなさい。', ['新型コロナウイルス', 'しんがたころなういるす', 'コロナウイルス'], '新型コロナウイルス。潜伏期間は1〜14日。');
+C(1, '結核の病原体はどれか。', ['結核菌', '結核ウイルス', 'マラリア原虫'], '結核菌（細菌）。咳・痰・発熱がおもな症状で、潜伏期間は1か月〜10年以上。');
+C(1, 'マラリアの病原体はどれか。', ['マラリア原虫', 'マラリア菌', 'ノロウイルス'], 'マラリア原虫。蚊を介して感染します（媒介物感染）。');
+C(1, '感染性胃腸炎のおもな病原体であるウイルスはどれか。', ['ノロウイルス', '結核菌', 'HIV'], 'ノロウイルスなど。下痢・嘔吐・発熱がおもな症状です。');
+C(1, 'COVID-19の病原体はどれか。', ['新型コロナウイルス', 'インフルエンザウイルス', '結核菌'], '新型コロナウイルス。潜伏期間は1〜14日。');
 
 /* 保健：環境の健康への影響（4〜8）＝アプリの単元 9〜13 */
 
@@ -1048,7 +1054,7 @@ var YOMI = {}; D.forEach(function (x) { if (x.k === 't' && x.y) YOMI[x.term] = x
 var S = { q: null, queue: [], mode: null, param: null, done: 0, right: 0, total: 0 };
 
 /* ---------- かんぺきメーター ---------- */
-function mastered(it) { var s = stat(it); return s.need === 0 && s.ok >= 1 && (it.k !== 't' || !it.s || s.w > 0); }
+function mastered(it) { var s = stat(it); return s.need === 0 && s.ok >= 1; }
 function prog(list) { var m = list.filter(mastered).length; return { n: list.length, m: m, left: list.length - m, pct: list.length ? Math.floor(m / list.length * 100) : 100 }; }
 function meterBar(pct, cls) { return '<div class="mbar ' + (cls || '') + '"><i style="width:' + pct + '%"></i></div>'; }
 function starItems() { return ITEMS.filter(function (x) { return x.s; }); }
@@ -1075,7 +1081,7 @@ function parseCloze(it) {
 function makeQ(it, form) {
   var q = { it: it, form: form, ans: null, judged: false, ok: false };
   if (it.k === 't') {
-    if (!form) form = pick(['w', 'w', 'c', 'd', 'o']);
+    if (!form || form === 'w') form = pick(['c', 'c', 'd', 'o']);
     q.form = form;
     if (form === 'w') { q.kind = 'wr'; q.html = '次の説明にあてはまることばを書きなさい。<div class="def">' + esc(qdef(it)) + '</div>'; q.accept = termAns(it); q.show = it.term; }
     else if (form === 'c') { q.kind = 'ch'; q.html = '次の説明にあてはまることばはどれか。<div class="def">' + esc(qdef(it)) + '</div>'; q.opts = shuffle([it.term].concat(shuffle(others(it)).slice(0, 3).map(function (x) { return x.term; }))); q.right = q.opts.indexOf(it.term); }
@@ -1086,7 +1092,7 @@ function makeQ(it, form) {
   else if (it.k === 'c') { q.kind = 'ch'; q.html = esc(it.q); q.opts = shuffle(it.opts); q.right = q.opts.indexOf(it.opts[0]); q.ex = it.ex; }
   else if (it.k === 'w') { q.kind = 'wr'; q.html = esc(it.q); q.accept = it.ans; q.show = it.ans[0]; q.ex = it.ex; }
   else if (it.k === 'l') {
-    var c = parseCloze(it); if (!form) form = Math.random() < 0.5 ? 'sel' : 'wr'; q.form = form; q.kind = 'cl'; q.cl = c; q.title = it.title;
+    var c = parseCloze(it); form = 'sel'; q.form = form; q.kind = 'cl'; q.cl = c; q.title = it.title;
     q.pool = shuffle(c.blanks.map(function (b) { return b[0]; }).filter(function (v, i, a) { return a.indexOf(v) === i; }).concat(it.decoy));
     q.ans = c.blanks.map(function () { return form === 'sel' ? -1 : ''; }); q.res = [];
   }
@@ -1115,7 +1121,7 @@ function home() {
   if (st.left) {
     h += '<div class="gh"><h2>ゴール①　いちばん出る所（★）</h2><span class="gp"><b>' + st.pct + '</b>%</span></div>' + meterBar(st.pct) +
       '<div class="gl"><span>できた <b>' + st.m + '</b> / ' + st.n + ' 問</span><span>ゴールまで あと <b>' + st.left + '</b> 問（' + mins(st.left) + '）</span></div><p class="gc">' + cheer(st) + '</p>' +
-      '<div class="gb"><button class="btn big" data-act="go" data-m="star">★ いちばん出る所からやる</button><span class="sm">★＝先生のプリントの空欄と、バスケットボールのオレンジのマーカーの所。1回正解で「できた」。まちがえた問題は、2回続けて正解するまで何度も出ます。用語は自分で書けたら「できた」です。</span></div>';
+      '<div class="gb"><button class="btn big" data-act="go" data-m="star">★ いちばん出る所からやる</button><span class="sm">★＝先生のプリントの空欄と、バスケットボールのオレンジのマーカーの所。1回正解で「できた」。まちがえた問題は、2回続けて正解するまで何度も出ます。ぜんぶ選ぶだけで進めます。</span></div>';
   } else if (all.left) {
     h += '<div class="gh"><h2>ゴール①達成　いちばん出る所は ぜんぶ できた</h2><span class="gp"><b>100</b>%</span></div>' + meterBar(100) +
       '<p class="gc">芭ちゃん、ここでやめても、もう十分です。<br>……ただ、ここまで来られる芭ちゃんなら、<b>のこりの ' + all.left + ' 問</b>も、案外すぐ終わってしまうかもしれません。</p>' +
@@ -1145,7 +1151,6 @@ function home() {
     });
     h += '</div>';
   });
-  h += '<h2 class="sec">記述のれんしゅう（メーターには入りません）</h2><div class="box">' + ESSAYS.map(function (e, i) { return '<button class="erow" data-act="essay" data-i="' + i + '"><span class="un">' + UNITS[e.u] + '</span>' + esc(e.q) + '</button>'; }).join('') + '</div>';
   if (ST.tests.length) h += '<h2 class="sec">模擬テストの記録</h2><div class="box"><table class="tl">' + ST.tests.slice().reverse().slice(0, 8).map(function (t) { return '<tr><td>' + t.date + '</td><td><b>' + t.score + '</b> 点</td></tr>'; }).join('') + '</table></div>';
   h += '<p class="foot"><button class="btn ghost" data-act="reset">記録をぜんぶ消す</button>　記録はこのパソコンのブラウザの中だけに残ります。</p>';
   app.innerHTML = h; window.scrollTo(0, 0);
@@ -1171,8 +1176,7 @@ function start(mode, u) {
 }
 function formFor(it) {
   var s = stat(it);
-  if (it.k === 't') return (it.s && !s.w) || s.need > 0 ? 'w' : null;
-  if (it.k === 'l') return it.s && !s.w ? 'wr' : (S.mode === 'fix' ? 'wr' : null);
+  if (it.k === 't') return s.need > 0 ? 'c' : null;
   return null;
 }
 function next() {
@@ -1225,7 +1229,7 @@ function qBody(q, idx) {
   var h = '', d = q.judged ? ' disabled' : '', p = idx == null ? '' : ' data-q="' + idx + '"';
   if (q.kind === 'cl') {
     h += '<div class="qt">' + (q.form === 'sel' ? '次の文章の（　）にあてはまることばを、語群から選びなさい。' : '次の文章の（　）にあてはまることばを書きなさい。') + '　<span class="sm">' + esc(q.title) + '</span></div><div class="cloze"' + p + '>' + clozeHtml(q) + '</div>';
-    if (q.form === 'sel') h += '<div class="pool">語群　' + q.pool.map(function (x, j) { return '<span>' + KANA[j] + '：' + esc(x) + '</span>'; }).join('') + '</div>';
+    if (q.form === 'sel') h += '<div class="pool"' + p + '>語群' + (q.judged ? '' : '<small>押すと、空いている（　）に入ります</small>') + q.pool.map(function (x, j) { return '<button class="pl" data-pl="' + j + '"' + d + '>' + KANA[j] + '：' + esc(x) + '</button>'; }).join('') + '</div>';
     return h;
   }
   h += '<div class="qt">' + q.html + '</div>';
@@ -1249,7 +1253,7 @@ function draw() {
   if (q.judged) {
     h += (q.kind === 'cl' ? '<div class="res ' + (q.ok ? 'ok' : 'ng') + '"><b>' + (q.ok ? '○ ぜんぶ正解' : '× ' + q.res.filter(function (x) { return !x; }).length + ' か所まちがい') + '</b></div>' + clozeAnswer(q) : resultHtml(q));
     var g = prog(S.pool);
-    h += '<div class="info ' + (q.ok ? 'ok' : 'ng') + (q.justM ? ' star' : '') + '">' + (q.ok ? (q.justM ? '★ この問題は「できた」になりました。（' + g.m + ' / ' + g.n + '）' : mastered(it) ? 'この問題は、もう「できた」です。' : s.need ? 'あと ' + s.need + ' 回続けて正解すると「できた」になります。少しあとでもう一度出ます。' : 'えらぶ形では正解。<b>自分で書けたら</b>「できた」になります。少しあとで書く形で出ます。') : (q.lostM ? '「できた」がいったん外れました。' : '') + 'この問題は、2回続けて正解するまで出ます。') + '</div>';
+    h += '<div class="info ' + (q.ok ? 'ok' : 'ng') + (q.justM ? ' star' : '') + '">' + (q.ok ? (q.justM ? '★ この問題は「できた」になりました。（' + g.m + ' / ' + g.n + '）' : mastered(it) ? 'この問題は、もう「できた」です。' : s.need ? 'あと ' + s.need + ' 回続けて正解すると「できた」になります。少しあとでもう一度出ます。' : '') : (q.lostM ? '「できた」がいったん外れました。' : '') + 'この問題は、2回続けて正解するまで出ます。') + '</div>';
     h += '<div class="actions"><button class="btn big" data-act="next">次の問題へ（Enter）</button></div>';
   }
   h += '</div><p class="keys">キーボード：○は <kbd>O</kbd> か <kbd>1</kbd>、×は <kbd>X</kbd> か <kbd>2</kbd>。記号は <kbd>1</kbd>〜<kbd>4</kbd>。次へは <kbd>Enter</kbd>。</p>';
@@ -1334,7 +1338,8 @@ function closeMsg() { var o = document.getElementById('ov'); if (o) o.parentNode
 /* ---------- 操作 ---------- */
 function answer(v) { var q = S.q; if (!q || q.judged) return; q.ans = v; doJudge(); }
 app.addEventListener('click', function (e) {
-  var t = e.target.closest('[data-ox],[data-o],[data-act]'); if (!t) return;
+  var t = e.target.closest('[data-ox],[data-o],[data-pl],[data-act]'); if (!t) return;
+  if (t.dataset.pl != null) { var box = t.closest('.pool'), cz = box && box.previousElementSibling; if (!cz) return; var ss = [].slice.call(cz.querySelectorAll('select:not([disabled])')), em = ss.filter(function (x) { return x.value === '-1'; })[0]; if (em) { em.value = t.dataset.pl; em.parentNode.classList.add('fl'); setTimeout(function () { em.parentNode.classList.remove('fl'); }, 400); } return; }
   if (t.dataset.ox != null || t.dataset.o != null) {
     var v = t.dataset.ox != null ? t.dataset.ox === '1' : +t.dataset.o, holder = t.closest('[data-q]');
     if (S.mode === 'test') { if (S.test.graded || !holder) return; var q = allQ()[+holder.dataset.q]; app.querySelectorAll('.cloze[data-q]').forEach(function (c) { readInputs(allQ()[+c.dataset.q], c); }); q.ans = v; S.test.keep = true; drawTest(); return; }
