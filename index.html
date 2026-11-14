@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex">
-<title>中3保健体育 期末テスト対策</title>
+<title>がんばれ芭ちゃん！テストまんてん講座（保健体育）</title>
 <style>
 *{box-sizing:border-box}
 body{margin:0;background:#f3f5f9;color:#1c2330;font-family:"BIZ UDPGothic","Hiragino Sans","Yu Gothic UI","Yu Gothic",Meiryo,sans-serif;font-size:18px;line-height:1.75}
@@ -234,6 +234,8 @@ textarea{font:inherit;font-size:18px;width:100%;border:2px solid #1f4e9c;border-
 .tsec .qt{font-size:18px;margin-bottom:8px}.tsec .def{font-size:18px}.tsec .oxb{max-width:150px;padding:4px}.tsec .oxb b{font-size:30px}.tsec .opt{font-size:17px}
 .sc{font-size:26px}
 @media(max-width:900px){.ucards{grid-template-columns:1fr 1fr}}
+
+.hd h1{color:#d9482b;font-size:34px}.hd h1 .ttl2{color:#1c2330;margin-left:10px}.hd h1 .ttl3{font-size:16px;color:#667;font-weight:normal;margin-left:14px}
 
 </style>
 </head>
@@ -1048,11 +1050,11 @@ function starItems() { return ITEMS.filter(function (x) { return x.s; }); }
 function needList() { return ITEMS.filter(function (x) { return stat(x).need > 0; }); }
 function mins(n) { var m = Math.max(1, Math.round(n * 12 / 60)); return m >= 60 ? '約' + Math.floor(m / 60) + '時間' + (m % 60 ? m % 60 + '分' : '') : '約' + m + '分'; }
 function cheer(g) {
-  if (g.m === 0) return 'まずは1つ、「できた」を作ってみよう。';
-  if (g.left <= 15) return 'ゴールは目の前。あと ' + g.left + ' 問。';
+  if (g.m === 0) return '芭ちゃん、まずは1つ、「できた」を作ってみよう。';
+  if (g.left <= 15) return '芭ちゃん、ゴールは目の前。あと ' + g.left + ' 問。';
   if (g.pct < 25) return 'いいスタート。1問10秒くらいで、どんどん進みます。';
   if (g.pct < 50) return '調子が出てきた。もうすぐ半分。';
-  if (g.pct < 75) return '半分をこえた。ここまで来る人は、じつは多くない。';
+  if (g.pct < 75) return '半分をこえた。さすが芭ちゃん。ここまで来る人は、じつは多くない。';
   return 'ゴールが見えてきた。ここからは1問ごとに終わりが近づく。';
 }
 
@@ -1103,7 +1105,7 @@ function record(q) {
 function home() {
   S.mode = null; S.q = null;
   var st = prog(starItems()), all = prog(ITEMS), need = needList().length, best = ST.tests.reduce(function (a, t) { return Math.max(a, t.score); }, 0);
-  var h = '<header class="hd"><h1>中3保健体育　期末テスト対策</h1><p>保健（感染症・保健医療機関・医薬品・環境）／体育理論／バスケットボール／アルティメット／水泳　<span class="sm">全 ' + ITEMS.length + ' 問</span></p></header>';
+  var h = '<header class="hd"><h1>がんばれ芭ちゃん！<span class="ttl2">テストまんてん講座</span><span class="ttl3">中3 保健体育・期末</span></h1><p>保健（感染症・保健医療機関・医薬品・環境）／体育理論／バスケットボール／アルティメット／水泳　<span class="sm">全 ' + ITEMS.length + ' 問</span></p></header>';
   h += '<div class="goal' + (st.left ? '' : ' done') + '">';
   if (st.left) {
     h += '<div class="gh"><h2>ゴール①　いちばん出る所（★）</h2><span class="gp"><b>' + st.pct + '</b>%</span></div>' + meterBar(st.pct) +
@@ -1111,12 +1113,12 @@ function home() {
       '<div class="gb"><button class="btn big" data-act="go" data-m="star">★ いちばん出る所からやる</button><span class="sm">★＝先生のプリントの空欄と、バスケットボールのオレンジのマーカーの所。1回正解で「できた」。まちがえた問題は、2回続けて正解するまで何度も出ます。用語は自分で書けたら「できた」です。</span></div>';
   } else if (all.left) {
     h += '<div class="gh"><h2>ゴール①達成　いちばん出る所は ぜんぶ できた</h2><span class="gp"><b>100</b>%</span></div>' + meterBar(100) +
-      '<p class="gc">ここでやめても、もう十分です。<br>……ただ、ここまで来られる人なら、<b>のこりの ' + all.left + ' 問</b>も、案外すぐ終わってしまうかもしれません。</p>' +
+      '<p class="gc">芭ちゃん、ここでやめても、もう十分です。<br>……ただ、ここまで来られる芭ちゃんなら、<b>のこりの ' + all.left + ' 問</b>も、案外すぐ終わってしまうかもしれません。</p>' +
       '<div class="gl"><span>ゴール②　ぜんぶの問題 <b>' + all.m + '</b> / ' + all.n + '</span><span>完全制覇まで あと <b>' + all.left + '</b> 問（' + mins(all.left) + '）</span></div>' + meterBar(all.pct, 'ex') +
       '<div class="gb"><button class="btn big" data-act="go" data-m="all">のこりにちょうせんする</button><span class="sm">やらなくても大丈夫。やれたら、かなりすごい。</span></div>';
   } else {
     h += '<div class="gh"><h2>完全制覇　' + all.n + ' 問、ぜんぶ できた</h2><span class="gp"><b>100</b>%</span></div>' + meterBar(100) + meterBar(100, 'ex') +
-      '<p class="gc">このアプリの問題は、ぜんぶ自分のものになりました。もうやることはありません。<br>' + (best >= 95 ? '模擬テストも ' + best + ' 点。あとは当日、いつもどおりに解くだけです。' : '……と言いたいところですが、<b>模擬テストで 95 点</b>をこえたら本物です。' + (best ? 'いまの最高は ' + best + ' 点。' : '') + 'ためしてみたくなりませんか。') + '</p>' +
+      '<p class="gc">芭ちゃん、まんてん講座は卒業です。問題は、ぜんぶ自分のものになりました。もうやることはありません。<br>' + (best >= 95 ? '模擬テストも ' + best + ' 点。あとは当日、いつもどおりに解くだけです。' : '……と言いたいところですが、<b>模擬テストで 95 点</b>をこえたら本物です。' + (best ? 'いまの最高は ' + best + ' 点。' : '') + 'ためしてみたくなりませんか。') + '</p>' +
       (best >= 95 ? '' : '<div class="gb"><button class="btn big" data-act="test">模擬テストで力だめし</button></div>');
   }
   h += '</div>';
@@ -1176,9 +1178,9 @@ function finish() {
   var g = prog(S.pool), name = S.mode === 'unit' ? '「' + UNITS[S.param] + '」' : MODE_NAME[S.mode];
   var st = prog(starItems()), all = prog(ITEMS), t, b, btn = [['ホームへ', home]];
   if (S.mode === 'fix') { t = 'まちがい直しが全部おわりました'; b = 'やり直しの問題は 0 個です。よくがんばりました。'; }
-  else if (!all.left && !ST.g2) { ST.g2 = ST.g1 = true; save(); t = '完全制覇！　' + all.n + ' 問、ぜんぶ できた'; b = 'ここまでできる中学生は、そう多くありません。もうやることはありません。<br><br>……と言いたいところですが、<b>模擬テストで 95 点</b>をこえられるか、ためしてみたくなりませんか。'; btn = [['ホームへ', home], ['模擬テストで力だめし', startTest]]; }
-  else if (!st.left && !ST.g1) { ST.g1 = true; save(); t = 'ゴール①達成！　いちばん出る所は ぜんぶ できた'; b = '先生のプリントの空欄と、バスケットボールのオレンジの所、' + st.n + ' 問をやり切りました。本当にすごいことです。今日はここで終わりにしても十分です。<br><br>……ただ、ここまで来られる人なら、<b>のこりの ' + all.left + ' 問</b>も、案外すぐ終わってしまうかもしれません。'; btn = [['ホームへ', home], ['のこりにちょうせんする', function () { start('all'); }]]; }
-  else if (!g.left) { t = name + ' は ぜんぶ できた'; b = 'この回は ' + S.done + ' 問中 ' + S.right + ' 問 正解でした。' + (st.left ? 'ゴール①まで、あと ' + st.left + ' 問です。' : all.left ? '完全制覇まで、あと ' + all.left + ' 問です。' : '') + '<br>……この調子なら、次の単元もいけそうです。'; }
+  else if (!all.left && !ST.g2) { ST.g2 = ST.g1 = true; save(); t = '芭ちゃん、完全制覇！　' + all.n + ' 問、ぜんぶ できた'; b = 'まんてん講座は卒業です。ここまでできる中学生は、そう多くありません。もうやることはありません。<br><br>……と言いたいところですが、<b>模擬テストで 95 点</b>をこえられるか、ためしてみたくなりませんか。'; btn = [['ホームへ', home], ['模擬テストで力だめし', startTest]]; }
+  else if (!st.left && !ST.g1) { ST.g1 = true; save(); t = 'やったね芭ちゃん！　ゴール①達成'; b = '先生のプリントの空欄と、バスケットボールのオレンジの所、' + st.n + ' 問をやり切りました。本当にすごいことです。今日はここで終わりにしても十分です。<br><br>……ただ、ここまで来られる芭ちゃんなら、<b>のこりの ' + all.left + ' 問</b>も、案外すぐ終わってしまうかもしれません。'; btn = [['ホームへ', home], ['のこりにちょうせんする', function () { start('all'); }]]; }
+  else if (!g.left) { t = name + ' は ぜんぶ できた'; b = 'この回は ' + S.done + ' 問中 ' + S.right + ' 問 正解でした。' + (st.left ? 'ゴール①まで、あと ' + st.left + ' 問です。' : all.left ? '完全制覇まで、あと ' + all.left + ' 問です。' : '') + '<br>……芭ちゃん、この調子なら、次の単元もいけそうです。'; }
   else { t = 'この回はおわり'; b = S.done + ' 問中 ' + S.right + ' 問 正解でした。'; }
   home(); msg(t, b, btn);
 }
@@ -1278,7 +1280,7 @@ function startTest() {
 function allQ() { var a = []; S.test.secs.forEach(function (s) { s.qs.forEach(function (q) { a.push(q); }); }); return a; }
 function drawTest() {
   var T2 = S.test, h = '<div class="top"><button class="btn ghost" data-act="tquit">← ' + (T2.graded ? 'ホームへ' : 'テストをやめる') + '</button><span class="mn">模擬テスト</span>' + (T2.graded ? '<span class="pg"><b class="sc">' + T2.score + '</b> 点 / 100点</span>' : '') + '</div>', k = 0, idx = 0;
-  if (T2.graded) h += '<div class="card"><div class="score"><b>' + T2.score + '</b> 点<span>（100点満点）</span></div><div class="actions">' + (needList().length ? '<button class="btn big" data-act="go" data-m="fix">まちがえた問題をやり直す</button>' : '') + '<button class="btn" data-act="home">ホームへ</button></div></div>';
+  if (T2.graded) h += '<div class="card"><div class="score"><b>' + T2.score + '</b> 点<span>（100点満点）' + (T2.score >= 100 ? '　芭ちゃん、まんてん！' : T2.score >= 90 ? '　まんてんまで、あと少し！' : '　まちがえた所を直せば、まんてんに近づくよ') + '</span></div><div class="actions">' + (needList().length ? '<button class="btn big" data-act="go" data-m="fix">まちがえた問題をやり直す</button>' : '') + '<button class="btn" data-act="home">ホームへ</button></div></div>';
   T2.secs.forEach(function (s, si) {
     h += '<div class="card tsec"><h3>' + (si + 1) + '　' + esc(s.title) + '</h3>';
     s.qs.forEach(function (q) { k++; h += '<div class="tq' + (q.judged ? (q.ok ? ' o' : ' x') : '') + '"><div class="tnum">' + (s.qs.length > 1 ? '(' + k + ')' : '') + (q.judged ? '<b>' + (q.ok ? '○' : '×') + '</b>' : '') + '</div><div class="tbody">' + qBody(q, idx) + (q.judged ? (q.kind === 'cl' ? '' : resultHtml(q)) : '') + '</div></div>'; idx++; });
