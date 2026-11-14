@@ -1,0 +1,1347 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>中3保健体育 期末テスト対策</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#f3f5f9;color:#1c2330;font-family:"BIZ UDPGothic","Hiragino Sans","Yu Gothic UI","Yu Gothic",Meiryo,sans-serif;font-size:18px;line-height:1.75}
+#app{max-width:1120px;margin:0 auto;padding:18px 20px 60px}
+i{font-family:"Times New Roman",Times,serif;font-style:italic;font-size:1.12em;padding:0 1px}
+sup{font-size:.7em}
+.fr{display:inline-flex;flex-direction:column;vertical-align:middle;text-align:center;font-size:.86em;line-height:1.2;margin:0 3px}
+.fr>span:first-child{border-bottom:1.5px solid currentColor;padding:0 4px}
+.fr>span{padding:0 4px}
+.hd h1{margin:6px 0 2px;font-size:30px}
+.hd p{margin:0 0 14px;color:#445}
+.sm{font-size:14px;color:#667;margin-left:8px}
+.sum{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:16px}
+.sum>div{background:#fff;border-radius:12px;padding:10px 18px;min-width:150px;box-shadow:0 1px 3px #0001}
+.sum b{font-size:28px;margin-right:2px}
+.sum span{display:block;font-size:13px;color:#667}
+.sum .warn{background:#fff3e6;outline:2px solid #f0a040}
+.modes{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:18px}
+.mode{border:0;border-radius:14px;padding:16px;text-align:left;color:#fff;cursor:pointer;font:inherit;box-shadow:0 2px 6px #0002}
+.mode b{display:block;font-size:21px;margin-bottom:4px}
+.mode span{font-size:14px;line-height:1.5;display:block}
+.mode em{font-style:normal;background:#fff;color:#c33;border-radius:99px;padding:0 9px;margin-left:8px;font-size:16px}
+.m1{background:#d9482b}.m2{background:#c27a00}.m3{background:#1f4e9c}.m4{background:#2a8a5c}
+.mode:hover{filter:brightness(1.08)}
+.box{background:#fff;border-radius:12px;padding:12px 20px;box-shadow:0 1px 3px #0001}
+.weakbox h2{font-size:18px;margin:4px 0}
+.weakbox ul{margin:4px 0;padding-left:22px;font-size:16px;line-height:1.7}
+.sec{font-size:20px;margin:22px 0 8px}
+.unit{background:#fff;border-radius:12px;margin-bottom:8px;box-shadow:0 1px 3px #0001}
+.unit summary{padding:12px 18px;cursor:pointer;display:flex;align-items:center;gap:10px}
+.unit summary b{font-size:18px}
+.unit summary .sm2{margin-left:auto}
+.tl{width:100%;border-collapse:collapse}
+.tl td,.tl th{padding:7px 18px;border-top:1px solid #e6e9ef;text-align:left;font-size:16px}
+.tl .rc{white-space:nowrap;width:120px}
+.tl td:last-child{width:120px;text-align:right}
+.bd{font-size:12px;border-radius:99px;padding:1px 9px;margin-left:8px;white-space:nowrap}
+.bd.w{background:#fde3dd;color:#b3321a}.bd.n{background:#fff0cc;color:#8a5a00}.bd.s{background:#e3ecfb;color:#1f4e9c}
+.btn{font:inherit;font-size:16px;border:1.5px solid #1f4e9c;background:#fff;color:#1f4e9c;border-radius:9px;padding:6px 14px;cursor:pointer}
+.btn:hover{background:#eaf1fc}
+.btn.big{background:#1f4e9c;color:#fff;font-size:19px;padding:10px 26px;font-weight:bold}
+.btn.big:hover{background:#173d7c}
+.btn.ghost{border-color:#aab;color:#556}
+.btn.ok{border-color:#1a9c5a;color:#fff;background:#1a9c5a;font-size:18px;padding:9px 22px}
+.btn.ng{border-color:#c33;color:#c33}
+.btn:disabled{opacity:.35;cursor:default}
+.foot{margin-top:26px;font-size:14px;color:#667}
+.top{display:flex;align-items:center;gap:14px;margin-bottom:10px}
+.mn{font-weight:bold;font-size:19px}
+.pg{margin-left:auto;color:#445}
+.tm{background:#1c2330;color:#fff;border-radius:8px;padding:2px 12px;font-variant-numeric:tabular-nums}
+.tm.hot{background:#c33}
+.nav{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:10px}
+.nb{font:inherit;font-size:14px;width:36px;height:32px;border:1.5px solid #bcc3d1;background:#fff;border-radius:7px;cursor:pointer}
+.nb.done{background:#dbe7fb;border-color:#1f4e9c}.nb.cur{outline:3px solid #f0a040}
+.nb.o{background:#d9f3e4;border-color:#1a9c5a}.nb.x{background:#fde0dc;border-color:#c33}
+.card{background:#fff;border-radius:14px;padding:18px 26px 22px;box-shadow:0 2px 8px #0001}
+.qhead{display:flex;align-items:center;gap:10px;border-bottom:2px solid #e6e9ef;padding-bottom:8px;margin-bottom:12px;flex-wrap:wrap}
+.un{background:#1c2330;color:#fff;border-radius:6px;padding:0 10px;font-size:14px}
+.tn{font-weight:bold}
+.qbody.hasfig{display:grid;grid-template-columns:1fr auto;gap:22px;align-items:start}
+.qtext{font-size:20px}
+.qfig{max-width:660px}
+.note{display:block;font-size:14px;color:#667;line-height:1.5;margin-top:2px}
+.figs{display:flex;gap:18px;flex-wrap:wrap;align-items:flex-end}
+.cap{font-size:14px;color:#445;font-weight:bold}
+svg{max-width:100%;height:auto}
+svg text{font-family:"Times New Roman","Hiragino Mincho ProN","Yu Mincho",serif}
+.gl{stroke:#222;stroke-width:1.8;stroke-linecap:round}.gd{stroke-dasharray:5 4}.gt{stroke-width:1;stroke:#666}
+.gar{fill:none;stroke:#222;stroke-width:1.3}.gtk{stroke:#222;stroke-width:1.4}
+.garc{fill:none;stroke:#777;stroke-width:1;stroke-dasharray:3 3}
+.gpt{font-size:17px;text-anchor:middle;fill:#111}
+.gln{font-size:15px;text-anchor:middle;fill:#111;paint-order:stroke;stroke:#fff;stroke-width:5px;stroke-linejoin:round}
+.gan{font-size:13px;text-anchor:middle;fill:#111;paint-order:stroke;stroke:#fff;stroke-width:3px}
+.gg{stroke:#c9d6ea;stroke-width:1}.gax{stroke:#222;stroke-width:1.5}
+.gtx{font-size:12px;fill:#333}.gxl,.gyl{font-size:14px;fill:#111}.gtt{font-size:14px;paint-order:stroke;stroke:#fff;stroke-width:4px}
+.tb{border-collapse:collapse;font-size:16px;background:#fff}
+.tb td,.tb th{border:1px solid #889;padding:2px 14px;text-align:right}
+.tb th{background:#eef1f6;text-align:center}
+.work{display:grid;grid-template-columns:1fr 300px;gap:24px;margin-top:16px;align-items:start}
+.part{padding:10px 0;border-top:1px dashed #d5dae3}
+.plabel{font-size:19px;margin-bottom:4px}
+.line{display:flex;align-items:center;flex-wrap:wrap;gap:6px;font-size:21px}
+.fld{display:inline-flex;align-items:center;justify-content:center;min-width:86px;min-height:52px;padding:2px 10px;border:2px solid #8b97ab;border-radius:9px;background:#fff;font-size:24px;cursor:pointer;font-family:"Times New Roman",serif}
+.fld.wide{min-width:120px}
+.fld.on{border-color:#e07b00;box-shadow:0 0 0 4px #ffe2b8;background:#fffaf2}
+.fld.on:after{content:"";width:2px;height:26px;background:#e07b00;margin-left:2px;animation:bl 1s steps(1) infinite}
+@keyframes bl{50%{opacity:0}}
+.fld.lock{background:#f1f3f7;cursor:default}
+.opts{display:flex;flex-direction:column;gap:7px;align-items:flex-start}
+.opts.pic{flex-direction:row;flex-wrap:wrap}
+.opt{font:inherit;font-size:19px;text-align:left;border:2px solid #bcc3d1;background:#fff;border-radius:10px;padding:7px 16px;cursor:pointer;display:flex;gap:10px;align-items:center}
+.opt:hover{border-color:#1f4e9c}
+.opt.sel{border-color:#1f4e9c;background:#e4eefc;box-shadow:0 0 0 2px #1f4e9c inset}
+.opt.lock{cursor:default}
+.opt.good{border-color:#1a9c5a;background:#dff5ea;box-shadow:0 0 0 2px #1a9c5a inset}
+.opt.bad{border-color:#c33;background:#fde6e3;box-shadow:0 0 0 2px #c33 inset}
+.ck{display:inline-block;width:22px;height:22px;border:2px solid #8b97ab;border-radius:5px;line-height:18px;text-align:center;font-size:16px;flex:none;background:#fff}
+.fillbox{font-size:19px;line-height:2.5;background:#f7f9fc;border-radius:10px;padding:8px 16px}
+.sel{font:inherit;font-size:17px;padding:5px 6px;border:2px solid #8b97ab;border-radius:8px;background:#fffaf2;max-width:100%}
+.sel.good{border-color:#1a9c5a;background:#dff5ea}.sel.bad{border-color:#c33;background:#fde6e3}
+.fixans{color:#c33;font-weight:bold;margin:0 6px}
+.plot{display:inline-block;cursor:crosshair;border:2px solid #8b97ab;border-radius:10px;padding:4px;background:#fff}
+.plot.lock{cursor:default}
+.right{font-size:17px;color:#b3321a;margin-top:6px}
+.right .line{display:inline-flex;font-size:19px}
+.ra{font-size:22px;font-family:"Times New Roman",serif;margin:0 4px}
+.mark{display:inline-block;margin-top:6px;font-weight:bold;border-radius:8px;padding:1px 14px;font-size:18px}
+.mark.o{background:#dff5ea;color:#12784a}.mark.x{background:#fde6e3;color:#b3321a}
+.mark span{font-weight:normal;margin-left:10px;font-size:15px}
+.kp{display:grid;grid-template-columns:repeat(4,1fr);gap:7px;position:sticky;top:10px;background:#eef1f6;border-radius:14px;padding:12px}
+.key{font:inherit;font-size:24px;height:54px;border:0;border-radius:10px;background:#fff;box-shadow:0 2px 0 #b9c1cf;cursor:pointer}
+.key:active{transform:translateY(2px);box-shadow:none}
+.key.fn{font-size:13px;background:#dfe5ee}
+.key.go{background:#1f4e9c;color:#fff;font-size:17px;font-weight:bold;box-shadow:0 2px 0 #12336b}
+.kpn{grid-column:1/-1;font-size:12.5px;color:#556;line-height:1.5}
+.warnbar{color:#b3321a;font-size:16px;min-height:6px;margin-top:6px}
+.actions{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-top:10px}
+.info{flex-basis:100%;border-radius:8px;padding:4px 14px;font-size:16px}
+.info.ok{background:#dff5ea;color:#12784a}.info.ng{background:#fff0cc;color:#7a4f00}
+.expl{margin-top:16px;background:#fffbea;border-left:6px solid #e3b400;border-radius:8px;padding:12px 20px;font-size:18px;line-height:2.1}
+.mt{font-weight:bold;font-size:15px;color:#7a5f00;margin-bottom:2px}
+.proof{background:#fff;border:1.5px solid #ccd;border-radius:8px;padding:8px 16px;margin:6px 0;line-height:2}
+.model{background:#f1f7ff;border-radius:10px;padding:10px 16px;margin-bottom:10px}
+.checks{background:#f7f9fc;border-radius:10px;padding:10px 16px}
+.chk{display:flex;gap:10px;align-items:flex-start;font-size:17px;cursor:pointer}
+.chk input{width:22px;height:22px;margin-top:6px;flex:none}
+.selfb{display:flex;gap:12px;margin-top:12px}
+.score{font-size:22px;text-align:center;margin:6px 0 12px}
+.score b{font-size:64px;color:#1f4e9c}
+.score span{font-size:15px;color:#667;margin-left:8px}
+.rl{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+.rrow{font:inherit;font-size:15px;text-align:left;display:flex;gap:10px;align-items:center;border:1.5px solid #ccd;border-radius:8px;background:#fff;padding:5px 10px;cursor:pointer}
+.rrow.x{background:#fff4f2;border-color:#e6a59c}.rrow.o{background:#f3fbf6}
+.rrow b{width:26px;text-align:right}.mk{font-weight:bold;width:22px}
+.rrow.x .mk{color:#c33}.rrow.o .mk{color:#1a9c5a}
+#ov{position:fixed;inset:0;background:#0007;display:flex;align-items:center;justify-content:center;z-index:9}
+.dlg{background:#fff;border-radius:16px;padding:22px 30px;max-width:520px;box-shadow:0 10px 40px #0005}
+.dlg h3{margin:0 0 6px;font-size:22px}
+.dbt{display:flex;gap:12px;justify-content:flex-end;margin-top:14px}
+@media(max-width:900px){.modes{grid-template-columns:1fr 1fr}.work{grid-template-columns:1fr}.qbody.hasfig{grid-template-columns:1fr}.rl{grid-template-columns:1fr}.kp{position:static}}
+
+.sth{font-weight:bold;font-size:18px;margin:14px 0 4px;padding:2px 12px;background:#1c2330;color:#fff;border-radius:6px;display:inline-block}
+.steps{list-style:none;margin:6px 0;padding:0}
+.steps li{background:#fff;border:1.5px solid #e2d59a;border-radius:10px;padding:8px 16px 10px;margin:8px 0}
+.st{font-weight:bold;font-size:18px;line-height:1.6}
+.sn{display:inline-block;background:#e3b400;color:#3d3000;border-radius:99px;padding:0 12px;font-size:14px;margin-right:10px}
+.sb{font-size:18px;line-height:1.95;margin-top:2px}
+.eq{font-size:20px;margin:3px 0 3px 22px;padding-left:12px;border-left:3px solid #cdd6e6;line-height:2.1}
+.exans,.expt,.exmiss{border-radius:10px;padding:8px 16px;margin:8px 0;font-size:18px;line-height:1.9}
+.exans{background:#dff5ea;border:1.5px solid #1a9c5a}
+.expt{background:#e8f0fd;border:1.5px solid #6b93d6}
+.exmiss{background:#fde9e5;border:1.5px solid #dd8a7c}
+.exans>span,.expt>span,.exmiss>span{display:inline-block;font-weight:bold;font-size:14px;border-radius:99px;padding:0 12px;margin-right:10px;color:#fff}
+.exans>span{background:#1a9c5a}.expt>span{background:#1f4e9c}.exmiss>span{background:#c33}
+
+/* かんぺきメーター */
+.goal{background:#fff;border-radius:16px;padding:16px 22px 18px;margin-bottom:16px;box-shadow:0 2px 8px #0002;border-left:8px solid #1f9d6b}
+.goal.done{border-left-color:#e0a100;background:linear-gradient(90deg,#fff8e0,#fff 60%)}
+.goal .gh{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap}
+.goal h2{margin:0;font-size:22px}
+.goal .gp{margin-left:auto;color:#12784a;font-size:18px}.goal .gp b{font-size:40px;line-height:1}
+.goal.done .gp{color:#a87400}
+.goal .gl{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:16px;margin-top:6px}
+.goal .gl b{font-size:22px}
+.goal .gc{margin:8px 0 10px;font-size:17px;color:#234}
+.goal .gb{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.goal .gb .sm{margin-left:0;flex:1;min-width:260px}
+.mbar{height:18px;background:#e4e9f0;border-radius:99px;overflow:hidden;margin:8px 0 2px}
+.mbar>i{display:block;height:100%;background:linear-gradient(90deg,#35b98a,#1f9d6b);border-radius:99px;transition:width .5s;padding:0;font-size:0}
+.mbar.ex>i{background:linear-gradient(90deg,#f2c230,#e08a00)}
+.mbar.mini{height:8px;width:110px;margin:0;display:inline-block;vertical-align:middle;flex:none}
+.bd.k{background:#dff5ea;color:#12784a}.bd.h{background:#eef3f8;color:#456}
+.top .gm{margin-left:14px;font-size:15px;color:#345;display:inline-flex;align-items:center;gap:8px;white-space:nowrap}
+.top .gm b{font-size:19px;color:#12784a}
+.info.star{font-weight:bold;background:#fff3c4;color:#6b4a00}
+/* 保健体育アプリ用 */
+.qt{font-size:20px;line-height:1.8;margin:4px 0 12px}
+.def{background:#f4f7fc;border-left:5px solid #1f4e9c;border-radius:6px;padding:10px 16px;margin-top:8px;font-size:20px}
+.oxs{display:flex;gap:16px;margin:6px 0}
+.oxb{font:inherit;flex:1;max-width:260px;border:2.5px solid #bcc3d1;background:#fff;border-radius:14px;padding:10px;cursor:pointer;font-size:16px;color:#445}
+.oxb b{display:block;font-size:46px;line-height:1.1;color:#1c2330}
+.oxb:hover:not(:disabled),.opt:hover:not(:disabled){border-color:#1f4e9c;background:#f1f6ff}
+.oxb.sel,.opt.sel{border-color:#1f4e9c;background:#e3ecfb}
+.oxb.right,.opt.right{border-color:#1a9c5a;background:#dff5ea}
+.oxb.wrong,.opt.wrong{border-color:#c33;background:#fde0dc}
+.opts{display:flex;flex-direction:column;gap:9px}
+.opt{font:inherit;font-size:18px;text-align:left;display:flex;gap:12px;align-items:flex-start;border:2px solid #bcc3d1;background:#fff;border-radius:11px;padding:9px 14px;cursor:pointer;line-height:1.6;color:#1c2330}
+.opt b{flex:none;width:30px;height:30px;border-radius:50%;background:#1c2330;color:#fff;text-align:center;line-height:30px;font-size:15px;margin-top:1px}
+.wr{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.wr input,.cloze input{font:inherit;font-size:20px;border:2px solid #1f4e9c;border-radius:9px;padding:7px 12px}
+.wr input{width:min(460px,100%)}
+.cloze{font-size:20px;line-height:2.5}
+.cloze input{width:190px;padding:3px 8px}
+.cloze select{font:inherit;font-size:17px;border:2px solid #1f4e9c;border-radius:8px;padding:4px 6px;max-width:260px;background:#fff}
+.blank{display:inline-flex;align-items:center;gap:3px;margin:0 3px;white-space:nowrap}
+.blank .bn{color:#1f4e9c;font-weight:bold}
+.blank.ok input,.blank.ok select{border-color:#1a9c5a;background:#dff5ea}
+.blank.ng input,.blank.ng select{border-color:#c33;background:#fde0dc}
+.fix{color:#12784a;font-weight:bold;margin-right:6px}
+.pool{background:#f6f7fa;border:1.5px solid #ccd;border-radius:9px;padding:6px 14px;margin-top:10px;font-size:16px;display:flex;flex-wrap:wrap;gap:4px 18px}
+.res{margin-top:14px;border-radius:9px;padding:7px 16px;font-size:18px}
+.res.ok{background:#dff5ea;color:#12784a}.res.ng{background:#fde0dc;color:#a52a1a}
+.res b{font-size:21px}
+.kn{display:block;font-size:15px;color:#8a5a00}
+.card>.expl,.tbody .expl{margin-top:8px;background:#fffbe9;border-radius:9px;padding:9px 16px;font-size:17px;line-height:1.7;border:1px solid #f0e2a8}
+.card>.info{margin-top:8px}
+.keys{font-size:13px;color:#778;margin-top:10px}
+kbd{border:1px solid #aab;border-radius:4px;padding:0 5px;background:#fff;font-family:inherit}
+.ucards{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.ucard{font:inherit;text-align:left;background:#fff;border:0;border-radius:12px;padding:12px 14px;box-shadow:0 1px 3px #0002;cursor:pointer;color:#1c2330}
+.ucard:hover{outline:2px solid #1f4e9c}
+.ucard b{display:block;font-size:16px;line-height:1.4;min-height:44px}
+.ucard span{font-size:13px;color:#556}
+.ucard em{font-style:normal;color:#b3321a;font-weight:bold}
+.ucard.done{background:#f1fbf5}
+.ucard .mbar{height:10px;margin:6px 0 4px}
+.erow{font:inherit;font-size:16px;text-align:left;display:block;width:100%;border:0;border-top:1px solid #e6e9ef;background:#fff;padding:9px 4px;cursor:pointer;line-height:1.6;color:#1c2330}
+.erow:first-child{border-top:0}.erow:hover{background:#f1f6ff}.erow .un{margin-right:10px}
+textarea{font:inherit;font-size:18px;width:100%;border:2px solid #1f4e9c;border-radius:9px;padding:8px 12px;line-height:1.7}
+.tsec{margin-bottom:12px}.tsec h3{font-size:18px;margin:2px 0 10px;border-bottom:2px solid #e6e9ef;padding-bottom:6px}
+.tq{display:flex;gap:10px;padding:10px 0;border-top:1px dashed #d5d9e2}
+.tq:first-of-type{border-top:0}
+.tnum{flex:none;width:52px;font-weight:bold;color:#445}
+.tnum b{display:block;font-size:26px}.tq.o .tnum b{color:#1a9c5a}.tq.x .tnum b{color:#c33}
+.tbody{flex:1;min-width:0}
+.tsec .qt{font-size:18px;margin-bottom:8px}.tsec .def{font-size:18px}.tsec .oxb{max-width:150px;padding:4px}.tsec .oxb b{font-size:30px}.tsec .opt{font-size:17px}
+.sc{font-size:26px}
+@media(max-width:900px){.ucards{grid-template-columns:1fr 1fr}}
+
+</style>
+</head>
+<body>
+<div id="app"></div>
+<script>
+/* 中3保健体育 期末対策：データの入れ物と、文字のそろえ方 */
+var D = [];
+var UNITS = [null, '感染症と病原体', '感染症と体の抵抗力', '感染症の予防', '性感染症とその予防', 'エイズとその予防', '保健機関とその利用', '医療機関とその利用', '医薬品の正しい使い方', '室内の空気の汚染と換気', '衛生的な飲料水の供給', 'し尿とごみの処理', '災害と環境', '私たちの生活と環境問題', '体育理論', 'バスケットボール', 'アルティメット', '水泳（バタフライ）'];
+var AREA = [['保健①　感染症の予防と健康を守る社会の取り組み', [1, 2, 3, 4, 5, 6, 7, 8]], ['保健②　環境の健康への影響', [9, 10, 11, 12, 13]], ['体育', [14, 15, 16, 17]]];
+function hash(s) { var h = 5381; for (var i = 0; i < s.length; i++) h = ((h << 5) + h + s.charCodeAt(i)) | 0; return (h >>> 0).toString(36); }
+function T(u, g, term, def, o) { o = o || {}; D.push({ k: 't', u: u, g: g, term: term, def: def, y: o.y || '', alt: o.alt || [], s: o.s ? 1 : 0, id: 't' + u + hash(term) }); }
+function OX(u, t, a, ex, s) { D.push({ k: 'o', u: u, t: t, a: a, ex: ex, s: s ? 1 : 0, id: 'o' + hash(t) }); }
+function C(u, q, opts, ex, s) { D.push({ k: 'c', u: u, q: q, opts: opts, ex: ex, s: s ? 1 : 0, id: 'c' + hash(q + opts[0]) }); }
+function CL(u, title, text, decoy, s) { D.push({ k: 'l', u: u, title: title, text: text, decoy: decoy || [], s: s ? 1 : 0, id: 'l' + hash(text) }); }
+function W(u, q, ans, ex, s) { D.push({ k: 'w', u: u, q: q, ans: ans, ex: ex, s: s ? 1 : 0, id: 'w' + hash(q) }); }
+function E(u, q, kw, model) { D.push({ k: 'e', u: u, q: q, kw: kw, model: model, s: 0, id: 'e' + hash(q) }); }
+/* 入力した文字をそろえる（全角半角・かたかな・記号のちがいを気にしない） */
+function norm(s) {
+  s = String(s == null ? '' : s).normalize('NFKC').toLowerCase();
+  s = s.replace(/[\s・･「」『』（）()、。,.．，·\/／＝=]/g, '').replace(/[〜～~－–—―‐]/g, '-').replace(/[ヶヵ]/g, 'か').replace(/[％]/g, '%');
+  return s.replace(/[ァ-ヶ]/g, function (c) { return String.fromCharCode(c.charCodeAt(0) - 0x60); });
+}
+function hasKanji(s) { return /[一-鿿]/.test(s); }
+function shuffle(a) { a = a.slice(); for (var i = a.length - 1; i > 0; i--) { var j = Math.floor(Math.random() * (i + 1)), t = a[i]; a[i] = a[j]; a[j] = t; } return a; }
+function pick(a) { return a[Math.floor(Math.random() * a.length)]; }
+function esc(s) { return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;'); }
+
+/* 保健：感染症の予防と健康を守る社会の取り組み（1〜8） */
+/* T=用語 OX=○× C=3択（先頭が正解） CL=穴うめ文 W=書く E=記述  s:1＝先生のプリントの空欄・とくに大事 */
+
+/* ---- 1 感染症と病原体 ---- */
+T(1, 'kihon', '病原体', '病気を引き起こす微生物など', { y: 'びょうげんたい', s: 1 });
+T(1, 'kihon', '感染', '病原体がほかの人や動物などから人の体の中に入って、体内で増え始めること', { y: 'かんせん', s: 1 });
+T(1, 'kihon', '発病', '感染した結果、体に異常があらわれること', { y: 'はつびょう', s: 1 });
+T(1, 'kihon', '感染症', '病原体が体内で増えた結果、体に異常があらわれる病気', { y: 'かんせんしょう', s: 1 });
+T(1, 'kihon', '潜伏期間', '感染してから発病するまでの期間', { y: 'せんぷくきかん' });
+T(1, 'keiro', '感染経路', '感染症のさまざまな感染のしかた', { y: 'かんせんけいろ', s: 1 });
+T(1, 'keiro', '飛沫感染', '咳やくしゃみで飛び散った、病原体を含む唾液が、口や鼻などの粘膜から入る感染のしかた', { y: 'ひまつかんせん', s: 1 });
+T(1, 'keiro', '空気感染', '飛沫の水分が蒸発して飛沫核になり、空気中に広くただよったものを吸いこむ感染のしかた', { y: 'くうきかんせん', alt: ['飛沫核感染', 'ひまつかくかんせん'], s: 1 });
+T(1, 'keiro', '接触感染', '皮膚や粘膜の直接的な接触や、ドアスイッチ・手すり・便座などを介しての接触による感染のしかた', { y: 'せっしょくかんせん', s: 1 });
+T(1, 'keiro', '媒介物感染', '病原体に汚染された水や食品、昆虫などを介する感染のしかた', { y: 'ばいかいぶつかんせん', s: 1 });
+T(1, 'byo', 'インフルエンザ', '病原体はインフルエンザウイルス。咳・鼻水・くしゃみ・発熱・筋肉痛。潜伏期間は1〜3日', { s: 1 });
+T(1, 'byo', '麻しん', '病原体は麻しんウイルス。咳・鼻水・発しん・発熱。潜伏期間は10〜12日。「はしか」ともいう', { y: 'ましん', alt: ['はしか', '麻疹', '麻しん（はしか）'], s: 1 });
+T(1, 'byo', '風しん', '病原体は風しんウイルス。発しん・リンパ節のはれ・発熱。潜伏期間は14〜21日', { y: 'ふうしん', alt: ['風疹'], s: 1 });
+T(1, 'byo', '結核', '病原体は結核菌。咳・痰・発熱。潜伏期間は1か月〜10年以上', { y: 'けっかく', s: 1 });
+T(1, 'byo', '感染性胃腸炎', '病原体はノロウイルスなど。下痢・嘔吐・発熱。潜伏期間はおもに1〜2日', { y: 'かんせんせいいちょうえん', s: 1 });
+T(1, 'byo', 'コレラ', '病原体はコレラ菌。激しい下痢・嘔吐。潜伏期間は1日', { s: 1 });
+T(1, 'byo', 'マラリア', '病原体はマラリア原虫。高熱・筋肉痛・嘔吐。潜伏期間は1週間以上。蚊が運ぶ', { s: 1 });
+T(1, 'byo', 'デング熱', '病原体はデングウイルス。急激な発熱・発しん・頭痛・嘔吐。潜伏期間は2〜14日', { y: 'でんぐねつ', s: 1 });
+T(1, 'byo', 'COVID-19', '病原体は新型コロナウイルス。咳・発熱、重症時は呼吸困難など。潜伏期間は1〜14日', { alt: ['covid19', '新型コロナウイルス感染症', 'コビッド19', 'コロナ'], s: 1 });
+OX(1, '病原体が体の中に入れば、必ずすぐに発病する。', false, '感染しても発病しない場合や、しばらくしてから発病する場合があります。');
+OX(1, '感染したとしても、すぐに発病するとは限らない。', true, '感染と発病はちがいます。発病しないこともあります。');
+OX(1, '病原体は、感染症の種類によって決まっている。', true, 'インフルエンザならインフルエンザウイルス、コレラならコレラ菌です。');
+OX(1, '病原体には、ウイルスや細菌などさまざまなものがある。', true, '結核は細菌（結核菌）、インフルエンザはウイルスです。');
+OX(1, '結核の病原体は、結核ウイルスである。', false, '結核の病原体は「結核菌」（細菌）です。');
+OX(1, 'コレラの病原体は、コレラ菌である。', true, 'コレラ菌に汚染された水などから感染します。');
+OX(1, 'マラリアの病原体は、マラリアウイルスである。', false, '「マラリア原虫」です。蚊を介して感染します（媒介物感染）。');
+OX(1, '感染性胃腸炎の病原体には、ノロウイルスなどがある。', true, 'おもな症状は下痢・嘔吐・発熱です。');
+OX(1, '飛沫は小さく軽いので、空気中を長時間ただよい、数十mはなれた人にも届く。', false, '飛沫は水分をふくみ大きく重いので、飛距離は1m程度です。長時間ただようのは「飛沫核」です。');
+OX(1, '飛沫核は、飛沫の水分が蒸発したもので、小さく軽いため空気中で気流に乗り、長時間ただよう。', true, 'これを吸いこむのが空気感染（飛沫核感染）です。');
+OX(1, '麻しんや結核は、空気感染（飛沫核感染）する。', true, '麻しん・結核・水痘（水ぼうそう）が空気感染の例です。');
+OX(1, 'インフルエンザや風しん、かぜは、おもに飛沫感染する。', true, '咳やくしゃみの飛沫が口や鼻の粘膜から入ります。');
+OX(1, 'コレラやマラリアは、人から人へ咳やくしゃみでうつる飛沫感染の代表である。', false, 'コレラ（水）やマラリア（蚊）は「媒介物感染」です。');
+OX(1, '性感染症や水いぼは、接触感染する。', true, '皮膚や粘膜の直接的な接触などで感染します。');
+OX(1, '1つの病原体は、必ず1つの感染経路でしか感染しない。', false, '多くの病原体は複数の経路で感染します。ノロウイルスがその代表です。');
+OX(1, 'インフルエンザウイルスは、低い気温・低い湿度で広がりやすい。', true, '食中毒を起こすブドウ球菌は、高い気温・湿度で広がりやすいです。');
+OX(1, '人口が密集し交通機関が発達している現代では、感染症はたくさんの人に短い期間で広がる危険性がある。', true, '教科書の記述どおりです。');
+OX(1, 'インフルエンザの潜伏期間は、ふつう10〜12日である。', false, 'インフルエンザは1〜3日。10〜12日は麻しんです。');
+OX(1, 'ノロウイルスは、アルコールなどの消毒薬が効きにくく、集団発生の可能性が高い。', true, '予防の4原則は「もちこまない・ひろげない・つけない・やっつける」。');
+C(1, '「感染」の正しい説明はどれか。', ['病原体がほかの人や動物などから人の体の中に入って、体内で増え始めること。', '病原体にふれた瞬間に、必ず高熱やせきなどの重い症状が全身にあらわれること。', '病原体が空気中をただよっている状態のことで、人の体の中に入ることとは関係がない。'], '体の中に入って「増え始める」ことが感染。症状があらわれるのは「発病」です。', 1);
+C(1, '「発病」の正しい説明はどれか。', ['感染した結果、体に異常があらわれること。', '病原体が体の中に入ったが、まだ1つも増えていない状態のこと。', '病気が完全に治り、二度とその病気にかからなくなった状態のこと。'], '感染→（潜伏期間）→発病 の順です。', 1);
+C(1, '「潜伏期間」の正しい説明はどれか。', ['感染してから発病するまでの期間。', '発病してから病気が完全に治るまでの期間。', '予防接種を受けてから、その効き目が切れるまでの期間。'], 'インフルエンザは1〜3日、結核は1か月〜10年以上です。');
+C(1, '飛沫感染の正しい説明はどれか。', ['咳やくしゃみで飛び散った、病原体を含む唾液が、口や鼻などの粘膜から入る。', '飛沫の水分が蒸発して空気中に広くただよったものを、何十mもはなれた場所で吸いこむ。', '病原体に汚染された水や食品、蚊などの昆虫を介して感染する。'], '2つ目は空気感染、3つ目は媒介物感染の説明です。', 1);
+C(1, '空気感染（飛沫核感染）する感染症の組み合わせとして正しいものはどれか。', ['麻しん・結核・水痘（水ぼうそう）', 'コレラ・マラリア・感染性胃腸炎', '性感染症・水いぼ・咽頭結膜熱（プール熱）'], '2つ目は媒介物感染、3つ目は接触感染の例です。', 1);
+C(1, '媒介物感染の例と、媒介するものの組み合わせとして正しいものはどれか。', ['コレラ（水）・感染性胃腸炎（食品）・マラリア（蚊）', 'コレラ（蚊）・感染性胃腸炎（空気）・マラリア（水）', 'コレラ（握手）・感染性胃腸炎（咳）・マラリア（食品）'], 'プリントの表のとおりです。', 1);
+C(1, '麻しん（はしか）の潜伏期間として正しいものはどれか。', ['10〜12日', '1〜3日', '1か月〜10年以上'], '1〜3日はインフルエンザ、1か月〜10年以上は結核です。');
+C(1, '風しんのおもな症状として正しいものはどれか。', ['発しん・リンパ節のはれ・発熱', '激しい下痢・嘔吐', '咳・痰・発熱が続き、潜伏期間が10年以上になることもある'], '2つ目はコレラ、3つ目は結核です。');
+CL(1, '感染症と病原体', '病気を引き起こす微生物などを[[病原体]]という。これが人の体の中に入って、体内で増え始めることを[[感染]]といい、その結果、体に異常があらわれることを[[発病]]という。このような病気を[[感染症]]という。', ['免疫', '抵抗力', '発生源'], 1);
+CL(1, '感染経路', '咳やくしゃみの飛沫が粘膜から入るのが[[飛沫感染]]、飛沫の水分が蒸発した飛沫核を吸いこむのが[[空気感染]]、皮膚や粘膜の接触や手すりなどを介するのが[[接触感染]]、汚染された水や食品、昆虫などを介するのが[[媒介物感染]]である。', ['母子感染', '血液感染'], 1);
+CL(1, '飛沫と飛沫核', '飛沫は水分をふくみ、大きく重いので、飛距離は[[1]]m程度である。飛沫の水分が蒸発したものを[[飛沫核]]といい、小さく軽いため空気中で気流に乗り、[[長時間|ちょうじかん|長い時間|長く]]ただよう。', ['10', '短時間', '病原体'], 0);
+W(1, 'ノロウイルス予防の4原則は「もちこまない・ひろげない・つけない・（　　）」である。（　　）に入ることばを書きなさい。', ['やっつける'], 'やっつける＝十分な加熱処理。もちこまない＝健康状態の把握、ひろげない＝消毒、つけない＝手洗い。');
+
+/* ---- 2 感染症と体の抵抗力 ---- */
+T(2, 'teiko', '抵抗力', '病原体の侵入を防いだり、排除したりする力', { y: 'ていこうりょく', s: 1 });
+T(2, 'teiko', '免疫', '抵抗力を体の中で発揮するしくみの1つで、病原体などの異物を体外へ排除する働き', { y: 'めんえき', s: 1 });
+T(2, 'teiko', '予防接種', '免疫のしくみを利用して、特定の病原体への抵抗力をつくりだす方法', { y: 'よぼうせっしゅ', s: 1 });
+T(2, 'teiko', 'ワクチン', '免疫をつける医薬品。病原体の毒性を弱めたり、無毒化したりして、体にとって安全な状態にしたもの', {});
+T(2, 'teiko', '個人免疫', '予防接種を受けた人の感染予防や、重症化しにくくなる効果', { y: 'こじんめんえき', s: 1 });
+T(2, 'teiko', '集団免疫', '集団の中の免疫を持たない人への感染を予防し、流行を防ぐ効果', { y: 'しゅうだんめんえき', s: 1 });
+T(2, 'saibo', 'マクロファージ', '病原体を食べ、同時に病原体の情報を伝える細胞（食細胞）', {});
+T(2, 'saibo', 'ヘルパーT細胞', '病原体の情報を受けて、抗体をつくるよう指令を出す細胞（リンパ球の一種）', { alt: ['へるぱーてぃーさいぼう', 'ヘルパーT', 'ヘルパーティー細胞'] });
+T(2, 'saibo', 'B細胞', '抗体を出して病原体を攻撃する細胞（リンパ球の一種）', { alt: ['びーさいぼう', 'ビー細胞'] });
+T(2, 'karada', '涙', '眼球への感染を予防する', { y: 'なみだ' });
+T(2, 'karada', '唾液', '口内の細菌を退治する', { y: 'だえき', alt: ['つば'] });
+T(2, 'karada', '気管の細かい毛', '痰といっしょに病原体を押しだす', { alt: ['きかんのこまかいけ', '気管の毛', 'せん毛', '線毛'] });
+T(2, 'karada', '汗と皮脂', '細菌が皮膚上で繁殖するのを防ぐ', { alt: ['あせとひし', '汗・皮脂', '汗や皮脂'] });
+T(2, 'karada', '胃液の酸', '強力な酸で殺菌し、腸への侵入を防ぐ', { alt: ['いえきのさん', '胃液', '胃酸'] });
+OX(2, '抵抗力が強いか弱いかの差によって、感染症にかかる・かからないという差が生まれる場合がある。', true, '抵抗力が低下していると、感染しやすかったり、症状が重くなったりします。', 1);
+OX(2, '抵抗力が低下しているときは、感染しやすくなるが、症状が重くなることはない。', false, '感染しやすくなり、症状も重くなります。', 1);
+OX(2, '免疫は、病気に感染した経験によって働きが弱まっていく。', false, '体は一度戦った病原体を記憶するので、感染した経験などによって働きは強まります。');
+OX(2, '体は一度戦った病原体を記憶し、次に同じ病原体が入ったときには、すばやく効果的に対応する。', true, '免疫のしくみです。予防接種はこれを利用しています。');
+OX(2, '適度な運動は抵抗力を高めるが、過度な運動や労働は逆に抵抗力をそこない、感染症にかかりやすくなる。', true, '運動量が少ないと感染のリスクは平均、適度だと低く、多すぎると高くなります。', 1);
+OX(2, '運動は多ければ多いほど抵抗力が高まるので、疲れていても毎日限界まで運動するのがよい。', false, '過度な運動は逆に抵抗力をそこないます。');
+OX(2, '予防接種は、ワクチンを体内にいれることで病原体の情報を記憶させ、実際の病原体の侵入に備える方法である。', true, '免疫のしくみを利用しています。');
+OX(2, '予防接種によって多くの人が抵抗力をもてば、本人がかかりにくくなるだけでなく、流行も起こりにくくなる。', true, '個人免疫と集団免疫です。', 1);
+OX(2, '予防接種を受ければ、免疫が必ずじゅうぶんにでき、副反応が出ることも絶対にない。', false, '免疫がじゅうぶんにできない場合や、副反応が出る場合もあります。');
+OX(2, 'インフルエンザの予防接種は、対象が「全員」で、0歳時に1回だけ受ける。', false, 'インフルエンザは「任意」で、毎シーズン流行前に受けます。0歳時に1回は結核（BCG）です。', 1);
+OX(2, '麻しん・風しんの予防接種は全員が対象で、1歳時と小学校入学前の2回受ける。', true, '麻しんと風しん両方のワクチンが入っています。', 1);
+OX(2, '結核の予防接種（BCG）はスタンプ状の注射のため、「はんこ注射」と呼ばれることもある。', true, '全員が対象で、0歳時に1回受けます。', 1);
+OX(2, '胃液の酸は、強力な酸で殺菌し、腸への病原体の侵入を防いでいる。', true, '体には病原体の侵入を防ぐしくみがあります。');
+OX(2, '涙には、口内の細菌を退治する働きがある。', false, '涙は「眼球への感染を予防」。口内の細菌を退治するのは唾液です。');
+OX(2, 'イギリスの結核による死亡率は、有効な治療法やBCGワクチンが普及してから、はじめて減り始めた。', false, '普及時にはすでに最初の10分の1ほどに減っていました。栄養状態や労働条件の改善で抵抗力が高まったためです。');
+C(2, '「抵抗力」の正しい説明はどれか。', ['病原体の侵入を防いだり、排除したりする力のこと。', 'どんな病原体が体に入っても絶対に発病しない、生まれつき全員が同じだけ持っている力のこと。', '薬を飲んだときにだけ一時的にあらわれる、病原体を体内で増やす力のこと。'], '抵抗力は生活習慣によって高まったり、低下したりします。', 1);
+C(2, '免疫のしくみの順番として正しいものはどれか。', ['マクロファージが病原体を食べ情報を伝える → ヘルパーT細胞が指令を出す → B細胞が抗体を出して攻撃する', 'B細胞が病原体を食べる → マクロファージが抗体を出す → ヘルパーT細胞が攻撃する', 'ヘルパーT細胞が病原体を食べる → B細胞が指令を出す → マクロファージが抗体を出す'], '食べる＝マクロファージ、指令＝ヘルパーT細胞、抗体＝B細胞。');
+C(2, '「集団免疫」の正しい説明はどれか。', ['集団の中の免疫を持たない人への感染を予防し、流行を防ぐ効果。', '予防接種を受けた本人だけが感染しにくくなり、重症化しにくくなる効果。', '集団で同じ病気にかかることで、全員の病気が同時に治る効果。'], '2つ目は「個人免疫」の説明です。', 1);
+C(2, '体の抵抗力を高める生活として正しいものはどれか。', ['バランスのよい食事と、適切な休養・睡眠をとり、適度な運動をする。', '睡眠時間をできるだけ減らして、毎日限界まで激しい運動を続ける。', '好きなものだけを食べ、疲れやストレスをためたまま生活する。'], '高める＝適度な運動・早寝早起き・栄養バランス・ストレス発散・適度な休養。');
+C(2, '結核（BCG）の予防接種の説明として正しいものはどれか。', ['全員が対象で、0歳時に1回受ける。スタンプ状の注射である。', '任意で、毎シーズン流行前に受ける。4種類程度のウイルスに備える。', '全員が対象で、1歳時と小学校入学前の2回受ける。'], '2つ目はインフルエンザ、3つ目は麻しん・風しんです。', 1);
+CL(2, '体の抵抗力', '病原体の侵入を防いだり、排除したりする力を[[抵抗力]]という。この力が低下しているとき、感染[[しやす|しやすく]]かったり、症状が[[重く|おもく|ひどく]]なったりする。この力を体の中で発揮するしくみの1つが[[免疫|めんえき]]である。', ['しにく', '軽く', '感染経路'], 1);
+CL(2, '予防接種', '免疫のしくみを利用して、特定の病原体への抵抗力をつくりだす方法を[[予防接種]]という。受けた人の感染予防や重症化しにくくなる効果を[[個人免疫]]、集団の中の免疫を持たない人への感染を予防し流行を防ぐ効果を[[集団免疫]]という。', ['自然治癒力', '獲得免疫', '学級閉鎖'], 1);
+CL(2, 'おもな予防接種', '[[インフルエンザ]]の予防接種は任意で、毎シーズン流行前に受ける。[[麻しん・風しん|麻疹・風疹|はしか・風しん|麻しん風しん]]は全員が対象で、1歳時と小学校入学前の[[2]]回。[[結核]]（BCG）は全員が対象で、[[0]]歳時に1回受ける。', ['コレラ', '1', '3'], 1);
+CL(2, '感染症のリスクの低下', '感染症のリスクが下がったのは、治療法や予防法などの医療の充実に加えて、[[栄養状態|えいようじょうたい]]や[[労働環境|ろうどうかんきょう|労働条件]]の改善によって、体の抵抗力が高まったためである。', ['感染経路', '気温'], 1);
+
+/* ---- 3 感染症の予防 ---- */
+T(3, 'yobo', '発生源', '病原体に汚染された食品や器具など', { y: 'はっせいげん', s: 1 });
+T(3, 'yobo', '殺菌', '病原体を殺す行為', { y: 'さっきん', s: 1 });
+T(3, 'yobo', '消毒', '対象に付着した病原体を、害のない程度まで減らすこと', { y: 'しょうどく', s: 1 });
+T(3, 'yobo', '学級閉鎖', '感染症が大きな流行になったとき、感染を社会に広めないためにおこなわれる、学級を休みにする対応', { y: 'がっきゅうへいさ', s: 1 });
+T(3, 'yobo', '咳エチケット', 'マスクをつける、ティッシュなどで口・鼻をおおう、肘の内側で口・鼻をおおう、の3つの行動', { alt: ['せきえちけっと', 'せきエチケット'] });
+OX(3, '感染症のリスクを減らす3つの対策は、「発生源をなくす」「感染経路を断つ」「体の抵抗力を高める」である。', true, '3つともそろえて覚えます。', 1);
+OX(3, '加熱すべき食品は加熱し、調理器具は熱湯で殺菌するなどして、発生源をなくす。', true, '適切な殺菌や消毒によって発生源をなくします。', 1);
+OX(3, '病原体を完全になくせない場合は、もう感染を防ぐ方法はない。', false, '病原体をなくせなくても、体に入れなければ（感染経路を断てば）感染は防げます。');
+OX(3, '手洗い・うがい・部屋の換気は、「感染経路を断つ」対策である。', true, '食品を衛生的にあつかうことも感染経路への対策です。', 1);
+OX(3, '予防接種を受けることは、「発生源をなくす」対策である。', false, '予防接種は「体の抵抗力を高める」対策です。', 1);
+OX(3, 'ふとんや洗濯物の日光消毒は、「発生源をなくす」対策である。', true, '教科書の確認問題の答えです。発生源をなくす＝②日光消毒。', 1);
+OX(3, '適度な運動やじゅうぶんな休養をとることは、「体の抵抗力を高める」対策である。', true, '予防接種と同じ分類です。', 1);
+OX(3, 'インフルエンザは、熱が下がればその日のうちに登校してよい。', false, '発症（発熱）後5日、かつ熱が下がってから2日たつまで登校できません。', 1);
+OX(3, 'インフルエンザでは、発症後5日、かつ熱が下がってから2日たつまで、登校することはできない。', true, 'プリントの空欄「発熱後5日」「2日」です。', 1);
+OX(3, '薬などによって症状がやわらげられたら、すぐにふだんどおりの生活にもどり、休養はとらないほうが早く治る。', false, '休養をおこたると症状が悪化するばかりでなく、周囲の人に感染を広めてしまいます。');
+OX(3, '感染症にかかった場合は、なるべく感染の早い時期から治療を受けるほうが効果的である。', true, '医療機関を受診し、正しい診断と適切な治療を受けます。');
+OX(3, 'マスクがもっとも効果を発揮するのは、感染していない人がつけた場合である。', false, 'もっとも効果を発揮するのは「感染した本人」がつけた場合です。');
+OX(3, 'ウイルスは、一般的な不織布マスクの網目を通り抜けられる大きさである。', true, 'マスクの穴は5マイクロメートル、ウイルスは0.1マイクロメートル。それでも飛沫を出さないために効果があります。');
+OX(3, 'かぜやインフルエンザにかからないためにマスクをつければ、感染を完全に防ぐことができる。', false, '飛沫は目にも入り、その粘膜から感染することもあります。手洗いなどもあわせておこないます。');
+OX(3, 'マスクやティッシュ・ハンカチが使えないとっさのときは、手のひらで口と鼻を押さえて咳をするのが正しい咳エチケットである。', false, 'とっさのときは「肘の内側」で口・鼻をおおいます。手のひらだと、手についた病原体を広げてしまいます。');
+OX(3, '人は3時間の平均で、口を24回、鼻を16回、目を7回もさわっている。', true, '手にウイルスがついていると、目や口から体内に入る可能性があります。');
+C(3, '「発生源」の正しい説明はどれか。', ['病原体に汚染された食品や器具などのこと。', '感染症にかかった人が住んでいる市町村のこと。', '病原体が体の中に入ってくる道すじのこと。'], '3つ目は「感染経路」です。', 1);
+C(3, '「消毒」の正しい説明はどれか。', ['対象に付着した病原体を、害のない程度まで減らすこと。', '病原体を1つ残らず完全にゼロにして、二度と付着しないようにすること。', '病原体の増殖を速めて、早く免疫をつけること。'], '殺菌＝病原体を殺す行為。消毒＝害のない程度まで減らすこと。', 1);
+C(3, '「感染経路を断つ」対策の組み合わせとして正しいものはどれか。', ['こまめなうがい・手洗い、部屋の換気', '予防接種、適度な運動やじゅうぶんな休養', '加熱すべき食品の加熱、調理器具の熱湯での殺菌'], '2つ目は抵抗力を高める、3つ目は発生源をなくす対策です。', 1);
+C(3, 'インフルエンザにかかったとき、登校できるようになるのはいつか。', ['発症後5日、かつ熱が下がってから2日たったあと。', '発症後2日、かつ熱が下がってから5日たったあと。', '熱が下がった日の翌日。'], '「5日」と「2日」を逆にしないこと。', 1);
+C(3, '3つの咳エチケットとして正しいものはどれか。', ['マスクを着用する、ティッシュなどで口・鼻をおおう、肘の内側で口・鼻をおおう', 'マスクを着用する、手のひらで口をおおう、人のいないほうを向いて咳をする', 'うがいをする、手を洗う、部屋を換気する'], '鼻からあごまでをおおい、すき間がないようにつけます。');
+CL(3, '発生源への対策', '病原体に汚染された食品や器具などを[[発生源]]という。加熱すべき食品の[[加熱|かねつ]]、調理器具の熱湯やアルコールなどでの[[殺菌]]など、適切な殺菌や[[消毒|しょうどく]]によって、これをなくす。', ['換気', '冷却', '感染経路'], 1);
+CL(3, 'かかった場合の対応', '大きな流行になったときは、[[学級閉鎖]]などがおこなわれる場合がある。インフルエンザは、発熱後[[5]]日、かつ熱が下がってから[[2]]日たつまで登校できない。', ['3', '7', '予防接種'], 1);
+CL(3, '3つの対策', '感染症のリスクを減らす対策は、[[発生源]]をなくす、[[感染経路]]を断つ、体の[[抵抗力]]を高める、の3つである。', ['潜伏期間', '副作用'], 1);
+W(3, '「抗菌→除菌→殺菌→（　　）」の順に、菌を減らす強さが強くなる。菌を限りなくゼロに近づけることを何というか。', ['滅菌', 'めっきん'], '抗菌＝増殖を抑える、除菌＝取り除いて減らす、殺菌＝菌を殺す、滅菌＝限りなくゼロに近づける。');
+
+/* ---- 4 性感染症とその予防 ---- */
+T(4, 'sei', '性感染症', '性的接触により直接感染する感染症', { y: 'せいかんせんしょう' });
+T(4, 'sei', '性的接触', '性感染症のおもな感染のしかた。これをもたなければ性感染症にかかることはない', { y: 'せいてきせっしょく', alt: ['性的な接触', 'せいてきなせっしょく'], s: 1 });
+T(4, 'sei', '母子感染', '感染している女性から、生まれた子どもに感染すること', { y: 'ぼしかんせん', s: 1 });
+T(4, 'seibyo', '性器クラミジア感染症', '病原体はクラミジア・トラコマティス。潜伏期間は1〜3週間。自覚症状がないことが多い', { alt: ['せいきくらみじあかんせんしょう', 'クラミジア', '性器クラミジア'] });
+T(4, 'seibyo', 'りん菌感染症', '病原体はりん菌。潜伏期間は2〜9日。尿道からの膿、排尿のときのいたみなど', { alt: ['りんきんかんせんしょう', '淋菌感染症', 'りん病'] });
+T(4, 'seibyo', '性器ヘルペスウイルス感染症', '病原体は単純ヘルペスウイルス。潜伏期間は2〜10日。いたみをともなう水ぶくれができ、再発しやすい', { alt: ['せいきへるぺすういるすかんせんしょう', '性器ヘルペス', 'ヘルペス'] });
+T(4, 'seibyo', '梅毒', '病原体は梅毒トレポネーマ。抗生物質の普及で急速に減少したが、近年は報告数が増加を続けている', { y: 'ばいどく' });
+OX(4, '性感染症の病原体は、感染者の精液や腟分泌液などの体液に含まれ、粘膜から侵入する。', true, 'プリントのQ&A①「体液などに存在する」も○です。', 1);
+OX(4, '性感染症の多くは、自覚症状が少ない。', true, '目立った症状がないことがあり、人知れず感染が広がります。', 1);
+OX(4, '性感染症にかかっている女性から生まれた子どもには、感染しない。', false, '母子感染する場合があります。', 1);
+OX(4, '性感染症にかかると、必ず性器がいたくなったり、膿が出たりする。', false, '目立った症状がないこともあります。');
+OX(4, '性感染症は、放置すると不妊の原因になることがある。', true, '女性の不妊の原因になり、母子感染する場合もあります。');
+OX(4, '性感染症は、はずかしいなどの理由で検査や治療をしない人がいるために、人知れず感染が広がる。', true, 'とくに若い人の間の感染が大きな割合を占めています。');
+OX(4, '相手が性感染症に感染しているかどうかは、その人の人間性をみればわかる。', false, 'だれが感染しているかはわかりません。');
+OX(4, 'もっとも効果的な予防は、性感染症に感染している人と性的接触をもたないことである。', true, 'だれが感染しているかわからないので、性的接触を避けることが大切です。', 1);
+OX(4, 'コンドームを正しく使えば、直接接触を避けることができる。', true, '予防方法の1つです。');
+OX(4, '感染の疑いがあっても、あきらかな症状が出てから受診するのがよい。', false, '疑いがあるなら早期に受診します。ためらっていると症状が進み、感染も広がります。', 1);
+OX(4, '性感染症は、感染が疑われたら自分一人で検査・治療を受ければ、それでじゅうぶんである。', false, '相手も受診・治療しないと、自分が治ってもまた感染します。', 1);
+OX(4, '性器クラミジア感染症の感染者は、20代がもっとも多い。', true, '2019年のデータで20代が51.8％。若い世代に多いです。');
+OX(4, '若い世代に性感染症が多い理由の1つは、病気に関する知識が少ないことである。', true, 'もう1つは、結婚していないのでパートナーが限定されないことです。');
+OX(4, '梅毒は、抗生物質の普及によって完全になくなり、現在の日本では報告されていない。', false, '近年、報告数は増加を続けています。女性は20代、男性は20〜40代に多いです。');
+OX(4, '多数の相手と性的接触をしないことは、性感染症の予防方法として正しい。', true, '多くの人との性的接触は感染の危険性を大きくします。');
+C(4, '性感染症の予防や対応として正しいものはどれか。', ['感染の疑いがあるなら早期に受診し、感染が確かめられたら相手とともに治療する。', '自覚症状がなければ感染していないので、検査を受ける必要はまったくない。', '一度治療すれば免疫ができるので、相手が治療していなくても二度と感染しない。'], '相手も受診・治療をしないと、自分が治ってもまた感染します。', 1);
+C(4, '性感染症の特徴として正しいものはどれか。', ['自覚症状がないことも多く、検査や治療をしない人がいるために人知れず感染が広がる。', '感染すると全員にすぐ高熱が出るので、感染していることに気づかない人はいない。', '空気感染するので、同じ部屋にいるだけで感染する。'], '性的接触により感染します。');
+C(4, '性器ヘルペスウイルス感染症の特徴として正しいものはどれか。', ['性器やその周辺にいたみをともなう水ぶくれができる。症状が出ないことも多く、再発しやすい。', '潜伏期間が10年以上あり、免疫の働きを弱めて肺炎などを起こす。', '蚊を介して感染し、高熱と筋肉痛が出る。'], '2つ目はエイズ、3つ目はマラリアです。');
+CL(4, '性感染症のまとめ', '性感染症は、感染している人と[[性的な接触|性的接触]]をもたなければ感染することはない。また、感染している疑いがあるなら[[早期|そうき|早め]]に受診し、感染が確かめられたら[[治療|ちりょう]]する必要がある。', ['握手', '放置', '症状が出てから'], 1);
+CL(4, '性感染症とは', '性感染症は[[性的接触|性的な接触]]により感染する。感染者の体液に含まれる病原体が[[粘膜|ねんまく]]から侵入する。目立った症状がないことがあり、[[不妊|ふにん]]の原因になる。生まれた子どもに[[母子感染]]する場合がある。', ['皮膚', '飛沫感染', '肺炎'], 1);
+
+/* ---- 5 エイズとその予防 ---- */
+T(5, 'aids', 'エイズ', 'HIVに感染して免疫の働きが弱まり、肺炎やがんなどの病気を起こすようになった状態', { alt: ['AIDS', 'えいず'], s: 1 });
+T(5, 'aids', 'HIV', 'エイズの病原体。日本語で「ヒト免疫不全ウイルス」', { alt: ['エイチアイブイ', 'ヒト免疫不全ウイルス', 'ひとめんえきふぜんういるす'], s: 1 });
+T(5, 'aids', '後天性免疫不全症候群', 'エイズ（AIDS）の日本語の正式名称', { y: 'こうてんせいめんえきふぜんしょうこうぐん', s: 1 });
+T(5, 'aids', 'HIV抗体検査', 'HIVに感染しているかどうかを調べる検査。保健所などで、匿名・無料で受けられる', { alt: ['えいちあいぶいこうたいけんさ', '抗体検査', 'HIV検査'] });
+T(5, 'aids', 'レッドリボン', 'HIV感染者・エイズ患者に対して、偏見をもたないこと、差別をしないことを示すシンボルマーク', { alt: ['れっどりぼん', '赤いリボン'] });
+OX(5, 'エイズの病原体はHIV（ヒト免疫不全ウイルス）である。', true, 'AIDS＝後天性免疫不全症候群、HIV＝ヒト免疫不全ウイルス。', 1);
+OX(5, 'エイズは、性感染症の一種である。', true, '感染経路の1つが性的接触です。');
+OX(5, 'HIVに感染すると免疫の働きが強まりすぎて、肺炎などの病気を起こす。', false, '免疫の働きを「弱めて」しまい、その結果、肺炎やがんなどを起こします。');
+OX(5, 'HIVに感染すると、数日のうちに必ず重い症状が出るので、感染にすぐ気づくことができる。', false, 'ほとんど症状がなく、発病するまでに10年間にもおよぶ長い潜伏期間がある場合があります。');
+OX(5, 'エイズは潜伏期間が長いため、知らない間に感染が広まってしまう可能性がある。', true, '感染初期後の数年〜10年以上、無症状のことがあります。', 1);
+OX(5, '現在では、エイズを完全に治す方法が発見されている。', false, '早期に治療を始めれば健康なときと同じように生活できますが、完全に治す方法はまだ発見されていません。');
+OX(5, '早期に適切な治療を始めることにより、多くの患者・感染者が健康なときと同じように生活できるようになっている。', true, 'さまざまな薬が開発されています。');
+OX(5, 'HIVは、感染者と握手をすると感染することがある。', false, '握手では感染しません。', 1);
+OX(5, 'HIVは、感染者の咳やくしゃみで感染することがある。', false, '咳やくしゃみでは感染しません。', 1);
+OX(5, 'HIVは、感染者の血を吸った蚊に刺されると感染することがある。', false, '蚊やダニでは感染しません。', 1);
+OX(5, 'HIVは、プールやトイレの共用で感染する。', false, '感染しない行為です。');
+OX(5, 'HIVの感染経路は、性的接触による感染、血液を通した感染、母子感染の3つである。', true, '血液感染の例は、薬物乱用における注射のまわし打ちです。', 1);
+OX(5, 'HIVは、感染者の血液、精液、腟分泌液に多く含まれる。', true, '母乳にも含まれます。');
+OX(5, 'いま感染していない人にとっては、注射のまわし打ちなどをしなければ、感染経路はほとんど性的接触に限られる。', true, '教科書の記述どおりです。');
+OX(5, 'HIV抗体検査は、保健所では名前をいわなくても無料で受けられる。', true, '匿名・無料です。', 1);
+OX(5, 'HIV抗体検査は、感染の可能性があった次の日に受ければ、正確な結果がわかる。', false, '感染後6〜8週間程度は検査でもわからないことが多く、機会から3か月を過ぎてからの検査が必要です。', 1);
+OX(5, 'コンドームを正しく用いれば、HIVの感染を100％確実に防ぐことができる。', false, '有効ですが100％ではありません。確実な方法は性的接触を避けることです。', 1);
+OX(5, '12月1日は、WHOにより「世界エイズデー」と定められている。', true, 'まん延防止と、患者などへの差別の解消が目的です。');
+OX(5, '日本では、HIV感染者は20〜30代に多く、エイズ患者は30〜40代に多い。', true, '潜伏期間が長いことと関係しています。');
+OX(5, '世界のHIV感染者とエイズ患者の合計は、約3,800万人にのぼる。', true, 'プリントにも書かれています。');
+C(5, 'AIDSの日本語の正式名称として正しいものはどれか。', ['後天性免疫不全症候群', 'ヒト免疫不全ウイルス', '先天性免疫過剰症候群'], 'ヒト免疫不全ウイルスは病原体（HIV）の名前です。', 1);
+C(5, 'HIVの感染経路の組み合わせとして正しいものはどれか。', ['性的接触、血液を通した感染（注射のまわし打ちなど）、母子感染', '握手、咳やくしゃみ、プールやトイレの共用', '蚊やダニに刺される、食器の共用、空気感染'], '握手・咳・蚊・プールやトイレの共用では感染しません。', 1);
+C(5, 'HIV抗体検査について正しいものはどれか。', ['保健所などで匿名・無料で受けられ、感染の可能性のある機会から3か月を過ぎてから受ける必要がある。', '病院でしか受けられず、必ず名前と住所を届け出なければならない。', '感染の可能性があった当日に受けるのがもっとも正確である。'], '感染してから6〜8週間程度は、感染を特定できない期間があります。', 1);
+C(5, 'エイズの問題点として正しいものはどれか。', ['感染してもほとんど症状がなく、潜伏期間が長いため、知らない間に感染が広まる可能性がある。', '感染するとすぐに発病するため、治療を始める時間がまったくない。', '空気感染するため、同じ教室にいるだけで感染が広がる。'], '発病までに10年間にもおよぶ潜伏期間がある場合があります。');
+C(5, '血液のついたものの処理として正しいものはどれか。', ['血液のついたものはポリ袋に入れ、封をして廃棄し、ほかの人がさわらないようにする。', '血液はすぐ乾くので、ついたものはそのまま机の上に置いておく。', 'ほかの人のけがは、すばやく処置するために素手で直接傷口にふれる。'], 'ほかの人のけがの処置では、直接血液や傷口にふれないようビニール手袋などを装着します。');
+CL(5, 'エイズとは', '[[AIDS|エイズ]]とは「後天性免疫不全症候群」のことで、病原体は[[HIV|ヒト免疫不全ウイルス]]（ヒト免疫不全ウイルス）である。感染すると[[免疫|めんえき]]の働きが弱まり、その結果、[[肺炎|はいえん]]やがんなどの病気を起こすようになる。その状態をエイズという。', ['WHO', '抵抗力', '結核', 'BCG'], 1);
+CL(5, 'エイズの感染経路と予防', 'HIVの感染経路は、[[性的接触|性的な接触]]による感染、注射のまわし打ちなど[[血液|けつえき]]を通した感染、[[母子感染]]の3つである。HIV抗体検査は[[保健所]]などで受けられる。', ['握手', '唾液', '飛沫感染', '保健センター'], 1);
+CL(5, 'HIV抗体検査', '保健所では、[[匿名|とくめい]]、[[無料|むりょう]]で検査できる。感染してから[[6〜8週間]]程度は感染を特定できない期間があるため、感染の可能性のある機会から[[3か月|三か月|3月]]を過ぎてからの検査が必要である。', ['実名', '有料', '1〜3日', '10年'], 1);
+
+/* ---- 6 保健機関とその利用 ---- */
+T(6, 'kikan', '保健活動', '人びとが病気にならないようにしたり、より健康になるようにしたりする、さまざまな社会の取り組み', { y: 'ほけんかつどう', s: 1 });
+T(6, 'kikan', '保健所', '都道府県・特別区・政令指定都市などが運営し、施設の衛生にかかわる検査や感染症対策など、広い地域におよぶ専門的な仕事をする機関', { y: 'ほけんじょ', s: 1 });
+T(6, 'kikan', '保健センター', '市町村が運営し、乳幼児健診や健康相談など、住民一人ひとりへの身近な活動をおこなう機関', { y: 'ほけんせんたー' });
+T(6, 'kikan', '厚生労働省', '医療や保健に関する法整備や、健康づくりへの支援をおこなう国の機関', { y: 'こうせいろうどうしょう' });
+T(6, 'kikan', '環境省', '環境汚染対策や、廃棄物・リサイクル問題に取り組む国の機関', { y: 'かんきょうしょう' });
+T(6, 'kikan', '日本赤十字社', '献血事業、救急法の講習、看護師の養成、災害時の救援などをおこなう民間機関', { y: 'にほんせきじゅうじしゃ', alt: ['にっぽんせきじゅうじしゃ', '赤十字', '日赤'] });
+T(6, 'kikan', '世界保健機関', '英語の頭文字でWHOという、健康に関する国際的な機関', { y: 'せかいほけんきかん', s: 1 });
+T(6, 'kikan', 'WHO', '世界保健機関のアルファベットの略称', { alt: ['ダブリューエイチオー', 'だぶりゅーえいちおー'], s: 1 });
+T(6, 'kikan', '保健サービス', '保健所などが提供しているサービス。市区町村の広報やホームページなどで確認できる', { y: 'ほけんさーびす', s: 1 });
+T(6, 'kikan', '健康情報', '予防接種の案内、健康相談の案内、休日診療所の紹介など、健康に関する幅広い情報', { y: 'けんこうじょうほう', s: 1 });
+OX(6, '私たちが健康であるためには、個人の努力だけでなく、社会の取り組みが必要である。', true, '衛生的な水、し尿やごみの処理、食品の安全などは個人ではつくれません。');
+OX(6, '健康は一人ひとりの努力だけで守ることができるので、社会の取り組みは必要ない。', false, '個人の努力だけではつくれない状況があり、保健活動が必要です。');
+OX(6, '保健所は、おもに市町村が運営している。', false, '保健所は「都道府県・特別区・政令指定都市など」。市町村が運営するのは保健センターです。', 1);
+OX(6, '保健センターは市町村が運営し、地域住民に近い身近な活動をおこなっている。', true, '乳幼児健診、健康相談、健康づくり教室などです。', 1);
+OX(6, '保健所は、美容院や飲食店などの施設に対して衛生にかかわる検査をしたり、感染症対策をとったりしている。', true, '広い地域におよぶ専門的な仕事です。');
+OX(6, '乳幼児健診や高齢者のための健康づくり教室は、おもに保健所がおこなう専門的な仕事である。', false, '住民一人ひとりへの身近な活動は「保健センター」がおこないます。');
+OX(6, 'HIV抗体検査や結核の検査・相談は、保健所で受けることができる。', true, '食中毒の原因、井戸水の検査、犬を飼う手続きなども保健所です。');
+OX(6, '厚生労働省と環境省は、健康を守るための国の機関である。', true, '厚生労働省＝医療・保健、環境省＝環境汚染対策など。', 1);
+OX(6, '日本赤十字社は、献血事業などをおこなう国の機関である。', false, '日本赤十字社は「民間機関」です。', 1);
+OX(6, 'ボランティア団体やNGO（非政府組織）、NPO（非営利組織）は、民間機関である。', true, '子ども食堂などの活動があります。');
+OX(6, '保健サービスの内容は、市区町村から配布される広報やインターネットのホームページなどで見ることができる。', true, '保健サービスを積極的に活用することが健康につながります。', 1);
+OX(6, 'WHOは「世界保健機関」のことである。', true, 'World Health Organization の略です。', 1);
+OX(6, 'WHOの仕事の1つに、感染症及びその他の疾病の撲滅事業の促進がある。', true, 'ほかに、医学情報の総合調整、世界各国への技術協力などがあります。');
+C(6, '保健所と保健センターの説明として正しいものはどれか。', ['保健所は都道府県などが運営し広い地域の専門的な仕事を、保健センターは市町村が運営し住民への身近な活動をおこなう。', '保健所は市町村が運営し乳幼児健診を、保健センターは都道府県が運営し飲食店の検査をおこなう。', '保健所も保健センターも国が直接運営しており、仕事の内容にちがいはまったくない。'], '保健所＝都道府県・特別区・政令指定都市など／保健センター＝市町村。', 1);
+C(6, '機関の分類として正しいものはどれか。', ['国の機関＝厚生労働省・環境省、地域の機関＝保健所・保健センター、民間機関＝日本赤十字社・ボランティア団体', '国の機関＝保健所・保健センター、地域の機関＝日本赤十字社、民間機関＝厚生労働省・環境省', '国の機関＝日本赤十字社、地域の機関＝厚生労働省、民間機関＝保健所・環境省'], '教科書の章のまとめの問題です。', 1);
+C(6, '「保健活動」の正しい説明はどれか。', ['人びとが病気にならないようにしたり、より健康になるようにしたりする活動。', '病気になった人だけを対象に、病院で手術をおこなう活動。', '健康な人が、自分ひとりの努力だけで体力を高めるためのトレーニング。'], '健康を守るための、さまざまな社会の取り組みのことです。', 1);
+C(6, '保健センターの仕事として正しいものはどれか。', ['乳幼児健診、健康相談、予防接種の案内、健康づくり教室', '飲食店を開く許可、騒音や悪臭の相談、犬を飼う手続き', '医療や保健に関する法律の整備、環境汚染の対策'], '2つ目は保健所、3つ目は国の機関の仕事です。');
+CL(6, '健康のための機関', '健康を守るためのさまざまな社会の取り組みを[[保健活動]]という。国の機関には[[厚生労働省]]や環境省があり、都道府県・特別区・政令指定都市などには[[保健所]]、市町村には[[保健センター]]がある。', ['日本赤十字社', '医療機関', '自然治癒力'], 1);
+CL(6, '保健機関の活用', '保健所などが提供している[[保健サービス]]は、市区町村の広報やホームページなどで確認できる。そこには、予防接種の案内、健康相談の案内、休日診療所の紹介などの[[健康情報]]が提供されている。国際的な機関には[[世界保健機関]]（[[WHO]]）がある。', ['個人情報', 'UNESCO', '保健活動', '国際連合'], 1);
+
+/* ---- 7 医療機関とその利用 ---- */
+T(7, 'iryo', '医療機関', '心身の不調を感じたら、早期に受診する所。診療所や病院など', { y: 'いりょうきかん', s: 1 });
+T(7, 'iryo', 'かかりつけ医', '身近な診療所などにいて、日常的な病気やけがの治療や健康管理をしてくれる医師', { alt: ['かかりつけい', 'かかりつけ医師'], s: 1 });
+T(7, 'iryo', 'お薬手帳', '自分に処方された薬の情報を記録しておく手帳', { alt: ['おくすりてちょう', 'お薬手帳', 'おくすり手帳', '薬手帳', 'くすりてちょう'], s: 1 });
+T(7, 'iryo', '診療所', '入院ベッド数が20未満の医療機関。医院、クリニックなどともいう', { y: 'しんりょうじょ', alt: ['しんりょうしょ', '医院', 'クリニック'] });
+T(7, 'iryo', '病院', '入院ベッド数が20以上ある医療機関', { y: 'びょういん' });
+T(7, 'iryo', '紹介状', 'かかりつけ医で治療できない病気のとき、大きな病院を受診するために書いてもらうもの', { y: 'しょうかいじょう' });
+OX(7, '高熱が出る、咳や腹痛が続くなどの不調を感じた場合は、早期に医療機関を受診する。', true, '早期の診療で治療の効果が高まり、回復も早まります。', 1);
+OX(7, '不調を感じても、しばらく放置しておくほうが自然に治るので、受診はできるだけ遅らせるのがよい。', false, '不調を放置すると重症化するおそれがあります。');
+OX(7, '入院ベッド数が20未満の医療機関を「診療所」、20以上ある医療機関を「病院」という。', true, '診療所は医院・クリニックなどともいいます。');
+OX(7, '入院ベッド数が100以上の医療機関だけを「病院」といい、それ未満はすべて「診療所」である。', false, '境目は「20」です。');
+OX(7, 'かぜなどの軽い病気でも、最初から大学病院などの大きな病院を受診するのがもっともよい。', false, '紹介状をもたずに大きな病院を受診すると、長時間待ったり、費用の負担が増えたりします。まずはかかりつけ医です。', 1);
+OX(7, 'かかりつけ医で治療できない病気や、より精密な検査が必要なときは、かかりつけ医に紹介された病院を受診する。', true, '紹介状を持参します。');
+OX(7, '軽い病気の人が紹介状をもたずに大きな病院を受診すると、大きな病院でしかできない治療や検査に支障をきたしてしまう。', true, '医療機関の役割を知って、適切に利用することが大切です。');
+OX(7, '受診するときは、病気の症状や経過などを事前に整理し、医師などに説明できるようにしておく。', true, 'いつから・どこが・どのような症状に・その経過は、などをメモします。');
+OX(7, 'お薬手帳があると、同じ作用の薬が重複することや、飲み合わせの悪い薬の処方を防ぐことができる。', true, '全国どこの医療機関・薬局でも使えます。', 1);
+OX(7, 'お薬手帳は、その手帳をつくった薬局でしか使うことができない。', false, '全国どこの医療機関、薬局でも使えます。');
+OX(7, '病気や検査、薬などについて疑問がある場合には、医師や薬剤師に積極的に質問し、納得して医療を受ける。', true, '主体的な受診は、よりよい医療の実現につながります。');
+OX(7, '医師の説明に疑問があっても、質問するのは失礼なので、だまって治療を受けるのがよい。', false, '積極的に質問し、納得して医療を受けます。');
+OX(7, '大病院（大学病院など）は、重症の救急患者や高度な医療を要する患者への医療をになっている。', true, '地域の中小規模の病院は、手術や入院、救急医療を要する地域の人々の治療をになっています。');
+OX(7, '受診するときに持参するものとして、保険証とお薬手帳がある。', true, 'プリントの空欄「お薬手帳」です。', 1);
+C(7, '「かかりつけ医」の正しい説明はどれか。', ['身近な診療所などにいて、日常的な病気の診察や健康管理などをしてくれる医師。', '大学病院にいて、重症の救急患者だけを専門にみる医師。', '薬局で、処方せんがなくてもどんな薬でも出してくれる人。'], '診療所・クリニック・医院が、かかりつけ医としての役割をもちます。', 1);
+C(7, '医療機関の上手な利用のしかたとして正しいものはどれか。', ['まずはかかりつけ医を受診し、必要なときは紹介された大きな病院を受診する。', 'どんな軽い症状でも、最初から紹介状なしで大学病院を受診する。', '症状がかなり重くなるまで、どの医療機関も受診しないでがまんする。'], '紹介状なしで大きな病院を受診すると、自己負担が大きくなります。', 1);
+C(7, '受診の前に用意しておくメモの内容として正しいものはどれか。', ['いつから、どこが、どのような症状か、その経過、これまでの大きな病気、飲んでいる薬、アレルギー', '好きな食べ物、得意な教科、家族全員の誕生日', '医師に言いたくないことは書かず、症状はできるだけ軽く伝える'], '症状を正確に伝えることで、医師は迅速かつ的確に診断できます。');
+C(7, '「お薬手帳」の正しい説明はどれか。', ['自分に処方された薬の情報を記録しておく手帳で、薬の重複や飲み合わせの悪い薬の処方を防ぐことができる。', '薬の値段を安くするためのポイントカードで、薬局ごとに別のものを作らなければならない。', '飲み終わった薬の空き箱をはりつけておく、思い出の手帳である。'], '過去や現在にどのような薬を用いていたかを、医師などに理解してもらえます。', 1);
+CL(7, '医療機関の利用', '心身の不調を感じたら、早期に[[医療機関]]を受診する。早期の受診により、[[治療|ちりょう]]の効果が高まり、[[回復|かいふく]]も早まる。日常的な病気やけがの治療は、診療所などの[[かかりつけ医]]の役割である。', ['保健所', '副作用', '感染', '薬剤師'], 1);
+CL(7, '医療を受けるための準備', '受診のときに持参するものは、保険証と[[お薬手帳]]である。メモには「[[いつから]]」「どこが、どのような症状に」「その[[経過|けいか]]は」などを書き、今までにかかった大きな病気、現在使用している薬、薬や食物などの[[アレルギー]]についても伝える。', ['母子手帳', 'だれと', '値段', '趣味'], 1);
+
+/* ---- 8 医薬品の正しい使い方 ---- */
+T(8, 'kusuri', '自然治癒力', '人間の体にもともと備わっている、病気やけがを治そうとする力', { y: 'しぜんちゆりょく', s: 1 });
+T(8, 'kusuri', '医薬品', '自然治癒力などの力を助ける役割があるもの。薬', { y: 'いやくひん', alt: ['薬', 'くすり'], s: 1 });
+T(8, 'kusuri', '主作用', '医薬品の、病気を治したり軽くしたりする、本来の目的にあった好ましい働き', { y: 'しゅさよう', s: 1 });
+T(8, 'kusuri', '副作用', '医薬品の、本来の目的以外の好ましくない働き', { y: 'ふくさよう', s: 1 });
+T(8, 'kusuri', '抗菌薬', '病原体を直接殺したり、増殖をおさえたりする薬', { y: 'こうきんやく', alt: ['抗生物質', 'こうせいぶっしつ'], s: 1 });
+T(8, 'kusuri', '対症療法薬', '症状をやわらげて、体力を回復させる薬。病気そのものを治すわけではない', { y: 'たいしょうりょうほうやく', s: 1 });
+T(8, 'katachi', '内用剤', '口から飲む薬。錠剤、カプセル剤、シロップ剤、散剤、顆粒剤など', { y: 'ないようざい', s: 1 });
+T(8, 'katachi', '外用剤', '皮膚や粘膜にぬったり貼ったりする薬。軟膏剤、貼付剤、点眼剤、坐剤など', { y: 'がいようざい', s: 1 });
+T(8, 'katachi', '注射剤', '注射針で体内に直接入れる薬。注射、点滴', { y: 'ちゅうしゃざい', s: 1 });
+T(8, 'kusuri', '血中濃度', '体の中（血液中）の医薬品の量。医薬品の効き目はこれで決まる', { y: 'けっちゅうのうど', s: 1 });
+T(8, 'kusuri', '薬剤耐性菌', '医薬品に対して抵抗力をもった細菌', { y: 'やくざいたいせいきん', s: 1 });
+OX(8, '医薬品には、人間の体にもともと備わっている自然治癒力を助ける役割がある。', true, '回復を早め、悪化を防ぎます。', 1);
+OX(8, 'かぜ薬は、かぜの原因そのものを取り除いて、病気そのものを治す薬である。', false, 'かぜ薬は症状をやわらげ体力を回復させる「対症療法薬」です。病気そのものを治すのではありません。', 1);
+OX(8, '対症療法薬は、症状を和らげたり、取り除いたりする薬である。', true, '痛み止め、咳止めなどです。', 1);
+OX(8, '薬の力だけでなく、安静にして栄養・休養・睡眠を十分にとることも、自然治癒力を高めるために大切である。', true, 'プリントの空欄「栄養・休養・睡眠」です。', 1);
+OX(8, 'かぜ薬で、発熱や咳などをおさえるのが主作用、眠くなるなどが副作用である。', true, '教科書の例のとおりです。');
+OX(8, '副作用の症状は、だれが使っても同じようにあらわれる。', false, '使う人の年齢や体調、妊娠やアレルギーの有無などによって異なります。');
+OX(8, '錠剤は飲みにくいので、くだいたり、カプセルを開けたりして飲んだほうが、効果が早く出てよい。', false, 'もとの形をかえて使うと、効果がそこなわれたり、害になったりします。');
+OX(8, '錠剤には、1錠の中の2つの成分が、胃と腸でそれぞれ吸収されるように工夫されているものがある。', true, '溶ける場所、効き始める時間、効果が続く時間が考えられています。');
+OX(8, '医薬品は、量や使う回数が多いほど、病気やけがが早く治る。', false, '多く用いると危険です。使用量・使用回数・使用時間が決められています。', 1);
+OX(8, '薬は、多く用いると危険になり、少ないと効果がない。', true, '血中濃度が適切な範囲に保たれるよう、1日の量と回数が決まっています。', 1);
+OX(8, '薬の使用量、使用回数、使用時間などは、自分の都合でかえてよい。', false, '自分勝手な判断で1回の量をかえてはいけません。', 1);
+OX(8, '薬を飲み忘れたら、次回に忘れた分を加えて2回分を飲むようにする。', false, '1回で飲む量が決まっています。2回分をまとめて飲んではいけません。', 1);
+OX(8, '症状が消えたら、処方された抗菌薬は途中でやめてよい。', false, '症状が消えても細菌が完全に死滅していない場合があり、薬剤耐性菌が生じてしまいます。', 1);
+OX(8, '症状が軽い場合には、自分の判断で薬の量を減らして飲むようにする。', false, '医師・薬剤師の指示や説明書の注意を守ります。');
+OX(8, '錠剤、カプセル剤、顆粒剤といった薬の形に、意味はない。', false, '医薬品に最大の効果を発揮させるために工夫されたものです。');
+OX(8, '自分と同じような症状の友だちには、医師に処方された自分の薬をあげてもよい。', false, 'その人に合った薬が処方されています。他の人にあげてはいけません。', 1);
+OX(8, '薬は、水やお湯以外の飲料といっしょに飲まないようにする。', true, '牛乳・緑茶・グレープフルーツジュース・アルコールなどは、薬の作用を強めたり弱めたりします。', 1);
+OX(8, '「食間」に飲む薬とは、食事の途中で飲む薬のことである。', false, '食事と食事の間（食後約2時間後）に飲む薬です。', 1);
+OX(8, '大人用の薬しかないときは、子どもは半分の量を飲めばよい。', false, '半分とは限りません。適切な血中濃度が保たれません。処方された薬を飲みます。');
+OX(8, 'カプセルが喉や食道にはりつき、薬が溶けだすと、粘膜を傷つけることがある。', true, 'だから水といっしょに飲みます。', 1);
+OX(8, 'どのような医薬品であっても、医師・薬剤師の指示や説明書に書かれた注意事項を守ることが重要である。', true, '説明書は「添付文書」ともいいます。', 1);
+C(8, '「自然治癒力」の正しい説明はどれか。', ['人間の体にもともと備わっている、病気やけがを治そうとする力。', '薬を飲んだときにだけ体の中にあらわれる、薬の効き目を強くする力。', '一度かかった病気の病原体を記憶し、二度とかからないようにする力。'], '医薬品は、この力を助ける役割があります。', 1);
+C(8, '「副作用」の正しい説明はどれか。', ['医薬品の、本来の目的から外れた好ましくない働き。', '医薬品の、病気を治したり軽くしたりする好ましい働き。', '2種類の薬を同時に飲んだときにだけ起こる、薬の効き目が2倍になる働き。'], '眠くなる、かゆくなる、下痢をする、体にぶつぶつが出る、などです。', 1);
+C(8, '医薬品の形の説明として正しいものはどれか。', ['内用剤は口から飲む薬、外用剤は皮膚や粘膜にぬったり貼ったりする薬、注射剤は注射針で体内に直接入れる薬。', '内用剤は皮膚にぬる薬、外用剤は口から飲む薬、注射剤は鼻から吸う薬。', '内用剤は家の中で使う薬、外用剤は外出先で使う薬、注射剤は病院で飲む薬。'], '「内」＝体の内に飲む、「外」＝体の外側に使う、と覚えます。', 1);
+C(8, '抗菌薬を、症状が消えたからといって途中でやめてはいけない理由として正しいものはどれか。', ['細菌が完全に死滅していない場合があり、その医薬品に抵抗力をもった薬剤耐性菌が生じてしまうから。', '途中でやめると、残った薬を捨てるのがもったいないから。', '途中でやめると、主作用と副作用が入れかわってしまうから。'], 'プリントの空欄「細菌」「薬剤耐性菌」です。', 1);
+C(8, '医薬品の効き目と血中濃度について正しいものはどれか。', ['効き目は血中濃度で決まるので、つねに効き目が一定に保たれるよう、1日の量と回数が決まっている。', '血中濃度は高ければ高いほどよいので、決められた量よりも多めに飲むとよく効く。', '血中濃度は薬の効き目と関係がないので、いつ、どれだけ飲んでもかまわない。'], '高すぎると危険、低いと効き目がありません。', 1);
+C(8, '薬の飲み合わせについて正しいものはどれか。', ['薬は水かお湯で飲む。牛乳やグレープフルーツジュースなどは薬の作用を弱めたり強めたりすることがある。', '薬は苦いので、ジュースや牛乳、お茶など、自分の好きな飲み物で飲むのがよい。', '水なしで飲んだほうが、薬がうすまらないのでよく効く。'], '水なしだと、喉や食道にはりついて粘膜を傷つけることがあります。');
+CL(8, '医薬品の役割', '人間の体にもともと備わっている、病気やけがを治そうとする力を[[自然治癒力]]という。[[医薬品]]にはこの力を助ける役割がある。病原体を直接殺したり増殖をおさえる薬を[[抗菌薬]]、症状をやわらげて体力を回復させる薬を[[対症療法薬]]という。', ['抵抗力', 'ワクチン', '内用剤', '保健活動'], 1);
+CL(8, '主作用と副作用', '病気を治したり軽くしたりする作用を[[主作用]]、薬本来の目的以外の好ましくない作用を[[副作用]]という。医薬品の効き目は、体の中の医薬品の量（[[血中濃度]]）で決まる。', ['自然治癒力', '使用回数', '反作用'], 1);
+CL(8, '医薬品の形', '口から飲む薬を[[内用剤]]、皮膚や粘膜にぬったり貼ったりする薬を[[外用剤]]、注射針で体内に直接入れる薬を[[注射剤]]という。', ['錠剤', '点眼剤', '対症療法薬'], 1);
+CL(8, '正しい使用方法', '安全に、もっとも効果が発揮されるように、[[使用量|しようりょう]]、[[使用回数|しようかいすう]]、[[使用時間|しようじかん]]などが決められている。指示とは異なった飲み方をすると、医薬品の[[効果|こうか|効き目]]が損なわれたり、[[害|がい]]になったりすることもある。', ['値段', '色', '副作用', '得'], 1);
+CL(8, '使用上の注意', 'たとえ症状が消えても、[[細菌|さいきん|菌]]が完全に死滅していない場合があり、その医薬品に抵抗力をもった[[薬剤耐性菌]]が生じてしまう。どのような医薬品であっても、[[医師|いし|医者]]・[[薬剤師|やくざいし]]の指示や説明書の注意事項を守る。薬は[[水|みず]]やお湯で飲み、処方された薬を[[他の人|ほかの人|他人]]にあげない。', ['ウイルス', '友だち', '牛乳', '家族'], 1);
+CL(8, '安静と自然治癒力', '薬の力だけでなく、安静にして[[栄養|えいよう]]・[[休養|きゅうよう]]・[[睡眠|すいみん]]を十分にとることも、自然治癒力を高めるために大切である。', ['運動', '勉強', '入浴'], 1);
+W(1, '結核の病原体の名前を書きなさい。', ['結核菌', 'けっかくきん'], '結核菌（細菌）。咳・痰・発熱がおもな症状で、潜伏期間は1か月〜10年以上。');
+W(1, 'マラリアの病原体の名前を書きなさい。', ['マラリア原虫', 'まらりあげんちゅう'], 'マラリア原虫。蚊を介して感染します（媒介物感染）。');
+W(1, '感染性胃腸炎のおもな病原体であるウイルスの名前を書きなさい。', ['ノロウイルス'], 'ノロウイルスなど。下痢・嘔吐・発熱がおもな症状です。');
+W(1, 'COVID-19の病原体の名前を書きなさい。', ['新型コロナウイルス', 'しんがたころなういるす', 'コロナウイルス'], '新型コロナウイルス。潜伏期間は1〜14日。');
+
+/* 保健：環境の健康への影響（4〜8）＝アプリの単元 9〜13 */
+
+/* ---- 9 室内の空気の汚染と換気 ---- */
+T(9, 'kuki', '二酸化炭素', '呼吸やものが燃えるときに発生する気体。濃度は空気の汚れを知る指標となる', { y: 'にさんかたんそ', alt: ['CO2'], s: 1 });
+T(9, 'kuki', '酸素', '呼吸やものが燃えるときに使われる気体。空気中に約21％含まれる', { y: 'さんそ', s: 1 });
+T(9, 'kuki', '一酸化炭素', '石油やガソリンなど、炭素を含むものが不完全燃焼すると発生する、無色・無臭の毒性の強い気体', { y: 'いっさんかたんそ', alt: ['CO'], s: 1 });
+T(9, 'kuki', '一酸化炭素中毒', '一酸化炭素が体内に入り、体の組織や細胞が酸素欠乏の状態におちいって、頭痛・めまい・吐き気などが起こること', { y: 'いっさんかたんそちゅうどく', s: 1 });
+T(9, 'kuki', '不完全燃焼', '酸素が不足した状態で、ものが燃えること', { y: 'ふかんぜんねんしょう' });
+T(9, 'kuki', 'ヘモグロビン', '赤血球の中にあり、酸素と結合して全身に運ぶもの。一酸化炭素とは酸素よりも強く結合する', {});
+T(9, 'kanki', '換気', '汚れた空気を室外に排出し、新鮮な外気を取りいれること', { y: 'かんき' });
+T(9, 'kanki', '自然換気', '建物のすき間や換気口などでおこなわれる換気', { y: 'しぜんかんき', s: 1 });
+T(9, 'kanki', '機械換気', '換気扇などの機械による換気', { y: 'きかいかんき', s: 1 });
+T(9, 'kanki', 'シックハウス症候群', '家の建材や接着剤から出るホルムアルデヒドなどの化学物質によって、頭痛・めまい・吐き気などが起こること', { alt: ['しっくはうすしょうこうぐん', 'シックハウス'] });
+OX(9, '呼吸やものが燃えるときに酸素が使われ、二酸化炭素が発生する。', true, 'プリントの空欄「酸素」「二酸化炭素」です。', 1);
+OX(9, '吸う空気（吸気）には酸素が約21％、二酸化炭素が約0.04％含まれている。', true, '吐く息（呼気）は酸素が約16％、二酸化炭素が約4％です。', 1);
+OX(9, '吐く息（呼気）に含まれる二酸化炭素は、約0.04％である。', false, '呼気の二酸化炭素は約4％。約0.04％は吸気（空気）です。', 1);
+OX(9, '吐く息（呼気）には、酸素は約16％含まれている。', true, '吸気の約21％から減ります。');
+OX(9, '大勢の人がいて室内の二酸化炭素が増えると、温度や湿度が上昇し、ほこりや細菌も増えている可能性が高まる。', true, 'だから二酸化炭素濃度は、空気の汚れを知る指標になります。');
+OX(9, '二酸化炭素濃度が高くなると、呼吸数や心拍数が減り、楽に活動できるようになる。', false, '呼吸数や心拍数が増え、頭痛やめまいなどを起こすことがあります。');
+OX(9, '二酸化炭素濃度が0.1％を超えると、空気が汚れているといえる。', true, 'プリントの空欄「0.1％」です（教科書の脚注では、0.15％以下が望ましいとされています）。', 1);
+OX(9, '二酸化炭素の濃度が濃くなると、倦怠感・息苦しさなどの症状が現れる。', true, 'プリントの記述どおりです。');
+OX(9, '炭素を含むものが不完全燃焼すると、一酸化炭素が発生する。', true, '石油やガソリンなどです。', 1);
+OX(9, '一酸化炭素は、灰色でにおいの強い気体である。', false, '無色・無臭の気体です。だから発生に気づきにくく危険です。', 1);
+OX(9, '一酸化炭素は無色・無臭なので、発生していても気づきにくい。', true, '毒性の強い気体で、許容濃度が定められています。');
+OX(9, '一酸化炭素は、体内に入ると、酸素よりも先に赤血球中のヘモグロビンと強く結合する。', true, 'そのためヘモグロビンが酸素を運べなくなり、酸素欠乏になります。');
+OX(9, '一酸化炭素が体内に入ると一酸化炭素中毒となり、意識を失って死亡する場合もある。', true, '頭痛、めまい、吐き気などを起こします。', 1);
+OX(9, '一酸化炭素は二酸化炭素より害が少ないので、許容濃度は定められていない。', false, 'とくに毒性の強い気体であるため、許容濃度が定められています。');
+OX(9, '換気せずに石油ストーブを使い続けると、一酸化炭素中毒が起きる危険がある。', true, '室内で練炭を燃やす、雪深いところでエンジンをかけたまま駐車する、なども危険です。');
+OX(9, '換気には、自然換気と機械換気がある。', true, '自然換気＝すき間や換気口、機械換気＝換気扇など。', 1);
+OX(9, '冷暖房効果や防音性が高い家では、換気は不要である。', false, '気密性が高い建物ほど自然換気が減り、汚れた空気がこもりやすいので、定期的・計画的な換気が重要です。');
+OX(9, '近年の建物は気密性が高まり、自然換気が減って、汚れた空気が室内にこもりやすくなっている。', true, 'だから定期的・計画的な換気がより重要です。');
+OX(9, 'エアコンをつけていれば換気も同時にされるので、窓を開ける必要はない。', false, 'それは誤りです。冷暖房時でも定期的な換気が必要です。');
+OX(9, '教室の換気は、対角線上の窓や戸を開けて、空気の流れをスムーズにするのが基本である。', true, '「換気の基本は対角線」。1時間あたりの換気回数の目安は約3回です。');
+C(9, '一酸化炭素の説明として正しいものはどれか。', ['炭素を含むものが不完全燃焼すると発生する、無色・無臭で毒性の強い気体。', '人が呼吸をすると発生する、白色で甘いにおいのする害のない気体。', '空気中に約21％含まれ、ものが燃えるのを助ける気体。'], '3つ目は酸素の説明です。', 1);
+C(9, '一酸化炭素中毒が起こるしくみとして正しいものはどれか。', ['一酸化炭素がヘモグロビンと強く結合して、ヘモグロビンが酸素を運べなくなり、体が酸素欠乏になる。', '一酸化炭素が胃の中で水にとけて強い酸になり、胃や腸を傷つける。', '一酸化炭素が皮膚にふれて体温をうばい、体が冷えて動けなくなる。'], '一酸化炭素は酸素の約300倍も結合力が強いといわれます。');
+C(9, '吸気（空気）と呼気の成分として正しいものはどれか。', ['吸気は酸素約21％・二酸化炭素約0.04％、呼気は酸素約16％・二酸化炭素約4％', '吸気は酸素約16％・二酸化炭素約4％、呼気は酸素約21％・二酸化炭素約0.04％', '吸気は酸素約4％・二酸化炭素約21％、呼気は酸素約0.04％・二酸化炭素約16％'], '呼吸で酸素が減り、二酸化炭素が増えます。', 1);
+C(9, '自然換気と機械換気の説明として正しいものはどれか。', ['自然換気は建物のすき間や換気口などで、機械換気は換気扇などでおこなわれる。', '自然換気は換気扇で、機械換気は窓を手で開けておこなわれる。', '自然換気は夏だけ、機械換気は冬だけにおこなう換気のことである。'], 'プリントの空欄です。', 1);
+C(9, '二酸化炭素濃度が空気の汚れを知る指標となる理由として正しいものはどれか。', ['二酸化炭素が増えているときは、温度や湿度が上昇し、ほこりや細菌も増えている可能性が高いから。', '二酸化炭素は一酸化炭素よりも毒性が強く、少しでも吸うと死亡するから。', '二酸化炭素には色がついていて、目で見て量がわかるから。'], '教科書の記述どおりです。');
+CL(9, '空気の汚れ', '呼吸やものが燃えるときに[[酸素]]が使われ、[[二酸化炭素]]が発生する。二酸化炭素濃度が[[0.1]]％を超えると、空気が汚れているといえる。', ['窒素', '一酸化炭素', '4', '21'], 1);
+CL(9, '一酸化炭素', '石油やガソリンなど、炭素を含むものが不完全燃焼すると[[一酸化炭素]]が発生する。これは無色、[[無臭|むしゅう]]の気体で、体内に入ると[[酸素]]欠乏になり、頭痛、めまい、吐き気などを起こす。これを[[一酸化炭素中毒]]という。', ['二酸化炭素', '刺激臭', '水分', '熱中症'], 1);
+CL(9, '換気', '建物の隙間や換気口などでおこなわれる換気を[[自然換気]]、換気扇などでおこなわれる換気を[[機械換気]]という。', ['人工換気', '強制換気', '計画換気'], 1);
+CL(9, '吸気と呼気', '吸気（空気）には酸素が約[[21]]％、二酸化炭素が約[[0.04]]％含まれる。呼気では酸素が約[[16]]％に減り、二酸化炭素が約[[4]]％に増える。', ['78', '0.1', '50', '10'], 1);
+
+/* ---- 10 衛生的な飲料水の供給 ---- */
+T(10, 'mizu', '飲料水', '人が飲む水。水質基準が設けられている', { y: 'いんりょうすい', s: 1 });
+T(10, 'mizu', '水質基準', '飲料水に設けられている、衛生的な水であるための基準', { y: 'すいしつきじゅん', s: 1 });
+T(10, 'mizu', '水道', '河川などから引いてきた水を、沈殿・ろ過・消毒などの段階を経て衛生的に処理し、各家庭に供給するしくみ', { y: 'すいどう', s: 1 });
+T(10, 'mizu', '水質検査', '浄水場で処理した水を、各家庭に供給する前におこなう検査', { y: 'すいしつけんさ', s: 1 });
+T(10, 'mizu', '浄水場', '川や湖などからくみ上げた水を、衛生的に処理する施設', { y: 'じょうすいじょう' });
+T(10, 'mizu', '脱水症状', '体重の2〜3％の水分が体内から失われると、あらわれ始める症状', { y: 'だっすいしょうじょう', alt: ['脱水症', 'だっすいしょう', '脱水'] });
+T(10, 'mizu', 'トリハロメタン', '水源の水に含まれる有機物と、消毒の塩素が化学反応を起こしてできる発がん物質', {});
+OX(10, '人間の体重の半分以上は水分である。', true, 'とくに血液や唾液などのほとんどは水分です。');
+OX(10, '体内の水分は、栄養素や酸素を運搬する、老廃物を体外に排泄する、汗として体温を下げるなどの役割を担っている。', true, '生命を維持するために水はなくてはならないものです。');
+OX(10, '人間は、1日に約2.5リットルの水を必要としている。', true, '摂取2.5L＝食事1.0L＋体内でつくられる水0.3L＋飲み水1.2L。', 1);
+OX(10, '人間が1日に必要とする水は、約0.5リットルである。', false, '約2.5リットルです。');
+OX(10, '1日に体内に取りいれる水分量と、体外に出す排泄量は、どちらも約2.5Lでバランスがとれている。', true, '排泄2.5L＝尿・便1.6L＋呼気や汗0.9L。', 1);
+OX(10, '体重の2〜3％の水分が体内から失われると、脱水症状があらわれ始める。', true, '20％以上では死亡する危険性が高まります。');
+OX(10, '体重の20％の水分が失われても、のどが渇くだけで、命に危険はない。', false, '20％以上では死亡する危険性が高まります。');
+OX(10, '飲料水には水質基準が設けられていて、基準を満たした衛生的な水しか飲めないことになっている。', true, '水道法にもとづき、50項目以上にわたって厳しく定められています。', 1);
+OX(10, '水道水は、沈殿、ろ過、塩素などによる消毒といった段階を経て処理され、さらに水質検査をしてから各家庭に供給される。', true, '順番も覚えます：沈殿→ろ過→消毒→水質検査。', 1);
+OX(10, '水道水は、塩素などによる消毒をしたあと、ろ過、沈殿の順に処理される。', false, '順番は「沈殿→ろ過→塩素などによる消毒→水質検査」です。', 1);
+OX(10, '配水ポンプで水に圧力をかけて水道管の中に押しだすのは、外部から病原体などが侵入するのを防ぐためでもある。', true, 'じょうぶな水道管の中を水道水が流れます。');
+OX(10, '水源の水が汚れを増すと、消毒に使う塩素の量を増やさなければならず、トリハロメタンが発生しやすくなる。', true, 'だから私たち自身が、水源の水を汚さないようにしなければなりません。');
+OX(10, '水道法による水質基準では、病原体に汚染されていないことや、有毒物質を含まないことなどが定められている。', true, 'ほかに、異常な酸性やアルカリ性でない、異常なにおいや味がない、ほとんど無色透明、などです。');
+OX(10, '水道の水は、どれだけ水源が汚れていても塩素を増やせば安全になるので、水源を汚しても問題はない。', false, '塩素を増やすとトリハロメタン（発がん物質）が発生しやすくなります。');
+C(10, '水道のしくみの順番として正しいものはどれか。', ['河川の水 → 沈殿 → ろ過 → 塩素などによる消毒 → 水質検査 → 各家庭', '河川の水 → 水質検査 → 消毒 → ろ過 → 沈殿 → 各家庭', '河川の水 → ろ過 → 水質検査 → 沈殿 → 各家庭（消毒はしない）'], 'プリントの流れのとおりです。', 1);
+C(10, '1日の体の水分の出入りとして正しいものはどれか。', ['摂取は食事1.0L・体内でつくられる水0.3L・飲み水1.2L、排泄は尿・便1.6L・呼気や汗0.9L', '摂取は飲み水2.5Lだけ、排泄は汗2.5Lだけ', '摂取は食事0.3L・飲み水0.2L、排泄は尿・便0.5L'], '摂取も排泄も合計2.5Lです。', 1);
+C(10, '体内の水分の役割として正しいものはどれか。', ['栄養素や酸素を溶かして運搬する、老廃物を体外に排泄する、汗として体温を下げる。', '骨をかたくして体を支える、筋肉を太くする、視力を上げる。', '体内で熱をつくり出し、体温を40℃以上に保つ。'], '生命を維持するために水はなくてはならないものです。');
+C(10, '脱水症状について正しいものはどれか。', ['体重の2〜3％の水分が失われるとあらわれ始め、20％以上では死亡する危険性が高まる。', '体重の50％の水分が失われるまでは、まったく症状があらわれない。', '水分を取りすぎたときにだけあらわれる症状である。'], '大量の発汗をしたのに水分の補給がないと起こり、熱中症を引き起こしかねません。');
+CL(10, '水道のしくみ', '[[飲料水]]には、[[水質基準]]がある。[[水道]]では、河川の水を[[沈殿|ちんでん]]、[[ろ過|ろか|濾過]]、塩素などによる[[消毒|しょうどく]]といった段階を経て処理し、[[水質検査]]をしてから各家庭に供給する。', ['下水道', '加熱', '冷却', '浄化槽'], 1);
+CL(10, '体の水分の出入り', '人間は1日に約[[2.5]]Lの水を必要とする。摂取は、食事[[1.0]]L、体内でつくられる水[[0.3]]L、飲み水[[1.2]]L。排泄は、尿・便[[1.6]]L、呼気や汗[[0.9]]Lである。', ['5.0', '2.0', '0.1'], 1);
+
+/* ---- 11 し尿とごみの処理 ---- */
+T(11, 'gomi', 'し尿', '大便と小便のこと', { y: 'しにょう', alt: ['屎尿'] });
+T(11, 'gomi', '下水道', '水洗便所からし尿が直接運ばれる管。下水処理場までつながっている', { y: 'げすいどう', s: 1 });
+T(11, 'gomi', '下水処理場', '下水道で運ばれたし尿を衛生的に処理する施設。きれいになった水は川や海に流される', { y: 'げすいしょりじょう', s: 1 });
+T(11, 'gomi', '浄化槽', '下水道のない地域で、し尿などの処理のために各家庭に設けられる設備', { y: 'じょうかそう', s: 1 });
+T(11, 'gomi', 'バキュームカー', '家庭の浄化槽から、し尿処理場へし尿を運ぶ車', { alt: ['ばきゅーむかー'], s: 1 });
+T(11, 'gomi', 'し尿処理場', '下水道のない地域で、バキュームカーで運ばれたし尿を処理する施設', { y: 'しにょうしょりじょう', s: 1 });
+T(11, 'gomi', '可燃ごみ', '生ごみを含む、燃やせるごみ。焼却施設で燃やされる', { y: 'かねんごみ', alt: ['燃えるごみ', '燃やせるごみ', '可燃ゴミ'], s: 1 });
+T(11, 'gomi', '焼却施設', '可燃ごみを燃やして灰にする施設', { y: 'しょうきゃくしせつ', alt: ['焼却場', 'ごみ焼却施設'], s: 1 });
+T(11, 'gomi', '最終処分場', '可燃ごみを燃やして残った灰や、不燃ごみなどを埋め立てる場所', { y: 'さいしゅうしょぶんじょう', s: 1 });
+OX(11, 'し尿やごみをどこかに捨ててしまえば、自然環境が汚染され、健康にも悪影響をおよぼす。', true, 'だから衛生的な処理が必要です。');
+OX(11, '生ごみを放置すると、感染症を媒介するハエやネズミなどの繁殖を引き起こす。', true, '教科書の記述どおりです。');
+OX(11, 'し尿は、水洗便所から直接下水道に運ばれ、下水処理場で処理されて、きれいになった水が川や海に流される。', true, '現在ではもっとも衛生的な処理のしかたです。', 1);
+OX(11, '下水道が整備されていない地域では、し尿は処理されずにそのまま川に流されている。', false, '家庭の浄化槽からバキュームカーでし尿処理場に運ばれ、そこで処理されます。', 1);
+OX(11, '下水道が整備されていない地域では、家庭の浄化槽からバキュームカーでし尿処理場に運ばれ、そこで処理される。', true, 'プリントの空欄：浄化槽→バキュームカー→し尿処理場。', 1);
+OX(11, '下水道が整備されている地域では、家庭の浄化槽からバキュームカーで下水処理場に運ばれる。', false, '下水道のある地域は「水洗便所→下水道→下水処理場→川や海」です。', 1);
+OX(11, '学校や地域などから出るごみは、可燃ごみ、不燃ごみ、粗大ごみ、資源ごみの4つに分けることができる。', true, '市区町村によっては、さらに細かく分別しています。');
+OX(11, '生ごみを含む可燃ごみは焼却施設で燃やされ、残った灰が最終処分場に埋められる。', true, 'プリントの空欄：可燃ごみ・焼却施設・最終処分場。', 1);
+OX(11, '不燃ごみは、焼却施設で燃やして灰にしてから最終処分場に埋められる。', false, '不燃ごみは「そのまま」最終処分場に埋められます。');
+OX(11, '資源ごみは、廃棄物再生利用施設などに運ばれて、再利用される。', true, '粗大ごみは一部が鉄くずなどの再資源として利用されます。');
+OX(11, 'ベルリンでは、下水道の普及率が上昇していくのと反比例して、チフスの死亡率が下降していった。', true, '下水道の整備は感染症の予防に重要です。');
+OX(11, '浄化槽には、し尿だけを処理する単独処理浄化槽と、し尿と生活雑排水を処理する合併処理浄化槽がある。', true, '現在は合併処理浄化槽のみが新設を認められています。');
+C(11, '下水道が整備されている地域の、し尿の処理の流れとして正しいものはどれか。', ['水洗便所 → 下水道 → 下水処理場 → 川や海', '家庭の浄化槽 → バキュームカー → し尿処理場', '水洗便所 → 焼却施設 → 最終処分場'], '2つ目は下水道が整備されていない地域の流れです。', 1);
+C(11, '下水道が整備されていない地域の、し尿の処理の流れとして正しいものはどれか。', ['家庭の浄化槽 → バキュームカー → し尿処理場', '水洗便所 → 下水道 → 下水処理場 → 川や海', '家庭の浄化槽 → ごみ収集車 → 焼却施設'], '浄化槽・バキュームカー・し尿処理場の3つをセットで覚えます。', 1);
+C(11, '可燃ごみの処理の流れとして正しいものはどれか。', ['ごみ収集車で焼却施設に運ばれて燃やされ、残った灰が最終処分場に埋められる。', 'そのまま最終処分場に運ばれ、燃やさずに埋められる。', '下水処理場に運ばれ、水できれいに洗われてから川に流される。'], '2つ目は不燃ごみの処理です。', 1);
+C(11, 'ごみの4つの分け方として正しいものはどれか。', ['可燃ごみ、不燃ごみ、粗大ごみ、資源ごみ', '生ごみ、紙ごみ、プラスチックごみ、金属ごみ', '家庭ごみ、学校ごみ、工場ごみ、病院ごみ'], '教科書の記述どおりです。');
+CL(11, 'し尿の処理', '下水道のある地域では、水洗便所→[[下水道]]→[[下水処理場]]→川や海 の順に処理される。下水道のない地域では、家庭の[[浄化槽]]→[[バキュームカー]]→[[し尿処理場]] の順に運ばれ、処理される。', ['水道', '浄水場', 'ごみ収集車', '焼却施設'], 1);
+CL(11, 'ごみの処理', '生ごみを含む[[可燃ごみ]]は、[[焼却施設]]で燃やされ、残った灰が[[最終処分場]]に埋められる。', ['不燃ごみ', '資源ごみ', '下水処理場', '浄水場'], 1);
+
+/* ---- 12 災害と環境 ---- */
+T(12, 'saigai', '災害関連死', '災害による直接的な被害ではなく、避難生活の疲労や持病の悪化など、災害に起因する身体的・精神的負担が原因で亡くなること', { y: 'さいがいかんれんし', s: 1 });
+T(12, 'saigai', '災害用伝言ダイヤル', '大規模な災害で電話がつながりにくくなったとき、音声で安否情報を録音・確認できる「声の伝言板」サービス。番号は171', { y: 'さいがいようでんごんだいやる', alt: ['災害用伝言ダイヤル171', '災害用伝言ダイヤル（171）', '171'], s: 1 });
+T(12, 'saigai', '災害用伝言板', '災害用伝言ダイヤルのwebバージョン。web171ともいう', { y: 'さいがいようでんごんばん', alt: ['web171', '災害用伝言板（web171）', '災害用伝言板web171'], s: 1 });
+T(12, 'saigai', 'デマ', '災害時などにSNSで飛び交うことがある、事実ではない情報', { alt: ['でま'] });
+T(12, 'saigai', '血栓症', '食事や水分が不十分な状態で長時間脚などを動かさないと、血が固まりやすくなり、血管がつまって起こる病気。エコノミークラス症候群', { y: 'けっせんしょう', alt: ['エコノミークラス症候群', 'えこのみーくらすしょうこうぐん'] });
+OX(12, '災害によって電気・ガス・水道が止まると、し尿やごみの処理ができなくなるなど、衛生環境が悪化する問題も発生する。', true, '食料や飲料水の供給がさえぎられ、生命維持の危険も生じます。');
+OX(12, '災害関連死とは、建物の倒壊や火災など、災害による直接的な被害で亡くなることである。', false, '直接的な被害「ではなく」、避難生活の疲労や持病の悪化などが原因で亡くなることです。', 1);
+OX(12, '災害用伝言ダイヤルの番号は「171」である。', true, '「声の伝言板」サービスです。', 1);
+OX(12, '災害用伝言ダイヤルの番号は「117」である。', false, '「171」です。数字の順番に注意。', 1);
+OX(12, '災害時は安否確認などで電話回線が混乱することがあるので、災害用伝言ダイヤルを利用することも有効である。', true, '171をダイヤルし、ガイダンスにしたがって操作します。');
+OX(12, '災害用伝言板（web171）は、災害用伝言ダイヤルのwebバージョンである。', true, 'プリントの空欄です。', 1);
+OX(12, '災害時、SNSによる情報は、即時性や局地性において貴重な情報源の1つである。', true, 'そのいっぽうでデマが飛び交うこともあります。');
+OX(12, '災害時のSNSの情報は、現場近くの人が発信しているので、すべて正確であり、そのまま広めてよい。', false, 'デマが飛び交うこともあります。正確な情報かどうかを判断したうえで活用します。');
+OX(12, 'SNSの情報は、発信日時や発信者がわかるか、根拠が示されているか、伝聞の情報ではないか、に注意する。', true, '「〜があったらしい」「〜だそうだ」は伝聞です。');
+OX(12, '被災地では、上下水道の不備や避難所での集団生活により、感染性胃腸炎やインフルエンザなどが流行しやすくなる。', true, '対策：こまめに手を洗う、感染者はマスクを着用する、水分補給。');
+OX(12, '避難所では、できるだけ体を動かさずにじっとしているほうが、健康を保つことができる。', false, '心身の機能が低下します。積極的に、意図的に体を動かすことが重要です。');
+OX(12, '避難生活で水不足のときは、歯みがきは健康に関係がないので、しなくてよい。', false, '口の中が不衛生になると、むし歯・歯周病・誤嚥性肺炎などのもとになります。少量の水でブクブクうがいをします。');
+OX(12, '血栓症（エコノミークラス症候群）を防ぐには、ゆったりした服装を選び、意図的に体を動かし、水分補給を心がける。', true, '利尿作用のある飲みものは避けます。');
+OX(12, '血栓症（エコノミークラス症候群）は、長時間脚などを動かさないと、血が固まりやすくなり、血管がつまって起こる。', true, '車の中での避難生活などで起こりやすいです。');
+OX(12, '災害時、仮設トイレは、すべての避難所に当日のうちにいきわたる。', false, '6割をこえる避難所で4日以上かかっています。し尿の衛生的な処理がとどこおります。');
+C(12, '「災害関連死」の正しい説明はどれか。', ['建物の倒壊や火災などの直接的な被害ではなく、避難生活の疲労や持病の悪化など、災害に起因する負担が原因で亡くなること。', '地震で倒れた建物の下じきになるなど、災害の直接的な被害で亡くなること。', '災害とは関係のない、ふだんの交通事故で亡くなること。'], '身体的・精神的負担が原因です。', 1);
+C(12, '災害後の健康問題と、その対策の組み合わせとして正しいものはどれか。', ['口の中の不衛生 → 少量の水でブクブクと、うがいをする', '血栓症 → 動かずにじっとして、水分をひかえる', '心身の機能の低下 → できるだけ横になったまま過ごす'], '感染症の流行→こまめに手を洗う／心身の機能の低下→気分転換をかねて散歩やスポーツ／血栓症→水分補給。');
+C(12, '災害用伝言ダイヤル（171）の説明として正しいものはどれか。', ['大規模な災害で電話がつながりにくくなったとき、音声で安否情報を録音・確認できる「声の伝言板」サービス。', '災害のときに救急車や消防車を呼ぶための、緊急通報用の電話番号。', '災害のときだけ使える、天気予報を聞くための電話番号。'], '救急・消防は119、時報は117です。', 1);
+C(12, '災害時のSNS情報のあつかい方として正しいものはどれか。', ['発信日時や発信者、根拠を確かめ、正確な情報かどうかを判断したうえで活用する。', 'できるだけ早く多くの人に知らせるため、内容を確かめずにすぐ拡散する。', 'SNSの情報はすべてデマなので、絶対に見てはいけない。'], '即時性・局地性で貴重な情報源ですが、デマもあります。');
+CL(12, '災害と情報', '災害に起因する身体的・精神的負担が原因で亡くなることを[[災害関連死]]という。電話がつながりにくいときに音声で安否情報を録音・確認できるサービスを[[災害用伝言ダイヤル]]（番号は[[171]]）といい、そのwebバージョンを[[災害用伝言板]]という。', ['117', '119', '緊急地震速報', '防災ラジオ'], 1);
+
+/* ---- 13 私たちの生活と環境問題 ---- */
+T(13, 'kogai', '公害', '1950〜1970年代、経済の発展の時期に全国各地で引き起こされた、健康や環境への被害', { y: 'こうがい', s: 1 });
+T(13, 'kogai', '四大公害病', '熊本水俣病・新潟水俣病・イタイイタイ病・四日市ぜんそくの4つをあわせた呼び方', { y: 'よんだいこうがいびょう', alt: ['四大公害', '4大公害病', '四大公害事件', 'よんだいこうがい'], s: 1 });
+T(13, 'byomei', '熊本水俣病', '熊本県水俣市で発生。メチル水銀が魚や貝に蓄積し、それを長い間食べた人が発病した。手足や口がしびれる', { y: 'くまもとみなまたびょう', alt: ['水俣病', 'みなまたびょう'] });
+T(13, 'byomei', '新潟水俣病', '新潟県阿賀野川流域で1964年ごろから発生。別名は第2水俣病', { y: 'にいがたみなまたびょう', alt: ['第2水俣病', '第二水俣病'] });
+T(13, 'byomei', 'イタイイタイ病', '富山県の神通川流域で発生。カドミウムが原因で、手足の骨がもろくなり、激しい痛みを伴う', { alt: ['いたいいたいびょう'] });
+T(13, 'byomei', '四日市ぜんそく', '三重県四日市市を中心とした地域で1960年ごろから発生。亜硫酸ガス（二酸化硫黄）による空気の汚れが原因', { y: 'よっかいちぜんそく', alt: ['四日市喘息'] });
+T(13, 'kankyo', '水質汚濁', 'おもに生活排水が湖や海を汚染して起こり、アオコや赤潮が発生する環境問題', { y: 'すいしつおだく', s: 1 });
+T(13, 'kankyo', '大気汚染', '工場や自動車の排気ガスなどで空気が汚れること。光化学スモッグが発生する', { y: 'たいきおせん', s: 1 });
+T(13, 'kankyo', '光化学スモッグ', '工場や自動車の排気ガスに含まれる成分が、太陽の紫外線を受けて化学反応を起こし、空気が白くモヤがかかったようになる大気汚染', { y: 'こうかがくすもっぐ', s: 1 });
+T(13, 'kankyo', '3R', 'リデュース（減量）、リユース（再使用）、リサイクル（再生利用）の3つをまとめた呼び方', { alt: ['スリーアール', 'すりーあーる', '３R', '三R'], s: 1 });
+T(13, 'kankyo', 'SDGs', '持続可能な開発目標。2030年までの国際社会共通の目標', { alt: ['エスディージーズ', 'えすでぃーじーず', '持続可能な開発目標'], s: 1 });
+T(13, 'r3', 'リデュース', '3Rのうち、ごみを減らすこと（減量）', { alt: ['りでゅーす', 'reduce'] });
+T(13, 'r3', 'リユース', '3Rのうち、くり返し使うこと（再使用）', { alt: ['りゆーす', 'reuse'] });
+T(13, 'r3', 'リサイクル', '3Rのうち、資源として再び利用すること（再生利用）', { alt: ['りさいくる', 'recycle'] });
+T(13, 'kankyo', '循環型社会', '廃棄物を減らし、資源を循環させながら利用していく、持続可能な社会', { y: 'じゅんかんがたしゃかい' });
+OX(13, '公害は、1950年代から70年代前半にかけて、経済がいちじるしく発展した時期に全国各地で引き起こされた。', true, 'プリントでは「1950〜1970年代」です。', 1);
+OX(13, '公害が大きな被害をもたらしたのは、人びとの命や健康よりも経済活動を優先し、対策が遅れたためである。', true, '教科書の記述どおりです。', 1);
+OX(13, '熊本水俣病は、工場排水に含まれるメチル水銀が魚介類にたまり、それを食べた住民に大きな健康被害が出た。', true, '手足や口のしびれる症状が出ました。');
+OX(13, 'イタイイタイ病は、熊本県で発生した、メチル水銀が原因の公害病である。', false, 'イタイイタイ病は富山県の神通川流域で、原因はカドミウムです。');
+OX(13, '四日市ぜんそくは、三重県で発生した、工場の排煙による空気の汚れが原因の公害病である。', true, '亜硫酸ガス（二酸化硫黄）が原因です。');
+OX(13, '新潟水俣病は、新潟県の阿賀野川流域で発生し、第2水俣病とも呼ばれる。', true, '1964年ごろからです。');
+OX(13, 'イタイイタイ病の原因はカドミウムで、手足の骨がもろくなり、激しい痛みを伴う。', true, '子供を出産した女性に多く発症しました。');
+OX(13, '四大公害病は、熊本水俣病・新潟水俣病・イタイイタイ病・四日市ぜんそくの4つである。', true, '熊本県・新潟県・富山県・三重県です。', 1);
+OX(13, '水質汚濁では、アオコや赤潮が発生する。', true, 'おもに生活排水が湖や海を汚染して起こります。', 1);
+OX(13, '光化学スモッグは、生活排水が湖や海を汚染して、水面が赤く見える現象である。', false, 'それは赤潮（水質汚濁）です。光化学スモッグは大気汚染です。', 1);
+OX(13, '光化学スモッグは、工場や自動車の排気ガスに含まれる成分が、太陽の紫外線を受けて化学反応を起こして発生する。', true, '目の痛みや咽頭痛、せきなどの症状があらわれます。', 1);
+OX(13, '人びとの努力や国の対策により、公害はすべてなくなり、現在は環境問題は起きていない。', false, '深刻な公害は改善されましたが、水質汚濁・大気汚染・地球温暖化・海洋汚染などが問題です。');
+OX(13, '3Rとは、リデュース（減量）、リユース（再使用）、リサイクル（再生利用）のことである。', true, 'プリントの空欄「3R（スリーアール）」です。', 1);
+OX(13, '買い物時にバッグを持っていくことは、リサイクルにあたる。', false, 'ごみを減らす「リデュース」です。過剰な包装を断るのもリデュース。');
+OX(13, '使用した空きびんをもう一度使うことは、リユースにあたる。', true, '再使用です。');
+OX(13, '使用した空き缶を再生利用することは、リデュースにあたる。', false, '再生利用は「リサイクル」です。');
+OX(13, 'SDGs（持続可能な開発目標）は、2030年までの国際社会共通の目標である。', true, 'プリントの空欄「SDGs」です。', 1);
+OX(13, '節電や節水、省エネルギー、ごみの削減や分別は、私たち自身でできる環境を守る行動である。', true, '持続可能な循環型社会の実現をめざします。');
+C(13, '四大公害病と発生した県の組み合わせとして正しいものはどれか。', ['熊本水俣病＝熊本県、新潟水俣病＝新潟県、イタイイタイ病＝富山県、四日市ぜんそく＝三重県', '熊本水俣病＝三重県、新潟水俣病＝富山県、イタイイタイ病＝熊本県、四日市ぜんそく＝新潟県', '熊本水俣病＝熊本県、新潟水俣病＝新潟県、イタイイタイ病＝三重県、四日市ぜんそく＝富山県'], 'イタイイタイ病＝富山（神通川）、四日市ぜんそく＝三重、をまちがえやすいです。');
+C(13, '四大公害病と原因の組み合わせとして正しいものはどれか。', ['水俣病＝メチル水銀、イタイイタイ病＝カドミウム、四日市ぜんそく＝亜硫酸ガス', '水俣病＝カドミウム、イタイイタイ病＝亜硫酸ガス、四日市ぜんそく＝メチル水銀', '水俣病＝亜硫酸ガス、イタイイタイ病＝メチル水銀、四日市ぜんそく＝カドミウム'], 'プリントの記述どおりです。');
+C(13, '「光化学スモッグ」の正しい説明はどれか。', ['工場や自動車の排気ガスに含まれる成分が太陽の紫外線を受けて化学反応を起こし、空気が白くモヤがかかったようになる大気汚染。', '生活排水に含まれる成分が海に流れこみ、プランクトンが増えて海が赤くなる水質汚濁。', '雪の多い地方で、車の排気ガスが車内に逆流して起こる中毒。'], '目の痛み、咽頭痛、せきなどの症状があらわれます。', 1);
+C(13, '3Rの説明として正しいものはどれか。', ['リデュース＝減量、リユース＝再使用、リサイクル＝再生利用', 'リデュース＝再使用、リユース＝再生利用、リサイクル＝減量', 'リデュース＝再生利用、リユース＝減量、リサイクル＝再使用'], '減らす→くり返し使う→資源にもどす、の順です。', 1);
+C(13, '「リデュース」にあたる行動はどれか。', ['過剰な包装を断る。', '使用した空きびんをもう一度使う。', '使用した空き缶を再生利用する。'], '2つ目はリユース、3つ目はリサイクルです。');
+C(13, '公害が大きな被害をもたらした理由として正しいものはどれか。', ['人びとの命や健康よりも経済活動を優先したため、対策が遅れたから。', '当時の人びとは体が弱く、少しの汚れでも病気になったから。', '国が経済活動をすべて禁止したため、工場が動かなくなったから。'], '教科書・プリントの記述どおりです。', 1);
+CL(13, '公害', '1950〜1970年代に、人々の命や健康よりも経済活動を優先したために起きた被害を[[公害]]という。熊本水俣病、新潟水俣病、イタイイタイ病、四日市ぜんそくをあわせて[[四大公害病]]という。', ['災害', '感染症', '生活習慣病'], 1);
+CL(13, '近年の環境問題', 'アオコや赤潮が発生するのは[[水質汚濁]]である。工場や自動車の排気ガスに含まれる成分が太陽の紫外線を受けて化学反応を起こす[[大気汚染]]を[[光化学スモッグ]]という。', ['地球温暖化', '海洋汚染', '酸性雨'], 1);
+CL(13, '3RとSDGs', 'リデュース（[[減量|げんりょう]]）、リユース（[[再使用|さいしよう]]）、リサイクル（[[再生利用|さいせいりよう]]）をまとめて[[3R]]という。持続可能な開発目標を[[SDGs]]といい、[[2030]]年までの国際社会共通の目標である。', ['焼却', '分別', 'WHO', '2050'], 1);
+CL(13, '四大公害病の原因', '熊本水俣病は[[メチル水銀|めちるすいぎん|有機水銀]]が魚や貝に蓄積し、それを長い間食べた人が発病した。イタイイタイ病は[[カドミウム]]が原因で、[[富山|とやま]]県の神通川流域で発生した。四日市ぜんそくは[[亜硫酸ガス|ありゅうさんがす|二酸化硫黄]]による空気の汚れが原因で、[[三重|みえ]]県で発生した。', ['一酸化炭素', '新潟', '熊本', 'トリハロメタン'], 0);
+
+/* 体育：体育理論（14）・バスケットボール（15）・アルティメット（16）・水泳 バタフライ（17） */
+
+/* ---- 14 体育理論 ---- */
+T(14, 'igi', '健康な心と体', 'スポーツの意義の1つ。体力の向上、肥満の防止、気分転換やストレスの軽減など、心身によい効果をもたらすこと', { alt: ['けんこうなこころとからだ', '健康な心と身体'], s: 1 });
+T(14, 'igi', '新しい自分との出会い', 'スポーツの意義の1つ。自分の限界に挑戦したり競技に打ち込んだりすることで、それまで気がつかなかった自分の力を発見できること', { alt: ['あたらしいじぶんとのであい', '新しい自分との出合い'], s: 1 });
+T(14, 'igi', '豊かな交流', 'スポーツの意義の1つ。スポーツが多様な人々が交流する場になっていること。地域のスポーツ大会やサークルがよい例', { alt: ['ゆたかなこうりゅう'], s: 1 });
+T(14, 'seido', 'UNESCO', '国際平和と人類の福祉の促進を目的とした、国際連合の専門機関。国連教育科学文化機関', { alt: ['ユネスコ', 'ゆねすこ', '国連教育科学文化機関', '国際連合教育科学文化機関'], s: 1 });
+T(14, 'seido', 'スポーツ基本法', '2011年に制定された、日本におけるスポーツに関する施策の基本事項を定めた法律', { y: 'すぽーつきほんほう', s: 1 });
+T(14, 'seido', 'スポーツ基本計画', 'スポーツ基本法の制定を受けて作成された、人々のスポーツライフの充実を目指す国のロードマップ（設計図）', { y: 'すぽーつきほんけいかく', s: 1 });
+T(14, 'seido', '第3期スポーツ基本計画', '2022〜2026年までの5年間で国が取り組むべきものを定めた計画。スポーツの価値を高めるための「3つの視点」を支える施策', { alt: ['だいさんきすぽーつきほんけいかく', '第三期スポーツ基本計画', '第3期スポーツ基本計画'], s: 1 });
+T(14, 'kokusai', 'クーベルタン', '「オリンピックの父」と呼ばれる人物。オリンピックを復活させた', { alt: ['くーべるたん', 'ピエール・ド・クーベルタン'], s: 1 });
+T(14, 'kokusai', '嘉納治五郎', '「柔道」の創始者', { y: 'かのうじごろう', s: 1 });
+T(14, 'kokusai', '国際親善', '国籍や文化の違いを超えて、世界の人々とお互いに理解し、親しい信頼関係を築くこと', { y: 'こくさいしんぜん', s: 1 });
+OX(14, '現代社会では、交通の発達や機械化の進展から、運動不足になりがちになっている。', true, '昔と今では、昔のほうが運動量が多かったといえます。');
+OX(14, '現代社会では、仕事の忙しさや人間関係の複雑さなどから、ストレスを抱えることが増えている。', true, 'スポーツは気分転換やストレスの軽減に役立ちます。');
+OX(14, 'スポーツは、現代社会において「生活を豊かにする大切な存在」である。', true, 'プリントの空欄の答えです。', 1);
+OX(14, 'スポーツは、体力の向上、肥満の防止、気分転換やストレスの軽減など、心身によい効果をもたらす。', true, '「健康な心と体」です。', 1);
+OX(14, 'スポーツの価値は体力を高めることだけにあり、人と人との交流には関係がない。', false, 'スポーツは多様な人々が交流する場になっています（豊かな交流）。');
+OX(14, 'UNESCOは、「体育・身体活動・スポーツの実践はすべての人の基本的権利」であると呼びかけている。', true, 'プリントの空欄の答えです。', 1);
+OX(14, 'UNESCOの呼びかけは、人種や性、ことばや宗教などにかかわらず、世界中の人びとが等しくスポーツをおこなう権利をもっていることを示している。', true, 'プリントの記述どおりです。');
+OX(14, 'UNESCOは、オリンピックを開催するためにつくられた、スポーツ専門の民間団体である。', false, '国際平和と人類の福祉の促進を目的とした、国際連合の専門機関（国連教育科学文化機関）です。', 1);
+OX(14, 'スポーツ基本法は、2011年に制定された。', true, '日本におけるスポーツに関する施策の基本事項を定めた法律です。', 1);
+OX(14, 'スポーツ基本法は、1964年の東京オリンピックの年に制定された。', false, '2011年に制定されました。', 1);
+OX(14, 'スポーツ基本法の前文には、「スポーツは、世界共通の人類の文化である」と記載されている。', true, 'プリントの空欄の答えです。', 1);
+OX(14, 'スポーツ基本計画は、スポーツ庁が作成した、人々のスポーツライフの充実を目指す国のロードマップである。', true, 'スポーツ基本法の制定を受けて作成されました。', 1);
+OX(14, '第3期スポーツ基本計画は、2022〜2026年までの5年間で国が取り組むべきものを定めている。', true, '「3つの視点」を支える施策です。', 1);
+OX(14, '第3期スポーツ基本計画の「3つの視点」は、スポーツを「つくる／はぐくむ」、スポーツで「あつまり、ともに、つながる」、スポーツに「誰もがアクセスできる」である。', true, 'プリントの空欄の答えです。', 1);
+OX(14, '夏季オリンピック競技大会に参加している国・地域の数は、国連に加盟している国の数よりも少ない。', false, '国連加盟国は193か国、夏季オリンピック参加国・地域は206で、オリンピックのほうが多いです。');
+OX(14, 'スポーツの価値や役割は、競技をしてメダルを争うことだけである。', false, 'メダルを争うだけではなく、世界中の人々にスポーツの意義や価値を伝えています。', 1);
+OX(14, '「オリンピックの父」と呼ばれるのは、クーベルタンである。', true, 'オリンピックを復活させました。', 1);
+OX(14, '「柔道」の創始者は、嘉納治五郎である。', true, 'プリントの空欄の答えです。', 1);
+OX(14, '「オリンピックの父」と呼ばれるのは、嘉納治五郎である。', false, 'オリンピックの父はクーベルタン。嘉納治五郎は「柔道」の創始者です。', 1);
+OX(14, '国際親善は、選手たちが技を競い合う中で、「健闘を称えあう」ことや「違いを理解しあう（国際理解）」ことなどを通じてはかられる。', true, 'プリントの記述どおりです。');
+OX(14, '昔は、国際スポーツ大会などの結果が日本に伝わるまで数日かかっていた。新聞しか知る方法がなかったからである。', true, 'プリントの空欄「新聞」です。', 1);
+OX(14, '最近では、メディアの発達により、「みるスポーツ」が充実している。', true, 'プリントの空欄「メディアの発達」です。', 1);
+OX(14, '海外のスポーツ中継がその国のことばを知らなくても楽しめるのは、スポーツが「世界の共通語」だからである。', true, '世界共通のルールでおこなわれ、表情や行動から感動が伝わります。', 1);
+OX(14, '国際的なスポーツ大会では、民族や国、人種、地域、風土の違いを超えて交流を深める。', true, 'プリントの空欄：民族・国・人種・地域・風土。', 1);
+OX(14, '地域でおこなわれるスポーツ大会は、年齢や性の違いにかかわらず楽しめるように、ルールが工夫されている。', true, 'プリントの空欄「年齢」「性」です。', 1);
+OX(14, 'スポーツは、障害のある人とない人がいっしょにプレイすることはできない。', false, '障害の有無に関係なくプレイできる種目もあります（車いすバスケットボール、シッティングバレーボールなど）。', 1);
+OX(14, 'スポーツは、「私たちが生み出したすばらしい文化」である。', true, 'プリントの空欄の答えです。', 1);
+C(14, 'UNESCOの説明として正しいものはどれか。', ['国際平和と人類の福祉の促進を目的とした、国際連合の専門機関。', '世界のバスケットボールのルールを決めている競技団体。', '感染症の撲滅事業などをおこなう、健康に関する国際機関。'], '2つ目はFIBA、3つ目はWHOです。', 1);
+C(14, 'スポーツ基本法の説明として正しいものはどれか。', ['2011年に制定された、日本におけるスポーツに関する施策の基本事項を定めた法律。', '2022〜2026年の5年間で国が取り組むべきものを定めた計画。', 'オリンピックに出場する選手の人数を決めた国際的な約束。'], '2つ目は第3期スポーツ基本計画です。', 1);
+C(14, 'スポーツ基本法の前文に記載されていることばとして正しいものはどれか。', ['スポーツは、世界共通の人類の文化である', 'スポーツは、勝つことだけに価値がある', 'スポーツは、若い人だけの楽しみである'], 'プリントの空欄の答えです。', 1);
+C(14, '「国際親善」の正しい説明はどれか。', ['国籍や文化の違いを超えて、世界の人々とお互いに理解し、親しい信頼関係を築くこと。', '国際大会で、自分の国の選手だけを応援し、ほかの国の選手とは関わらないこと。', '国どうしがメダルの数を競い、強い国が弱い国を指導すること。'], '健闘を称えあう、違いを理解しあう（国際理解）ことを通じてはかられます。', 1);
+C(14, 'スポーツの3つの意義・価値として正しい組み合わせはどれか。', ['健康な心と体、新しい自分との出会い、豊かな交流', '勝利、賞金、有名になること', '筋力、持久力、柔軟性'], 'プリントの空欄の3つです。', 1);
+C(14, '第3期スポーツ基本計画の「3つの視点」として正しいものはどれか。', ['スポーツを「つくる／はぐくむ」、スポーツで「あつまり、ともに、つながる」、スポーツに「誰もがアクセスできる」', 'スポーツを「見る」、スポーツで「勝つ」、スポーツに「お金をかける」', 'スポーツを「やめる」、スポーツで「休む」、スポーツに「たよらない」'], 'プリントの空欄です。', 1);
+C(14, '年齢や性の違い、障害の有無にかかわらず楽しめるスポーツの例として正しいものはどれか。', ['グラウンド・ゴルフ、ゲートボール、インディアカ、車いすバスケットボール、シッティングバレーボール', 'プロ野球、大相撲、プロボクシング', 'オリンピックの陸上競技100m走の決勝'], 'プリントに挙げられている例です。');
+CL(14, 'スポーツの意義', 'スポーツは、[[生活を豊かにする大切な存在|生活を豊かにする大切なもの]]である。体力の向上やストレスの軽減など心身によい効果をもたらす「[[健康な心と体]]」、気がつかなかった自分の力を発見できる「[[新しい自分との出会い]]」、多様な人々が交流する「[[豊かな交流]]」という意義がある。', ['勝利をめざす競争', 'お金をかせぐ手段', '世界の共通語'], 1);
+CL(14, 'スポーツを支える取り組み', '[[UNESCO]]は「体育・身体活動・スポーツの実践はすべての人の[[基本的権利|きほんてきけんり]]」と呼びかけている。日本では[[2011]]年に[[スポーツ基本法]]が制定され、その前文には「スポーツは、世界共通の人類の[[文化|ぶんか]]である」と記載されている。', ['WHO', '義務', '1964', 'スポーツ基本計画', '競争'], 1);
+CL(14, 'スポーツ基本計画', 'スポーツ基本法の制定を受けて、スポーツ庁が[[スポーツ基本計画]]を作成した。[[第3期スポーツ基本計画]]は、[[2022]]〜[[2026]]年までの5年間で国が取り組むべきものである。', ['スポーツ基本法', '2011', '2030', '第1期スポーツ基本計画'], 1);
+CL(14, '国際的なスポーツ大会', 'スポーツは、世界中の人々にスポーツの[[意義|いぎ]]や[[価値|かち]]を伝えている。「オリンピックの父」は[[クーベルタン]]、「柔道」の創始者は[[嘉納治五郎]]である。国籍や文化の違いを超えて信頼関係を築くことを[[国際親善]]という。', ['ネイスミス', '記録', '大森兵蔵', '国際理解'], 1);
+CL(14, 'メディアとスポーツ', '昔は、国際スポーツ大会などの結果を知る方法が[[新聞|しんぶん]]しかなかったので、日本に伝わるまで数日かかっていた。最近では[[メディアの発達|めでぃあのはったつ]]により、「[[みるスポーツ|見るスポーツ]]」が充実している。', ['テレビ', '交通の発達', 'するスポーツ', 'ささえるスポーツ'], 1);
+CL(14, '人びとを結ぶスポーツ', 'スポーツは世界の[[共通語|きょうつうご]]である。国際的なスポーツ大会では、[[民族|みんぞく]]や国、[[人種|じんしゅ]]、地域、[[風土|ふうど]]の違いを超えて交流を深める。地域のスポーツ大会は、[[年齢|ねんれい]]や[[性|せい|性別]]の違いにかかわらず楽しめるようにルールが工夫され、[[障害|しょうがい|障がい]]の有無に関係なくプレイできる種目もある。', ['体力', '収入', '職業', '記録'], 1);
+E(14, '現代社会でスポーツに親しむことには、どのような意義や価値があるか。「健康」「自分」「交流」の3つのことばを必ず使って説明しなさい。', ['健康', '自分', '交流'], 'スポーツは生活を豊かにする大切な存在である。体力の向上やストレスの軽減など、健康な心と体をつくる効果がある。また、自分の限界に挑戦することで、それまで気がつかなかった自分の力を発見できる。さらに、多様な人々が交流する場にもなっている。');
+
+/* ---- 15 バスケットボール ---- */
+T(15, 'yogo', 'オフェンス', '攻撃側のこと', { alt: ['おふぇんす'], s: 1 });
+T(15, 'yogo', 'ディフェンス', '守備側のこと', { alt: ['でぃふぇんす'], s: 1 });
+T(15, 'yogo', 'リバウンドボール', 'リング（バスケット）やバックボードにあたって落ちてくるボール', { alt: ['りばうんどぼーる', 'リバウンド'], s: 1 });
+T(15, 'yogo', 'ルーズボール', 'どちらのチームにも所属していないボール', { alt: ['るーずぼーる'], s: 1 });
+T(15, 'yogo', 'スローイン', 'コートの外からコート内のプレイヤーにボールをパスすること', { alt: ['すろーいん'], s: 1 });
+T(15, 'yogo', 'フリースロー', '相手のファウルによって、決められたラインから誰にもじゃまされないでシュートすること', { alt: ['ふりーすろー'], s: 1 });
+T(15, 'yogo', 'バイオレーション', 'ルールで定められた動き方や制限時間に違反すること', { alt: ['ばいおれーしょん', 'ヴァイオレーション'], s: 1 });
+T(15, 'yogo', 'ターンオーバー', 'シュートミス以外で、オフェンスからディフェンスに切り替わること', { alt: ['たーんおーばー'], s: 1 });
+T(15, 'yogo', 'ファストブレイク', '速攻のこと', { alt: ['ふぁすとぶれいく', 'ファーストブレイク'], s: 1 });
+T(15, 'yogo', 'ハリーバック', 'オフェンスからディフェンスに切り替わったとき、自分のチームが守るバスケット近くにすぐに戻ってディフェンスすること', { alt: ['はりーばっく'], s: 1 });
+T(15, 'yogo', 'マンツーマン', '「1対1」という意味のことば', { alt: ['まんつーまん'], s: 1 });
+T(15, 'yogo', 'スクリーン', 'ディフェンスに対して、オフェンスが自分の体をかべのようにして、動きを封じること', { alt: ['すくりーん'], s: 1 });
+T(15, 'line', 'センターライン', 'コートの中央を横切り、コートを2つに分けているライン', { alt: ['せんたーらいん'], s: 1 });
+T(15, 'line', 'サイドライン', 'コートの長いほうの辺（長さ28m）のライン', { alt: ['さいどらいん'], s: 1 });
+T(15, 'line', 'エンドライン', 'コートの短いほうの辺（長さ15m）のライン。バスケットの後ろにある', { alt: ['えんどらいん'], s: 1 });
+T(15, 'line', 'フリースローライン', 'フリースローのときに、シューターがその後ろからシュートするライン', { alt: ['ふりーすろーらいん'], s: 1 });
+T(15, 'line', 'スリーポイントライン', 'このラインの外側からのシュートが入ると3点になる、半円形のライン', { alt: ['すりーぽいんとらいん', '3ポイントライン'], s: 1 });
+T(15, 'vio', 'アウトオブバウンズ', 'ボールを境界線の外に出したり、ボールを持って境界線をふんだり、ふみ越えたりする反則', { alt: ['あうとおぶばうんず'], s: 1 });
+T(15, 'vio', 'ダブルドリブル', '両手で同時にボールにふれたり、ボールを支え持ったりしたあとに、もう一度ドリブルをする反則。イリーガルドリブルともいう', { alt: ['だぶるどりぶる', 'イリーガルドリブル'], s: 1 });
+T(15, 'vio', 'トラベリング', 'ボールを持ったまま3歩以上進む、ピボットの軸足を途中で替える、という反則', { alt: ['とらべりんぐ'], s: 1 });
+T(15, 'vio', 'バックパス', 'フロントコートに進めたボールを、バックコートの味方に返す反則', { alt: ['ばっくぱす'] });
+T(15, 'vio', '3秒ルール', '攻撃中に、相手コートの制限区域内に決められた秒数をこえてとどまってはいけない、というルール', { alt: ['三秒ルール', '3びょうるーる', '3秒'] });
+T(15, 'vio', '8秒ルール', 'バックコートでボールをコントロールしたチームは、決められた秒数以内にフロントコートにボールを進めなければならない、というルール', { alt: ['八秒ルール', '8びょうるーる', '8秒'] });
+T(15, 'vio', '24秒ルール', 'ボールをコントロールしたチームは、決められた秒数以内にシュートしなければならない、というルール', { alt: ['二十四秒ルール', '24びょうるーる', '24秒'] });
+T(15, 'foul', 'プッシング', '手や体で相手を押すファウル', { alt: ['ぷっしんぐ'], s: 1 });
+T(15, 'foul', 'チャージング', '無理に進んで相手に突きあたるファウル', { alt: ['ちゃーじんぐ'], s: 1 });
+T(15, 'foul', 'ホールディング', '相手をつかんだり、押さえたりするファウル', { alt: ['ほーるでぃんぐ'], s: 1 });
+T(15, 'foul', 'イリーガルユースオブハンズ', '手で相手をたたくファウル', { alt: ['いりーがるゆーすおぶはんず', 'イリーガル・ユース・オブ・ハンズ'], s: 1 });
+T(15, 'foul', 'ハンドチェッキング', '手で相手にふれ続けて防御するファウル', { alt: ['はんどちぇっきんぐ'], s: 1 });
+T(15, 'foul', 'ブロッキング', '相手の進行を強引に妨げるファウル', { alt: ['ぶろっきんぐ'], s: 1 });
+T(15, 'foul2', 'パーソナルファウル', '体のふれあいによる反則', { alt: ['ぱーそなるふぁうる'] });
+T(15, 'foul2', 'テクニカルファウル', 'スポーツマンらしくない行為などの反則。相手側に1個のフリースローが与えられる', { alt: ['てくにかるふぁうる'] });
+T(15, 'foul2', 'ダブルファウル', '両チームのプレイヤーが同時におかすファウル', { alt: ['だぶるふぁうる'] });
+T(15, 'rekishi', 'ネイスミス', '1891年に、アメリカの国際YMCAの体育教師としてバスケットボールを考案した人物', { alt: ['ねいすみす', 'ネイスミス', 'J.ネイスミス', 'ジェームズ・ネイスミス'], s: 1 });
+T(15, 'rekishi', 'FIBA', '国際バスケットボール連盟の略称。210か国以上が加盟している', { alt: ['国際バスケットボール連盟', 'フィバ', 'こくさいばすけっとぼーるれんめい'], s: 1 });
+T(15, 'rekishi', 'NBA', 'アメリカのプロバスケットボール。試合は世界的に大人気となっている', { alt: ['エヌビーエー', 'えぬびーえー'], s: 1 });
+T(15, 'rekishi', 'Bリーグ', '日本で2016年から始まった、男子のプロバスケットボールリーグ', { alt: ['びーりーぐ', 'B.LEAGUE', 'ビーリーグ', 'Bリーグ'], s: 1 });
+OX(15, 'バスケットボールは、1891年にアメリカの国際YMCA体育教師ネイスミスが考案した。', true, '冬季に室内でおこなうスポーツとして考案されました。', 1);
+OX(15, 'バスケットボールは、1926年にイギリスの体育教師ネイスミスが考案した。', false, '「1891年」に「アメリカ」の国際YMCA体育教師ネイスミスが考案しました。1926年は日本の学校体育に導入された年です。', 1);
+OX(15, 'バスケットボールの最初のルールは、13条であった。', true, 'オレンジのマーカー「最初は13条のルール」です。', 1);
+OX(15, '考案された当初のバスケットボールは、1チーム5人で、ドリブルを使ってボールを運んでいた。', false, '当初は1チーム9人、ルールは13条で、ドリブルという技術はありませんでした。', 1);
+OX(15, '考案された当初は、サッカーボールを使用し、桃のかごを体育館の手すりに釘で打ちつけておこなった。', true, 'だから「バスケット（かご）ボール」です。');
+OX(15, 'バスケットボールは、日本の学校体育には1926年に導入された。', true, '1908年に大森兵蔵が初めて日本に紹介し、1913年に来日したF.H.ブラウンの指導で広く普及しました。', 1);
+OX(15, 'バスケットボールを初めて日本に紹介したのは、1908年の大森兵蔵である。', true, 'その後、F.H.ブラウンの指導で広く普及しました。');
+OX(15, '国際バスケットボール連盟の略称は、NBAである。', false, '国際バスケットボール連盟は「FIBA」。NBAはアメリカのプロバスケットボールです。', 1);
+OX(15, '国際バスケットボール連盟（FIBA）には、210か国以上が加盟している。', true, '世界各地域で盛んにおこなわれています。', 1);
+OX(15, '日本では、2016年から男子のプロバスケットボールリーグ（Bリーグ）が始まった。', true, 'オレンジのマーカーの所です。', 1);
+OX(15, '日本の男子のプロバスケットボールリーグ（Bリーグ）は、1926年に始まった。', false, 'Bリーグは「2016年」から。1926年は学校体育に導入された年です。', 1);
+OX(15, 'バスケットボールは、パスやドリブルを使って相手コートに侵入し、一定時間内に相手バスケットにシュートして得点を競う、ゴール型の球技である。', true, '集団対集団の攻防です。');
+OX(15, 'バスケットボールは、ネットをはさんでボールを打ち合う、ネット型の球技である。', false, '「ゴール型」の球技です。');
+OX(15, 'オフェンスとは守備側のことで、攻撃側をディフェンスという。', false, '逆です。オフェンス＝攻撃側、ディフェンス＝守備側。', 1);
+OX(15, 'リバウンドボールとは、リング（バスケット）やバックボードにあたって落ちてくるボールのことである。', true, '基本用語です。', 1);
+OX(15, 'ルーズボールとは、どちらのチームにも所属していないボールのことである。', true, '基本用語です。', 1);
+OX(15, 'ルーズボールとは、リングやバックボードにあたって落ちてくるボールのことである。', false, 'それは「リバウンドボール」。ルーズボールは、どちらのチームにも所属していないボールです。', 1);
+OX(15, 'スローインとは、コートの外からコート内のプレイヤーにボールをパスすることである。', true, '基本用語です。', 1);
+OX(15, 'フリースローとは、相手のファウルによって、フリースローラインから誰にもじゃまされないでシュートすることである。', true, '入れば1点です。', 1);
+OX(15, 'バイオレーションとは、相手の体を押したりたたいたりする、体のふれあいによる反則のことである。', false, 'それは「パーソナルファウル」。バイオレーションは、ルールで定められた動き方や制限時間に違反することです。', 1);
+OX(15, 'ターンオーバーとは、シュートミス以外でオフェンスからディフェンスに切り替わることである。', true, '基本用語です。', 1);
+OX(15, 'ターンオーバーとは、シュートが外れてディフェンスにボールを取られることだけを指す。', false, '「シュートミス以外で」切り替わることです。', 1);
+OX(15, 'ファストブレイクとは、速攻のことである。', true, '基本用語です。', 1);
+OX(15, 'ファストブレイクとは、時間をかけてゆっくり攻める作戦のことである。', false, '「速攻」のことです。', 1);
+OX(15, 'ハリーバックとは、オフェンスからディフェンスに切り替わったとき、自分のチームが守るバスケット近くにすぐに戻ってディフェンスすることである。', true, '基本用語です。', 1);
+OX(15, 'マンツーマンとは、「1対1」という意味である。', true, '決められた自分の相手をマークする守り方を、マンツーマンディフェンスといいます。', 1);
+OX(15, 'スクリーンとは、ディフェンスに対して、オフェンスが自分の体をかべのようにして、動きを封じることである。', true, '基本用語です。', 1);
+OX(15, 'スクリーンとは、ディフェンスがオフェンスの体をつかんで、動きを止めることである。', false, '「オフェンス」が自分の体を「かべ」のようにすることです。つかむのはホールディング（ファウル）です。', 1);
+OX(15, 'コートの長いほうの辺のラインをサイドライン、短いほうの辺のラインをエンドラインという。', true, 'コートは縦28m、横15mです。', 1);
+OX(15, 'コートの長いほうの辺のラインをエンドライン、短いほうの辺のラインをサイドラインという。', false, '逆です。長いほう＝サイドライン、短いほう（バスケットの後ろ）＝エンドライン。', 1);
+OX(15, 'コートの中央にあるラインを、センターラインという。', true, 'センターサークルの中を通っています。', 1);
+OX(15, 'バスケットボールのコートの大きさは、縦28m、横15mである。', true, 'リングの高さは3.05mです。');
+OX(15, 'リングの高さは、床から3.05mである。', true, 'バックボードは横1.80m、縦1.05mです。');
+OX(15, 'スリーポイントラインは、バスケットから6.75mの所にある。', true, 'このラインの外側がスリーポイントエリアです。');
+OX(15, '中学生以上の女子が使うボールは6号、男子が使うボールは7号である。', true, 'オレンジのマーカーの所です。', 1);
+OX(15, '中学生以上の女子が使うボールは7号、男子が使うボールは6号である。', false, '女子が6号、男子が7号。男子のほうが大きく重いボールです。', 1);
+OX(15, '1チームの出場プレイヤーは、5人である。', true, '交替要員は7人以内です。', 1);
+OX(15, '1チームの出場プレイヤーは7人で、交替要員は5人以内である。', false, '出場プレイヤーが5人、交替要員が7人以内です。', 1);
+OX(15, '試合時間は各クォーター10分で、中学生は各クォーター8分である。', true, 'オレンジのマーカーの所です。', 1);
+OX(15, '中学生の試合時間は、各クォーター10分である。', false, '中学生は各クォーター「8分」です。10分は一般です。', 1);
+OX(15, '第1クォーターは、ジャンプボールで開始する。', true, '第2・3・4クォーターとオーバータイムは、スローインで開始します。');
+OX(15, 'ボールがゴールに入ると2点、スリーポイントエリアからの場合は3点、フリースローの場合は1点を得る。', true, '合計得点が多いチームが勝ちです。');
+OX(15, 'フリースローが入ると、2点を得る。', false, 'フリースローは1点です。');
+OX(15, '同点のときは、引き分けとして試合を終わる。', false, '同点のときはオーバータイム（延長）をおこないます。');
+OX(15, 'プレイヤーの交替は、一度に何人でも、何回でもできる。', true, '教科書の記述どおりです。');
+OX(15, 'ボールをこぶしでたたいたり、ボールをけったりすることは、バイオレーションである。', true, 'オレンジのマーカーの所です。', 1);
+OX(15, 'ボールを足でけって味方にパスすることは、ルールで認められている。', false, 'ボールをけるのはバイオレーションです。', 1);
+OX(15, 'ボールを境界線（エンドラインおよびサイドライン）の外に出したり、ボールを持って境界線をふんだりすることを、アウトオブバウンズという。', true, 'オレンジのマーカーの所です。', 1);
+OX(15, 'ボールを持ったまま境界線をふんでも、線をふみ越えなければ反則にはならない。', false, 'ふんだだけでもアウトオブバウンズです。', 1);
+OX(15, 'ボールを持ったまま3歩以上進むことを、トラベリングという。', true, 'ピボットの軸足を途中で替えるのもトラベリングです。', 1);
+OX(15, 'ボールを持ったまま3歩以上進むことを、ダブルドリブルという。', false, 'それは「トラベリング」。ダブルドリブルは、ボールを支え持ったあとにもう一度ドリブルをする反則です。', 1);
+OX(15, 'ドリブルを終えてボールを支え持ったあとに、もう一度ドリブルをすることを、ダブルドリブルという。', true, '両手で同時にボールにふれてドリブルするのも同じ反則です（イリーガルドリブル）。', 1);
+OX(15, 'バイオレーションがあったときは、おこった場所にもっとも近いラインの外から、相手チームのスローインとなる。', true, 'バイオレーションの罰則です。');
+OX(15, 'バイオレーションがあったときは、相手チームに2個のフリースローが与えられる。', false, 'バイオレーションの罰則は、相手チームのスローインです。');
+OX(15, '攻撃中に、相手コートの制限区域内に3秒をこえてとどまってはいけない。', true, '3秒ルールです。');
+OX(15, 'ボールをコントロールしたチームは、24秒以内にシュートしなければならない。', true, '24秒ルールです。');
+OX(15, 'バックコートでボールをコントロールしたチームは、8秒以内にフロントコートにボールを進めなければならない。', true, '8秒ルールです。');
+OX(15, 'スローインは、審判からボールをわたされてから5秒以内におこなわなければならない。', true, '「5秒以内にスローインしない」はバイオレーションです。', 1);
+OX(15, 'スローインは、審判からボールをわたされてから10秒以内におこなえばよい。', false, '「5秒以内」です。', 1);
+OX(15, 'スローインのとき、ラインをふみ越えてスローインすると反則になる。', true, 'オレンジのマーカーの所です。', 1);
+OX(15, 'フリースローは、審判からボールをわたされてから5秒以内にシュートしなければならない。', true, '「5秒以内にシュートしない」は反則です。', 1);
+OX(15, 'フリースローのとき、シュートのふり（フェイク）をしてから打つのは、じょうずな作戦として認められている。', false, 'フリースローでのフェイクは反則です。', 1);
+OX(15, 'フリースローのとき、シューターはフリースローラインにふれたり、こえたりしてはいけない。', true, 'オレンジのマーカーの所です。', 1);
+OX(15, 'フリースローのとき、シューターは、シュートしたボールが手からはなれた瞬間に、フリースローラインをこしてリバウンドを取りにいってよい。', false, 'シュートボールが「リングにふれる前」にフリースローラインをこすと反則です。', 1);
+OX(15, 'フリースローのときにシューターが反則をすると、シュートが入っても得点にならない。', true, 'フリースローライン延長線上の外から、相手側のスローインになります。');
+OX(15, '手や体で相手を押すファウルを、プッシングという。', true, 'パーソナルファウルの1つです。', 1);
+OX(15, '無理に進んで相手に突きあたるファウルを、チャージングという。', true, 'パーソナルファウルの1つです。', 1);
+OX(15, '相手をつかんだり押さえたりするファウルを、ホールディングという。', true, 'パーソナルファウルの1つです。', 1);
+OX(15, '手で相手をたたくファウルを、イリーガルユースオブハンズという。', true, 'パーソナルファウルの1つです。', 1);
+OX(15, '手で相手にふれ続けて防御するファウルを、ハンドチェッキングという。', true, 'パーソナルファウルの1つです。', 1);
+OX(15, '相手の進行を強引に妨げるファウルを、ブロッキングという。', true, 'パーソナルファウルの1つです。', 1);
+OX(15, '手や体で相手を押すファウルを、ホールディングという。', false, '押すのは「プッシング」。ホールディングは、つかんだり押さえたりするファウルです。', 1);
+OX(15, '相手をつかんだり押さえたりするファウルを、チャージングという。', false, 'つかむ・押さえるのは「ホールディング」。チャージングは、無理に進んで突きあたるファウルです。', 1);
+OX(15, '相手の進行を強引に妨げるファウルを、プッシングという。', false, '進行を妨げるのは「ブロッキング」。プッシングは、手や体で相手を押すファウルです。', 1);
+OX(15, '手で相手をたたくファウルを、ハンドチェッキングという。', false, 'たたくのは「イリーガルユースオブハンズ」。ハンドチェッキングは、手でふれ続けて防御するファウルです。', 1);
+OX(15, '1人の競技者が5回のファウルをおこなうと、退場となる。', true, 'オレンジのマーカーの所です。', 1);
+OX(15, '1人の競技者が3回のファウルをおこなうと、退場となる。', false, '「5回」で退場です。', 1);
+OX(15, 'シュート動作中にファウルをされ、そのシュートが成功したときは、得点となり、さらに1個のフリースローが与えられる。', true, '不成功のときは2個（スリーポイントエリアからのシュートのときは3個）です。');
+OX(15, 'シュート動作中にファウルをされ、そのシュートが不成功だったときは、2個（スリーポイントエリアからのシュートのときは3個）のフリースローが与えられる。', true, 'パーソナルファウルの罰則です。');
+OX(15, 'シュート動作中以外のパーソナルファウルでは、ファウルされた場所にもっとも近いラインの外からスローインとなる。', true, 'パーソナルファウルの罰則です。');
+OX(15, 'テクニカルファウルとは、スポーツマンらしくない行為などの反則である。', true, 'わざとゲームの進行を遅らせる、審判の指示にしたがわない、なども含まれます。');
+OX(15, '1チームが各クォーター中に4回のファウルをおこなうと、以降のファウルに対して相手に2個のフリースローが与えられる。', true, 'ただし、オフェンスのファウルはフリースローになりません。');
+OX(15, 'バスケットボールでは、相手との身体接触は自由に認められている。', false, '相手との身体接触は禁止されています。その中でパスやシュートをさせないように防ぐ守りの技能が必要です。');
+OX(15, '3×3（スリー・エックス・スリー）は、ハーフコートを使って3人対3人でおこなう球技である。', true, '2020年東京オリンピックの正式種目です。');
+OX(15, 'バスケットボールのシュートは、「走る」「跳ぶ」「投げる」という基本的な運動でおこなわれる。', true, '巧ち性、敏捷性、スピード、全身持久力などが高まります。');
+C(15, 'バスケットボールのはじまりについて正しいものはどれか。', ['1891年に、アメリカの国際YMCA体育教師ネイスミスが考案した。', '1926年に、日本の体育教師 大森兵蔵が考案した。', '2016年に、アメリカのプロリーグNBAが考案した。'], '最初は13条のルールでした。', 1);
+C(15, 'バスケットボールの最初のルールは何条だったか。', ['13条', '5条', '24条'], 'オレンジのマーカー「最初は13条のルール」です。', 1);
+C(15, 'バスケットボールが日本の学校体育に導入されたのはいつか。', ['1926年', '1891年', '2016年'], '1891年は考案された年、2016年はBリーグが始まった年です。', 1);
+C(15, '「バイオレーション」の正しい説明はどれか。', ['ルールで定められた動き方や制限時間に違反すること。', '相手の体を押したりつかんだりする、体のふれあいによる反則のこと。', 'スポーツマンらしくない行為をして、審判に注意されること。'], '2つ目はパーソナルファウル、3つ目はテクニカルファウルです。', 1);
+C(15, '「ターンオーバー」の正しい説明はどれか。', ['シュートミス以外で、オフェンスからディフェンスに切り替わること。', 'シュートが入って、得点したチームがそのまま攻撃を続けること。', '前半と後半で、攻めるゴールを入れかえること。'], '基本用語です。', 1);
+C(15, '「ハリーバック」の正しい説明はどれか。', ['オフェンスからディフェンスに切り替わったとき、自分のチームが守るバスケット近くにすぐに戻ってディフェンスすること。', 'ボールをうばったらすぐに相手ゴールへ走り、速攻で得点すること。', 'ボールを一度バックコートにもどして、ゆっくり攻め直すこと。'], '2つ目はファストブレイク（速攻）です。', 1);
+C(15, '「スクリーン」の正しい説明はどれか。', ['ディフェンスに対して、オフェンスが自分の体をかべのようにして、動きを封じること。', 'ディフェンスが両手を広げて、オフェンスのシュートを防ぐこと。', '審判の視界をさえぎって、反則を見えないようにすること。'], '基本用語です。', 1);
+C(15, '「リバウンドボール」の正しい説明はどれか。', ['リング（バスケット）やバックボードにあたって落ちてくるボール。', 'どちらのチームにも所属していないボール。', 'コートの外からコート内に投げ入れられたボール。'], '2つ目はルーズボール、3つ目はスローインです。', 1);
+C(15, '「ルーズボール」の正しい説明はどれか。', ['どちらのチームにも所属していないボール。', 'リングやバックボードにあたって落ちてくるボール。', 'フリースローのときにシューターが持っているボール。'], '2つ目はリバウンドボールです。', 1);
+C(15, '1チームの人数について正しいものはどれか。', ['出場プレイヤーは5人、交替要員は7人以内。', '出場プレイヤーは7人、交替要員は5人以内。', '出場プレイヤーは9人、交替要員は何人でもよい。'], '考案当初は1チーム9人でした。', 1);
+C(15, '試合時間について正しいものはどれか。', ['各クォーター10分、中学生は各クォーター8分。', '各クォーター8分、中学生は各クォーター10分。', '前半・後半それぞれ20分で、中学生も同じ。'], 'オレンジのマーカーの所です。', 1);
+C(15, '中学生以上が使うボールについて正しいものはどれか。', ['女子は6号、男子は7号を使う。', '女子は7号、男子は6号を使う。', '男女とも5号を使う。'], '男子のボールのほうが大きく、重いです。', 1);
+C(15, '「トラベリング」の正しい説明はどれか。', ['ボールを持ったまま3歩以上進んだり、ピボットの軸足を途中で替えたりする反則。', 'ボールを支え持ったあとに、もう一度ドリブルをする反則。', 'ボールを境界線の外に出す反則。'], '2つ目はダブルドリブル、3つ目はアウトオブバウンズです。', 1);
+C(15, '「アウトオブバウンズ」の正しい説明はどれか。', ['ボールを境界線の外に出したり、ボールを持って境界線をふんだり、ふみ越えたりする反則。', 'ボールをこぶしでたたいたり、足でけったりする反則。', '制限区域内に3秒をこえてとどまる反則。'], '境界線＝エンドラインおよびサイドラインです。', 1);
+C(15, 'スローインのときの反則として正しいものはどれか。', ['5秒以内にスローインしない。ラインをふみ越えてスローインする。', '3秒以内にスローインしない。両手でボールを投げ入れる。', '24秒以内にスローインしない。味方の名前を呼んでからパスする。'], 'オレンジのマーカーの所です。', 1);
+C(15, 'フリースローのときの、シューターの反則として正しくないものはどれか。', ['両手でシュートする。', '5秒以内にシュートしない。', 'シュートのふりをする（フェイク）。'], '反則は、5秒以内にシュートしない／フェイク／フリースローラインにふれたりこえたりする／ボールがリングにふれる前にラインをこす、の4つ。', 1);
+C(15, 'ファウルの名前と内容の組み合わせとして正しいものはどれか。', ['プッシング＝手や体で相手を押す、チャージング＝無理に進んで突きあたる、ホールディング＝つかんだり押さえる', 'プッシング＝つかんだり押さえる、チャージング＝手や体で相手を押す、ホールディング＝無理に進んで突きあたる', 'プッシング＝無理に進んで突きあたる、チャージング＝つかんだり押さえる、ホールディング＝手や体で相手を押す'], 'push＝押す、charge＝突進、hold＝つかむ。', 1);
+C(15, 'ファウルの名前と内容の組み合わせとして正しいものはどれか。', ['イリーガルユースオブハンズ＝手で相手をたたく、ハンドチェッキング＝手でふれ続けて防御する、ブロッキング＝相手の進行を強引に妨げる', 'イリーガルユースオブハンズ＝相手の進行を強引に妨げる、ハンドチェッキング＝手で相手をたたく、ブロッキング＝手でふれ続けて防御する', 'イリーガルユースオブハンズ＝手でふれ続けて防御する、ハンドチェッキング＝相手の進行を強引に妨げる、ブロッキング＝手で相手をたたく'], 'オレンジのマーカーの所です。', 1);
+C(15, '1人の競技者が何回ファウルをおこなうと退場になるか。', ['5回', '3回', '4回'], '4回は、チームのファウル（各クォーター中）の区切りです。', 1);
+C(15, '得点について正しいものはどれか。', ['通常のゴールは2点、スリーポイントエリアからは3点、フリースローは1点。', '通常のゴールは1点、スリーポイントエリアからは3点、フリースローは2点。', '通常のゴールは3点、スリーポイントエリアからは5点、フリースローは1点。'], '教科書の記述どおりです。');
+C(15, '時間に関するバイオレーションの組み合わせとして正しいものはどれか。', ['制限区域内にとどまれるのは3秒まで、フロントコートへは8秒以内、シュートは24秒以内。', '制限区域内にとどまれるのは8秒まで、フロントコートへは24秒以内、シュートは3秒以内。', '制限区域内にとどまれるのは24秒まで、フロントコートへは3秒以内、シュートは8秒以内。'], '3秒ルール・8秒ルール・24秒ルールです。');
+C(15, '世界や日本のバスケットボールについて正しいものはどれか。', ['国際バスケットボール連盟＝FIBA、アメリカのプロバスケットボール＝NBA、日本の男子プロリーグ＝Bリーグ', '国際バスケットボール連盟＝NBA、アメリカのプロバスケットボール＝FIBA、日本の男子プロリーグ＝Jリーグ', '国際バスケットボール連盟＝Bリーグ、アメリカのプロバスケットボール＝FIBA、日本の男子プロリーグ＝NBA'], 'オレンジのマーカーの所です。', 1);
+CL(15, 'はじまりと発展', 'バスケットボールは、[[1891]]年に[[アメリカ|アメリカ合衆国|米国]]の国際YMCA体育教師[[ネイスミス]]が考案した。最初は[[13]]条のルールだった。日本の学校体育には[[1926]]年に導入された。', ['1913', '2016', 'イギリス', 'クーベルタン', '24'], 1);
+CL(15, '世界的な広がり', '国際バスケットボール連盟（[[FIBA]]）には210か国以上が加盟している。アメリカのプロバスケットボール（[[NBA]]）の試合は世界的に大人気である。日本でも[[2016]]年から男子のプロバスケットボールリーグ（[[Bリーグ]]）が始まった。', ['WHO', 'UNESCO', 'Jリーグ', '1926', '1891'], 1);
+CL(15, '基本用語①', '攻撃側を[[オフェンス]]、守備側を[[ディフェンス]]という。リングやバックボードにあたって落ちてくるボールを[[リバウンドボール]]、どちらのチームにも所属していないボールを[[ルーズボール]]という。コートの外からコート内のプレイヤーにボールをパスすることを[[スローイン]]という。', ['フリースロー', 'スクリーン', 'ターンオーバー', 'ジャンプボール'], 1);
+CL(15, '基本用語②', 'ルールで定められた動き方や制限時間に違反することを[[バイオレーション]]という。シュートミス以外でオフェンスからディフェンスに切り替わることを[[ターンオーバー]]、速攻を[[ファストブレイク]]という。ディフェンスに切り替わったとき、守るバスケット近くにすぐに戻ることを[[ハリーバック]]という。', ['パーソナルファウル', 'マンツーマン', 'スローイン', 'リバウンドボール'], 1);
+CL(15, '基本用語③', '「1対1」という意味のことばを[[マンツーマン]]という。ディフェンスに対して、オフェンスが自分の体をかべのようにして動きを封じることを[[スクリーン]]という。相手のファウルによって、誰にもじゃまされないでシュートすることを[[フリースロー]]という。', ['ハリーバック', 'ブロッキング', 'ルーズボール', 'スローイン'], 1);
+CL(15, 'コートのライン', 'コートの長いほうの辺を[[サイドライン]]、短いほうの辺を[[エンドライン]]、中央のラインを[[センターライン]]という。外側からのシュートが3点になるラインを[[スリーポイントライン]]、フリースローのときに使うラインを[[フリースローライン]]という。', ['ゴールライン', 'ベースライン', 'タッチライン', 'ハーフライン'], 1);
+CL(15, '試合の進め方', '1チームの出場プレイヤーは[[5]]人。試合時間は各クォーター[[10]]分、中学生は各クォーター[[8]]分である。中学生以上の女子は[[6]]号、男子は[[7]]号のボールを使う。', ['9', '4', '12', '20'], 1);
+CL(15, 'おもなファウル①', '手や体で相手を押すファウルを[[プッシング]]、無理に進んで突きあたるファウルを[[チャージング]]、つかんだり押さえるファウルを[[ホールディング]]という。', ['ブロッキング', 'トラベリング', 'ハンドチェッキング'], 1);
+CL(15, 'おもなファウル②', '手で相手をたたくファウルを[[イリーガルユースオブハンズ]]、手でふれ続けて防御するファウルを[[ハンドチェッキング]]、相手の進行を強引に妨げるファウルを[[ブロッキング]]という。1人の競技者が[[5]]回のファウルをおこなうと退場となる。', ['プッシング', 'ホールディング', 'チャージング', '3', '4'], 1);
+CL(15, 'おもなバイオレーション', 'ボールを持ったまま3歩以上進む反則を[[トラベリング]]、ボールを支え持ったあとにもう一度ドリブルをする反則を[[ダブルドリブル]]、ボールを境界線の外に出したり境界線をふんだりする反則を[[アウトオブバウンズ]]という。', ['バックパス', 'チャージング', 'ターンオーバー'], 1);
+CL(15, 'スローイン・フリースローの反則', 'スローインは[[5]]秒以内におこない、ラインを[[ふみ越えて|踏み越えて|ふみこえて|ふんで]]はならない。フリースローでは、[[5]]秒以内にシュートし、シュートのふり（[[フェイク|フェイント]]）をしてはならない。また、ボールが[[リング|バスケット]]にふれる前にフリースローラインをこしてはならない。', ['3', '8', '24', 'パス', 'バックボード'], 1);
+E(15, 'バスケットボールで、ボールを持たないときにどのように動けば、チームの攻撃がうまくいくか。「スペース」「パス」「マーク」の3つのことばを必ず使って説明しなさい。', ['スペース', 'パス', 'マーク'], '限られたコートを有効に使うために、ボールの近くにかたまらず、広がって攻める。マークをかわして空いているスペースに走りこみ、パスを受けられる位置に動く。パスを出したあとも止まらずに、次の空いているスペースへ動く。');
+E(15, 'バスケットボールの授業で、自分のできた点、課題点、それに対して工夫した点や改善した点を、具体的に書きなさい。（自分のことばで書く問題。書いたあと、見本とくらべて自分で丸をつける）', [], '【書き方の型】①できた点：例「空いているスペースに走りこんで、パスを受けることができた」②課題点：例「シュートのときにひじが開いて、ボールがまっすぐ飛ばなかった」③工夫・改善：例「リングを直接ねらうのではなく、バックボードの四角のかどをねらうようにしたら、入る回数が増えた」。3つとも、具体的な場面と動きを書くこと。文字数が足りない・趣旨に合わないと減点。');
+
+/* ---- 16 アルティメット ---- */
+T(16, 'ult', 'フライングディスク', 'アルティメットで使う用具。フリスビーともいう', { alt: ['ふらいんぐでぃすく', 'ディスク', 'フリスビー'], s: 1 });
+T(16, 'ult', 'エンドゾーン', 'このエリア内でディスクをキャッチすると得点（1点）になる、フィールドの両はしのエリア', { alt: ['えんどぞーん'], s: 1 });
+T(16, 'ult', 'セルフジャッジ', 'いかなる選手も意図的にルールを破ることはないという前提で、選手自身が判定をおこなう制度。自己審判', { alt: ['せるふじゃっじ', '自己審判', 'セルフジャッジ制'], s: 1 });
+T(16, 'ult', 'スピリット・オブ・ザ・ゲーム', 'アルティメットのプレイ中の行動指針。勝利を追及する情熱と、自身のプレイを客観的に判断する冷静さを両立するための方法を示すもの', { alt: ['スピリットオブザゲーム', 'すぴりっとおぶざげーむ'], s: 1 });
+T(16, 'ultr', 'プル', '試合開始のときのスローオフのこと', { alt: ['ぷる', 'スローオフ'] });
+T(16, 'ultr', 'ターンオーバー', 'ディスクの所有権が相手に移行すること。パスがつながらない場合やディスクが地面に落ちた場合の攻守交替', { alt: ['たーんおーばー'], s: 1 });
+T(16, 'ultr', 'ストーリング', 'マーカー（ディフェンス側）がスローワーから3m以内にいる場合に、1から10秒間をカウントすること', { alt: ['すとーりんぐ'] });
+T(16, 'ultr', 'ストールアウト', 'ストールカウントが「10」に達した時点で、ディスクがスローワーの手を離れていなかった場合の反則', { alt: ['すとーるあうと'] });
+T(16, 'ultr', 'ディスクスペース', 'ディフェンス側の選手が、スローワーの胴部に対し、ディスク1枚分の距離よりも近づいた場合の反則', { alt: ['でぃすくすぺーす'] });
+T(16, 'ultr', 'トラベル', 'ディスクをキャッチした後、スローワーが速やかにピボット（軸）を確定させなかった場合などの反則', { alt: ['とらべる', 'トラベリング'] });
+T(16, 'ultr', 'ハンドオーバー', 'オフェンス側の選手同士で意図的にディスクを手渡し、両方の選手がディスクに同時に触れている状態を作る反則', { alt: ['はんどおーばー'] });
+T(16, 'ultr', 'オフサイド', 'プルが投げられるまで、足がゴールラインよりも完全に後ろになくてはならない、というルールに反すること', { alt: ['おふさいど'] });
+T(16, 'ultr', 'ドロップド・プル', 'プルされたディスクが地面に落ちる前にオフェンス側の選手が触れ、キャッチできなかった場合のこと。ターンオーバーになる', { alt: ['ドロップドプル', 'どろっぷどぷる'] });
+OX(16, 'アルティメットは、球技の「ゴール型」に分類される。', true, '空間をめぐる攻防で、ボール操作とボールを持たないときの動きが大切です。', 1);
+OX(16, 'アルティメットは、球技の「ネット型」に分類される。', false, '「ゴール型」です。', 1);
+OX(16, 'アルティメットは、1968年にアメリカの高校生ジョエル・シルバーが考案した。', true, 'ニュージャージー州メイプルウッド市のコロンビア高校で、最初のゲームがおこなわれました。');
+OX(16, 'アルティメットは、1891年にアメリカの体育教師ネイスミスが考案した。', false, 'それはバスケットボールです。アルティメットは1968年、高校生のジョエル・シルバーが考案しました。');
+OX(16, 'アルティメットは、2028年に開催が決まっているロサンゼルスオリンピックの追加種目の最有力候補になっている。', true, 'プリントの記述どおりです。');
+OX(16, 'アルティメットは、フライングディスクを使用した、1チーム7人制のチームスポーツである。', true, '下線が引かれていた所です。', 1);
+OX(16, 'アルティメットは、1チーム5人制のチームスポーツである。', false, '「1チーム7人制」です。5人はバスケットボールです。', 1);
+OX(16, 'エンドゾーンのエリア内でディスクをキャッチすると、得点（1点）となる。', true, '下線が引かれていた所です。', 1);
+OX(16, 'エンドゾーンのエリア内でディスクをキャッチすると、2点が入る。', false, '得点は「1点」です。', 1);
+OX(16, 'アルティメットでは、ディスクを持ったまま走って、エンドゾーンに持ちこむと得点になる。', false, 'ディスクを持っている選手は、その位置から移動できません。パスで運び、エンドゾーン内でキャッチすると得点です。', 1);
+OX(16, 'パスをする方向に制限はないが、ディスクを持っている選手はその位置から移動することはできない。', true, 'プリントの記述どおりです。', 1);
+OX(16, 'アルティメットでは、パスは前方向にしか出してはいけない。', false, 'パスをする方向に制限はありません。', 1);
+OX(16, 'パスがつながらない場合や、ディスクが地面に落ちた場合は、攻守交替となる。これをターンオーバーという。', true, 'プリントの記述どおりです。', 1);
+OX(16, 'アルティメットでは、選手同士の身体接触が禁じられているため、男女混合形式での試合も実施可能である。', true, 'プリントの記述どおりです。', 1);
+OX(16, 'アルティメットでは、ディスクをうばうために相手の体を押してもよい。', false, '選手同士の身体接触は禁じられています。', 1);
+OX(16, 'アルティメットは、「セルフジャッジ（自己審判）」制を採用している。', true, 'いかなる選手も意図的にルールを破ることはない、という前提です。', 1);
+OX(16, 'アルティメットでは、主審1人と副審2人が、すべての反則を判定する。', false, '「セルフジャッジ（自己審判）」制で、選手自身が審判の役割も担います。', 1);
+OX(16, 'アルティメットのプレイ中の行動指針を、「スピリット・オブ・ザ・ゲーム」という。', true, '勝利を追及する情熱と、自身のプレイを客観的に判断する冷静さを両立するための方法を示します。', 1);
+OX(16, 'アルティメットの試合は、プル（スローオフ）で開始する。', true, 'プリントの「ルール」の最初です。');
+OX(16, 'アルティメットは15点先取で、8点を獲得した時点でハーフタイムとなる。', true, 'プリントの記述どおりです。', 1);
+OX(16, 'アルティメットは21点先取で、11点を獲得した時点でハーフタイムとなる。', false, '「15点先取」で「8点」でハーフタイムです。', 1);
+OX(16, 'オフサイドとは、プルが投げられるまで、足がゴールラインよりも完全に後ろになくてはならない、というルールである。', true, 'プリントの記述どおりです。');
+OX(16, 'ストーリングは、マーカーがスローワーから3m以内にいる場合におこなうことができる。', true, '「ストーリング」と言ってから、1から10秒間カウントします。');
+OX(16, 'ストーリングでは、マーカーは「ストーリング」と言ってから、1から10秒間カウントする。各カウントの間隔は「1秒」以上でなければならない。', true, 'プリントの記述どおりです。');
+OX(16, 'ストールカウントが「5」に達した時点で、ディスクがスローワーの手を離れていなかった場合を、ストールアウトという。', false, 'カウントは「10」です。');
+OX(16, 'ディスクスペースとは、ディフェンス側の選手が、スローワーの胴部に対し、ディスク1枚分の距離よりも近づいた場合の反則である。', true, 'プリントの記述どおりです。');
+OX(16, 'ディスクをキャッチした後、スローワーは進行方向を変えることなく、可能な限り速やかにピボット（軸）を確定させなければならない。', true, 'これに反するのが「トラベル」です。');
+OX(16, 'オフェンス側の選手同士で、ディスクを手渡ししてもよい。', false, '意図的にディスクを手渡すのは「ハンドオーバー」という反則です。');
+OX(16, 'アルティメットのプレイングフィールドは、全長100m、幅37mである。', true, 'エンドゾーン18m＋セントラルゾーン64m＋エンドゾーン18m＝100m。');
+OX(16, 'アルティメットのエンドゾーンの長さは、それぞれ18mである。', true, '中央のセントラルゾーンは64mです。');
+C(16, 'アルティメットの説明として正しいものはどれか。', ['フライングディスクを使用した1チーム7人制のチームスポーツで、エンドゾーンのエリア内でディスクをキャッチすると1点となる。', 'ボールを使用した1チーム5人制のチームスポーツで、リングにシュートすると2点となる。', 'フライングディスクを使用した1チーム11人制のチームスポーツで、ゴールにディスクを投げ入れると3点となる。'], '下線が引かれていた所です。', 1);
+C(16, 'アルティメットの審判について正しいものはどれか。', ['いかなる選手も意図的にルールを破ることはないという前提で、「セルフジャッジ（自己審判）」制を採用している。', '反則を見のがさないように、ほかの球技よりも多い5人の審判がつく。', 'ビデオ判定だけで、すべての反則を判定する。'], 'プリントの空欄「セルフジャッジ」です。', 1);
+C(16, '「スピリット・オブ・ザ・ゲーム」の説明として正しいものはどれか。', ['プレイ中の行動指針で、勝利を追及する情熱と、自身のプレイを客観的に判断する冷静さを両立するための方法を示すもの。', '試合に勝ったチームに与えられる、優勝トロフィーの名前。', '試合開始のときに、ディスクを相手チームに投げ入れること。'], '3つ目は「プル（スローオフ）」です。', 1);
+C(16, 'アルティメットで攻守交替（ターンオーバー）になるのはどの場合か。', ['パスがつながらない場合や、ディスクが地面に落ちた場合。', 'パスが3回つながった場合。', 'ディスクを持った選手が、その場から動かなかった場合。'], 'ディスクの所有権が相手に移行します。', 1);
+C(16, 'アルティメットの試合の進め方として正しいものはどれか。', ['プル（スローオフ）で試合を開始し、15点先取。8点を獲得した時点でハーフタイムとなる。', 'ジャンプボールで試合を開始し、各クォーター8分でおこなう。', 'じゃんけんで試合を開始し、21点先取。11点でコートチェンジとなる。'], 'プリントの「ルール」のとおりです。', 1);
+C(16, 'アルティメットが男女混合形式で試合ができる理由として正しいものはどれか。', ['選手同士の身体接触が禁じられているため。', 'ディスクが軽く、だれが投げても同じ距離しか飛ばないため。', '走ってはいけないルールがあり、体力の差が出ないため。'], 'プリントの記述どおりです。');
+C(16, 'ストーリングのカウントについて正しいものはどれか。', ['マーカーがスローワーから3m以内にいる場合におこない、1から10秒間カウントする。', 'マーカーがスローワーから10m以内にいる場合におこない、1から3秒間カウントする。', '審判がおこない、1から24秒間カウントする。'], '「10」に達してもディスクが手を離れていないと、ストールアウトです。');
+CL(16, 'アルティメットとは', 'アルティメットは、球技の[[ゴール]]型に分類される。[[フライングディスク]]を使用した1チーム[[7]]人制のチームスポーツで、[[エンドゾーン]]のエリア内でディスクをキャッチすると得点（[[1]]点）となる。', ['ネット', 'ベースボール', '5', '2', 'センターサークル'], 1);
+CL(16, 'アルティメットの精神', 'いかなる選手も意図的にルールを破ることはないという前提で、[[セルフジャッジ]]（自己審判）制を採用している。プレイ中の行動指針を[[スピリット・オブ・ザ・ゲーム]]という。パスがつながらない場合などの攻守交替を[[ターンオーバー]]という。', ['フェアプレイ', 'ビデオ判定', 'ハリーバック', 'プル'], 1);
+CL(16, 'アルティメットのルール', '試合は[[プル]]（スローオフ）で開始する。[[15]]点先取で、[[8]]点を獲得した時点でハーフタイムとなる。ストーリングは、マーカーがスローワーから[[3]]m以内にいる場合におこない、[[10]]秒間カウントする。', ['ジャンプボール', '21', '5', '24'], 1);
+E(16, 'アルティメットが「セルフジャッジ（自己審判）」制を採用できるのはなぜか。「前提」「スピリット・オブ・ザ・ゲーム」「冷静」の3つのことばを必ず使って説明しなさい。', ['前提', 'スピリット・オブ・ザ・ゲーム', '冷静'], 'いかなる選手も意図的にルールを破ることはないという前提があるからである。選手は「スピリット・オブ・ザ・ゲーム」という行動指針にしたがい、勝利を追及する情熱と、自身のプレイを客観的に判断する冷静さを両立して、審判の役割も担っている。');
+
+/* ---- 17 水泳（バタフライ） ---- */
+OX(17, 'バタフライでは、スタートおよび折り返し後、最初の腕のかき始めから、体はうつぶせでなければならない。', true, '競技規則の1つ目です。');
+OX(17, 'バタフライでは、折り返しのあと足が壁から離れたときに、体があおむけになっていてもよい。', false, '足が壁から離れたときには、うつぶせ状態でなければなりません。');
+OX(17, 'バタフライの折り返し動作中は、壁に手がついた後、うつぶせ状態でなくてもよい。', true, 'ただし、足が壁から離れたときには、うつぶせ状態でなければなりません。');
+OX(17, 'バタフライでは、両腕は水中を同時に後方へ運び、水面の上を同時に前方に運ばなければならない。', true, '左右の腕を「同時に」動かします。');
+OX(17, 'バタフライでは、クロールのように、左右の腕を交互に動かしてもよい。', false, '両腕は「同時に」動かさなければなりません。');
+OX(17, 'バタフライでは、全ての足の上下動作は同時におこなわれなければならない。', true, '両脚・両足は同じ高さになる必要はありませんが、交互に動かしてはなりません。');
+OX(17, 'バタフライでは、両脚・両足は必ず同じ高さにそろえなければならず、少しでもずれると失格になる。', false, '同じ高さになる必要はありません。ただし、交互に動かしてはなりません。');
+OX(17, 'バタフライでは、足を交互に動かすバタ足を使ってもよい。', false, '足を交互に動かしてはなりません。');
+OX(17, 'バタフライでは、平泳ぎの足の蹴りは許されない。', true, '競技規則の3つ目です。');
+OX(17, 'バタフライの折り返しとゴールタッチは、両手が同時に、かつ離れた状態でおこなわなければならない。', true, '水面の上もしくは下でおこないます。');
+OX(17, 'バタフライのゴールタッチは、片手でおこなってもよい。', false, '「両手が同時に」、かつ離れた状態でおこないます。');
+OX(17, 'バタフライのゴールタッチは、両手を重ねた状態でおこなわなければならない。', false, '両手が同時に、かつ「離れた状態」でおこないます。');
+OX(17, 'バタフライのタッチは、必ず水面の上でおこなわなければならない。', false, '「水面の上もしくは下」でよいです。');
+OX(17, 'バタフライでは、スタート後、折り返し後は、水中での数回の蹴りと後方への一かきが許される。', true, '水面に浮き上がるためです。');
+OX(17, 'バタフライでは、スタート後、折り返し後は、壁から15m地点までに、頭は水面上に出ていなければならない。', true, 'それまでは、体は完全に水没していてもよいです。');
+OX(17, 'バタフライでは、スタート後、壁から25m地点までは、体が完全に水没していてもよい。', false, '「15m地点」までに、頭は水面上に出ていなければなりません。');
+C(17, 'バタフライの腕の動きとして正しいものはどれか。', ['両腕は水中を同時に後方へ運び、水面の上を同時に前方に運ぶ。', '左右の腕を交互に、水中を後方へ運ぶ。', '両腕を水中で前方に運び、水面の上を後方へ運ぶ。'], '競技規則の2つ目です。');
+C(17, 'バタフライの足の動きとして正しいものはどれか。', ['全ての足の上下動作は同時におこなう。交互に動かしてはならず、平泳ぎの足の蹴りも許されない。', '足は左右交互に上下させる。平泳ぎの足の蹴りを使ってもよい。', '足は動かしてはならず、腕の力だけで進む。'], '両脚・両足は同じ高さになる必要はありません。');
+C(17, 'バタフライの折り返し・ゴールタッチとして正しいものはどれか。', ['水面の上もしくは下で、両手が同時に、かつ離れた状態でおこなう。', '水面の上で、片手でおこなう。', '水面の下で、両手を重ねた状態でおこなう。'], '競技規則の4つ目です。');
+C(17, 'バタフライのスタート後・折り返し後について正しいものはどれか。', ['水中での数回の蹴りと後方への一かきが許され、壁から15m地点までに頭が水面上に出ていなければならない。', '水中で何回かいてもよく、壁から25m地点までに頭が水面上に出ていればよい。', 'すぐに水面に浮き上がらなければならず、水中での蹴りは1回も許されない。'], '競技規則の5つ目です。');
+CL(17, 'バタフライの泳ぎ方', 'バタフライでは、両腕は水中を[[同時|どうじ]]に後方へ運び、水面の上を同時に前方に運ぶ。足の上下動作も同時におこない、[[交互|こうご]]に動かしてはならない。[[平泳ぎ]]の足の蹴りは許されない。', ['背泳ぎ', '別々', '前後', 'クロール'], 0);
+CL(17, 'バタフライのタッチとスタート', '折り返し、ゴールタッチは、[[両手|りょうて]]が同時に、かつ[[離れた|はなれた]]状態でおこなう。スタート後、折り返し後は、壁から[[15]]m地点までに、[[頭|あたま]]は水面上に出ていなければならない。', ['片手', '重ねた', '25', '10', '足'], 0);
+CL(17, 'バタフライの姿勢', 'スタートおよび折り返し後、最初の腕のかき始めから、体は[[うつぶせ|うつ伏せ]]でなければならない。折り返し動作中は、壁に[[手|て|両手]]がついた後はそうでなくてもよいが、[[足|あし|両足]]が壁から離れたときには、うつぶせ状態でなければならない。', ['あおむけ', '頭', '横向き', '肩'], 0);
+
+/* ---------- 記録（このパソコンのブラウザの中だけ） ---------- */
+var KEY = 'chu3_hotai_v1';
+var ST = (function () { try { var s = JSON.parse(localStorage.getItem(KEY)); if (s && s.it) return s; } catch (e) { } return { it: {}, tests: [] }; })();
+function save() { try { localStorage.setItem(KEY, JSON.stringify(ST)); } catch (e) { } }
+function stat(it) { if (!ST.it[it.id]) ST.it[it.id] = { n: 0, ok: 0, need: 0, w: 0 }; return ST.it[it.id]; }
+var app = document.getElementById('app');
+var ITEMS = D.filter(function (x) { return x.k !== 'e'; }), ESSAYS = D.filter(function (x) { return x.k === 'e'; });
+var YOMI = {}; D.forEach(function (x) { if (x.k === 't' && x.y) YOMI[x.term] = x.y; });
+var S = { q: null, queue: [], mode: null, param: null, done: 0, right: 0, total: 0 };
+
+/* ---------- かんぺきメーター ---------- */
+function mastered(it) { var s = stat(it); return s.need === 0 && s.ok >= 1 && (it.k !== 't' || !it.s || s.w > 0); }
+function prog(list) { var m = list.filter(mastered).length; return { n: list.length, m: m, left: list.length - m, pct: list.length ? Math.floor(m / list.length * 100) : 100 }; }
+function meterBar(pct, cls) { return '<div class="mbar ' + (cls || '') + '"><i style="width:' + pct + '%"></i></div>'; }
+function starItems() { return ITEMS.filter(function (x) { return x.s; }); }
+function needList() { return ITEMS.filter(function (x) { return stat(x).need > 0; }); }
+function mins(n) { var m = Math.max(1, Math.round(n * 12 / 60)); return m >= 60 ? '約' + Math.floor(m / 60) + '時間' + (m % 60 ? m % 60 + '分' : '') : '約' + m + '分'; }
+function cheer(g) {
+  if (g.m === 0) return 'まずは1つ、「できた」を作ってみよう。';
+  if (g.left <= 15) return 'ゴールは目の前。あと ' + g.left + ' 問。';
+  if (g.pct < 25) return 'いいスタート。1問10秒くらいで、どんどん進みます。';
+  if (g.pct < 50) return '調子が出てきた。もうすぐ半分。';
+  if (g.pct < 75) return '半分をこえた。ここまで来る人は、じつは多くない。';
+  return 'ゴールが見えてきた。ここからは1問ごとに終わりが近づく。';
+}
+
+/* ---------- 1問を作る ---------- */
+function qdef(it) { return it.g === 'byo' ? it.def.replace(/^病原体は[^。]*。/, '') : it.def; }
+function others(it) { var a = ITEMS.filter(function (x) { return x.k === 't' && x.g === it.g && x.u === it.u && x.term !== it.term; }); if (a.length < 3) a = a.concat(ITEMS.filter(function (x) { return x.k === 't' && x.u === it.u && x.g !== it.g && x.term !== it.term; })); return a; }
+function termAns(it) { return [it.term].concat(it.y ? [it.y] : [], it.alt); }
+function parseCloze(it) {
+  var blanks = [], parts = it.text.split(/\[\[(.*?)\]\]/);
+  for (var i = 1; i < parts.length; i += 2) { var a = parts[i].split('|'); if (YOMI[a[0]]) a.push(YOMI[a[0]]); blanks.push(a); }
+  return { parts: parts, blanks: blanks };
+}
+function makeQ(it, form) {
+  var q = { it: it, form: form, ans: null, judged: false, ok: false };
+  if (it.k === 't') {
+    if (!form) form = pick(['w', 'w', 'c', 'd', 'o']);
+    q.form = form;
+    if (form === 'w') { q.kind = 'wr'; q.html = '次の説明にあてはまることばを書きなさい。<div class="def">' + esc(qdef(it)) + '</div>'; q.accept = termAns(it); q.show = it.term; }
+    else if (form === 'c') { q.kind = 'ch'; q.html = '次の説明にあてはまることばはどれか。<div class="def">' + esc(qdef(it)) + '</div>'; q.opts = shuffle([it.term].concat(shuffle(others(it)).slice(0, 3).map(function (x) { return x.term; }))); q.right = q.opts.indexOf(it.term); }
+    else if (form === 'd') { q.kind = 'ch'; q.html = '「<b>' + esc(it.term) + '</b>」の正しい説明はどれか。'; q.opts = shuffle([qdef(it)].concat(shuffle(others(it)).slice(0, 2).map(qdef))); q.right = q.opts.indexOf(qdef(it)); }
+    else { q.kind = 'ox'; var t = Math.random() < 0.5, o = pick(others(it)); q.html = '次の文は正しいか。<div class="def">「<b>' + esc(it.term) + '</b>」とは、次のことである。<br>' + esc(t ? qdef(it) : qdef(o)) + '</div>'; q.right = t; if (!t) q.note = 'この説明は「' + o.term + '」のものです。'; }
+    q.ex = '「' + it.term + '」＝' + it.def;
+  } else if (it.k === 'o') { q.kind = 'ox'; q.html = '次の文は正しいか。正しければ○、間違っていれば×。<div class="def">' + esc(it.t) + '</div>'; q.right = it.a; q.ex = it.ex; }
+  else if (it.k === 'c') { q.kind = 'ch'; q.html = esc(it.q); q.opts = shuffle(it.opts); q.right = q.opts.indexOf(it.opts[0]); q.ex = it.ex; }
+  else if (it.k === 'w') { q.kind = 'wr'; q.html = esc(it.q); q.accept = it.ans; q.show = it.ans[0]; q.ex = it.ex; }
+  else if (it.k === 'l') {
+    var c = parseCloze(it); if (!form) form = Math.random() < 0.5 ? 'sel' : 'wr'; q.form = form; q.kind = 'cl'; q.cl = c; q.title = it.title;
+    q.pool = shuffle(c.blanks.map(function (b) { return b[0]; }).filter(function (v, i, a) { return a.indexOf(v) === i; }).concat(it.decoy));
+    q.ans = c.blanks.map(function () { return form === 'sel' ? -1 : ''; }); q.res = [];
+  }
+  return q;
+}
+var KANA = 'アイウエオカキクケコサシスセソ';
+function judgeText(v, accept) { var n = norm(v), hit = -1; if (!n) return { ok: false }; accept.forEach(function (a, i) { if (hit < 0 && norm(a) === n) hit = i; }); return { ok: hit >= 0, kana: hit > 0 && hasKanji(accept[0]) && !hasKanji(v) }; }
+function judge(q) {
+  if (q.kind === 'ox' || q.kind === 'ch') q.ok = q.ans === q.right;
+  else if (q.kind === 'wr') { var r = judgeText(q.ans, q.accept); q.ok = r.ok; q.kana = r.kana; }
+  else { q.res = q.cl.blanks.map(function (b, i) { return q.form === 'sel' ? q.pool[q.ans[i]] === b[0] : judgeText(q.ans[i], b).ok; }); q.ok = q.res.every(function (x) { return x; }); q.frac = q.res.filter(function (x) { return x; }).length / q.res.length; }
+  q.judged = true; return q.ok;
+}
+function record(q) {
+  var s = stat(q.it), was = mastered(q.it); s.n++;
+  if (q.ok) { s.ok++; if (s.need > 0) s.need--; if (q.kind === 'wr' || (q.kind === 'cl' && q.form === 'wr')) s.w++; } else s.need = 2;
+  q.justM = !was && mastered(q.it); q.lostM = was && !mastered(q.it); save();
+}
+
+/* ---------- ホーム ---------- */
+function home() {
+  S.mode = null; S.q = null;
+  var st = prog(starItems()), all = prog(ITEMS), need = needList().length, best = ST.tests.reduce(function (a, t) { return Math.max(a, t.score); }, 0);
+  var h = '<header class="hd"><h1>中3保健体育　期末テスト対策</h1><p>保健（感染症・保健医療機関・医薬品・環境）／体育理論／バスケットボール／アルティメット／水泳　<span class="sm">全 ' + ITEMS.length + ' 問</span></p></header>';
+  h += '<div class="goal' + (st.left ? '' : ' done') + '">';
+  if (st.left) {
+    h += '<div class="gh"><h2>ゴール①　いちばん出る所（★）</h2><span class="gp"><b>' + st.pct + '</b>%</span></div>' + meterBar(st.pct) +
+      '<div class="gl"><span>できた <b>' + st.m + '</b> / ' + st.n + ' 問</span><span>ゴールまで あと <b>' + st.left + '</b> 問（' + mins(st.left) + '）</span></div><p class="gc">' + cheer(st) + '</p>' +
+      '<div class="gb"><button class="btn big" data-act="go" data-m="star">★ いちばん出る所からやる</button><span class="sm">★＝先生のプリントの空欄と、バスケットボールのオレンジのマーカーの所。1回正解で「できた」。まちがえた問題は、2回続けて正解するまで何度も出ます。用語は自分で書けたら「できた」です。</span></div>';
+  } else if (all.left) {
+    h += '<div class="gh"><h2>ゴール①達成　いちばん出る所は ぜんぶ できた</h2><span class="gp"><b>100</b>%</span></div>' + meterBar(100) +
+      '<p class="gc">ここでやめても、もう十分です。<br>……ただ、ここまで来られる人なら、<b>のこりの ' + all.left + ' 問</b>も、案外すぐ終わってしまうかもしれません。</p>' +
+      '<div class="gl"><span>ゴール②　ぜんぶの問題 <b>' + all.m + '</b> / ' + all.n + '</span><span>完全制覇まで あと <b>' + all.left + '</b> 問（' + mins(all.left) + '）</span></div>' + meterBar(all.pct, 'ex') +
+      '<div class="gb"><button class="btn big" data-act="go" data-m="all">のこりにちょうせんする</button><span class="sm">やらなくても大丈夫。やれたら、かなりすごい。</span></div>';
+  } else {
+    h += '<div class="gh"><h2>完全制覇　' + all.n + ' 問、ぜんぶ できた</h2><span class="gp"><b>100</b>%</span></div>' + meterBar(100) + meterBar(100, 'ex') +
+      '<p class="gc">このアプリの問題は、ぜんぶ自分のものになりました。もうやることはありません。<br>' + (best >= 95 ? '模擬テストも ' + best + ' 点。あとは当日、いつもどおりに解くだけです。' : '……と言いたいところですが、<b>模擬テストで 95 点</b>をこえたら本物です。' + (best ? 'いまの最高は ' + best + ' 点。' : '') + 'ためしてみたくなりませんか。') + '</p>' +
+      (best >= 95 ? '' : '<div class="gb"><button class="btn big" data-act="test">模擬テストで力だめし</button></div>');
+  }
+  h += '</div>';
+  h += '<div class="modes"><button class="mode m1" data-act="go" data-m="basket"><b>バスケのオレンジ</b><span>先生が「出る」と言った、オレンジのマーカーの所だけ。</span></button>' +
+    '<button class="mode m2" data-act="go" data-m="fix"><b>まちがい直し' + (need ? '<em>' + need + '</em>' : '') + '</b><span>まちがえた問題だけ。2回続けて正解すると消えます。</span></button>' +
+    '<button class="mode m3" data-act="test"><b>模擬テスト</b><span>前回のテストと同じ形。○×・記号・語群の穴うめで100点。' + (best ? '最高 ' + best + ' 点。' : '') + '</span></button>' +
+    '<button class="mode m4" data-act="go" data-m="all"><b>ぜんぶの問題</b><span>まだ「できた」になっていない問題を、単元の順に。</span></button></div>';
+  h += '<div class="box weakbox"><h2>この先生のテストの出し方（前回のテストから）</h2><ul>' +
+    '<li><b>「正しいものには○、間違っているものには×」</b>がいちばん多い。1文が長く、もっともらしい理由がついている。<b>数字・人数・名前が1か所だけ入れかわっている</b>ことが多い。</li>' +
+    '<li>保健は<b>「正しい説明はどれか。記号で答えなさい」</b>の3択。まちがいの2つは、大げさな内容や「絶対に」「まったく」などの言い切り。正解は教科書・プリントのことばどおり。</li>' +
+    '<li><b>文章の（　）に語群から選ぶ</b>穴うめ。語群には、にた数字やことばがまざる。</li>' +
+    '<li>「〜の3つのことばを必ず使って説明しなさい」という<b>記述</b>が、種目ごとに1問出ることがある。</li>' +
+    '<li>正解は<b>資料集・学習プリント・授業で先生が言ったこと</b>の表記どおり。プリントの空欄のことばは、漢字で書けるようにしておく。</li></ul></div>';
+  AREA.forEach(function (ar) {
+    h += '<h2 class="sec">' + ar[0] + '</h2><div class="ucards">';
+    ar[1].forEach(function (u) {
+      var list = ITEMS.filter(function (x) { return x.u === u; }), g = prog(list), nd = list.filter(function (x) { return stat(x).need > 0; }).length;
+      h += '<button class="ucard' + (g.left ? '' : ' done') + '" data-act="go" data-m="unit" data-u="' + u + '"><b>' + (g.left ? '' : '★ ') + UNITS[u] + '</b>' + meterBar(g.pct) + '<span>できた ' + g.m + ' / ' + g.n + (nd ? '　<em>やり直し ' + nd + '</em>' : '') + '</span></button>';
+    });
+    h += '</div>';
+  });
+  h += '<h2 class="sec">記述のれんしゅう（メーターには入りません）</h2><div class="box">' + ESSAYS.map(function (e, i) { return '<button class="erow" data-act="essay" data-i="' + i + '"><span class="un">' + UNITS[e.u] + '</span>' + esc(e.q) + '</button>'; }).join('') + '</div>';
+  if (ST.tests.length) h += '<h2 class="sec">模擬テストの記録</h2><div class="box"><table class="tl">' + ST.tests.slice().reverse().slice(0, 8).map(function (t) { return '<tr><td>' + t.date + '</td><td><b>' + t.score + '</b> 点</td></tr>'; }).join('') + '</table></div>';
+  h += '<p class="foot"><button class="btn ghost" data-act="reset">記録をぜんぶ消す</button>　記録はこのパソコンのブラウザの中だけに残ります。</p>';
+  app.innerHTML = h; window.scrollTo(0, 0);
+}
+
+/* ---------- 練習 ---------- */
+var MODE_NAME = { star: '★ いちばん出る所', all: 'ぜんぶの問題', unit: '単元の練習', fix: 'まちがい直し', basket: 'バスケのオレンジ' };
+function poolFor(mode, u) {
+  if (mode === 'star') return starItems();
+  if (mode === 'basket') return ITEMS.filter(function (x) { return x.u === 15 && x.s; });
+  if (mode === 'unit') return ITEMS.filter(function (x) { return x.u === u; });
+  if (mode === 'fix') return needList();
+  return ITEMS;
+}
+function start(mode, u) {
+  var pool = poolFor(mode, u), list = pool.filter(function (x) { return !mastered(x); }), again = false;
+  if (mode === 'fix' && !list.length) { msg('やり直しの問題はありません', 'まちがえた問題があると、ここに自動で入ります。', [['ホームへ', home]]); return; }
+  if (!list.length) { list = pool; again = true; }
+  var by = {}; list.forEach(function (x) { (by[x.u] = by[x.u] || []).push(x); });
+  S.queue = []; Object.keys(by).map(Number).sort(function (a, b) { return a - b; }).forEach(function (k) { S.queue = S.queue.concat(shuffle(by[k])); });
+  S.mode = mode; S.param = u; S.done = 0; S.right = 0; S.total = S.queue.length; S.again = again; S.pool = pool;
+  next();
+}
+function formFor(it) {
+  var s = stat(it);
+  if (it.k === 't') return (it.s && !s.w) || s.need > 0 ? 'w' : null;
+  if (it.k === 'l') return it.s && !s.w ? 'wr' : (S.mode === 'fix' ? 'wr' : null);
+  return null;
+}
+function next() {
+  if (!S.queue.length) { finish(); return; }
+  var it = S.queue.shift(); S.q = makeQ(it, formFor(it)); draw();
+}
+function finish() {
+  var g = prog(S.pool), name = S.mode === 'unit' ? '「' + UNITS[S.param] + '」' : MODE_NAME[S.mode];
+  var st = prog(starItems()), all = prog(ITEMS), t, b, btn = [['ホームへ', home]];
+  if (S.mode === 'fix') { t = 'まちがい直しが全部おわりました'; b = 'やり直しの問題は 0 個です。よくがんばりました。'; }
+  else if (!all.left && !ST.g2) { ST.g2 = ST.g1 = true; save(); t = '完全制覇！　' + all.n + ' 問、ぜんぶ できた'; b = 'ここまでできる中学生は、そう多くありません。もうやることはありません。<br><br>……と言いたいところですが、<b>模擬テストで 95 点</b>をこえられるか、ためしてみたくなりませんか。'; btn = [['ホームへ', home], ['模擬テストで力だめし', startTest]]; }
+  else if (!st.left && !ST.g1) { ST.g1 = true; save(); t = 'ゴール①達成！　いちばん出る所は ぜんぶ できた'; b = '先生のプリントの空欄と、バスケットボールのオレンジの所、' + st.n + ' 問をやり切りました。本当にすごいことです。今日はここで終わりにしても十分です。<br><br>……ただ、ここまで来られる人なら、<b>のこりの ' + all.left + ' 問</b>も、案外すぐ終わってしまうかもしれません。'; btn = [['ホームへ', home], ['のこりにちょうせんする', function () { start('all'); }]]; }
+  else if (!g.left) { t = name + ' は ぜんぶ できた'; b = 'この回は ' + S.done + ' 問中 ' + S.right + ' 問 正解でした。' + (st.left ? 'ゴール①まで、あと ' + st.left + ' 問です。' : all.left ? '完全制覇まで、あと ' + all.left + ' 問です。' : '') + '<br>……この調子なら、次の単元もいけそうです。'; }
+  else { t = 'この回はおわり'; b = S.done + ' 問中 ' + S.right + ' 問 正解でした。'; }
+  home(); msg(t, b, btn);
+}
+function topBar() {
+  var g = prog(S.pool);
+  return '<div class="top"><button class="btn ghost" data-act="home">← ホームへ</button><span class="mn">' + (S.mode === 'unit' ? UNITS[S.param] : MODE_NAME[S.mode]) + '</span><span class="pg">' + (S.done + 1) + ' 問目　正解 ' + S.right + '</span><span class="gm">' + (S.again ? 'おさらい あと ' : 'のこり ') + '<b>' + (S.queue.length + 1) + '</b> 問' + meterBar(g.pct, 'mini') + '</span></div>';
+}
+function clozeHtml(q) {
+  var c = q.cl, h = '', k = 0;
+  for (var i = 0; i < c.parts.length; i++) {
+    if (i % 2 === 0) { h += esc(c.parts[i]); continue; }
+    var cls = q.judged ? (q.res[k] ? ' ok' : ' ng') : '', n = '<span class="bn">' + '①②③④⑤⑥⑦⑧⑨'[k] + '</span>';
+    if (q.form === 'sel') h += '<span class="blank' + cls + '">' + n + '<select data-b="' + k + '"' + (q.judged ? ' disabled' : '') + '><option value="-1">えらぶ</option>' + q.pool.map(function (p, j) { return '<option value="' + j + '"' + (q.ans[k] === j ? ' selected' : '') + '>' + KANA[j] + '：' + esc(p) + '</option>'; }).join('') + '</select></span>';
+    else h += '<span class="blank' + cls + '">' + n + '<input type="text" data-b="' + k + '" value="' + esc(q.ans[k]).replace(/"/g, '&quot;') + '" autocomplete="off"' + (q.judged ? ' disabled' : '') + '></span>';
+    if (q.judged && !q.res[k]) h += '<span class="fix">→ ' + esc(c.blanks[k][0]) + '</span>';
+    k++;
+  }
+  return h;
+}
+function qBody(q, idx) {
+  var h = '', d = q.judged ? ' disabled' : '', p = idx == null ? '' : ' data-q="' + idx + '"';
+  if (q.kind === 'cl') {
+    h += '<div class="qt">' + (q.form === 'sel' ? '次の文章の（　）にあてはまることばを、語群から選びなさい。' : '次の文章の（　）にあてはまることばを書きなさい。') + '　<span class="sm">' + esc(q.title) + '</span></div><div class="cloze"' + p + '>' + clozeHtml(q) + '</div>';
+    if (q.form === 'sel') h += '<div class="pool">語群　' + q.pool.map(function (x, j) { return '<span>' + KANA[j] + '：' + esc(x) + '</span>'; }).join('') + '</div>';
+    return h;
+  }
+  h += '<div class="qt">' + q.html + '</div>';
+  if (q.kind === 'ox') h += '<div class="oxs"' + p + '>' + [[true, '○', '正しい'], [false, '×', '間違い']].map(function (o) { return '<button class="oxb' + (q.ans === o[0] ? ' sel' : '') + (q.judged && q.right === o[0] ? ' right' : '') + (q.judged && q.ans === o[0] && !q.ok ? ' wrong' : '') + '" data-ox="' + (o[0] ? 1 : 0) + '"' + d + '><b>' + o[1] + '</b>' + o[2] + '</button>'; }).join('') + '</div>';
+  else if (q.kind === 'ch') h += '<div class="opts"' + p + '>' + q.opts.map(function (o, i) { return '<button class="opt' + (q.ans === i ? ' sel' : '') + (q.judged && q.right === i ? ' right' : '') + (q.judged && q.ans === i && !q.ok ? ' wrong' : '') + '" data-o="' + i + '"' + d + '><b>' + KANA[i] + '</b><span>' + esc(o) + '</span></button>'; }).join('') + '</div>';
+  else h += '<div class="wr"><input type="text" id="wr" value="' + esc(q.ans || '').replace(/"/g, '&quot;') + '" placeholder="ここに書く" autocomplete="off"' + d + '>' + (q.judged ? '' : '<button class="btn big" data-act="judge">判定する</button><button class="btn ghost" data-act="giveup">わからない</button>') + '</div>';
+  return h;
+}
+function resultHtml(q) {
+  var h = '<div class="res ' + (q.ok ? 'ok' : 'ng') + '"><b>' + (q.ok ? '○ 正解' : '× ざんねん') + '</b>';
+  if (q.kind === 'ox') h += '　答えは「' + (q.right ? '○' : '×') + '」';
+  if (q.kind === 'ch') h += '　答えは「' + KANA[q.right] + '」';
+  if (q.kind === 'wr') h += '　答えは「' + esc(q.show) + '」' + (q.ok && q.kana ? '<span class="kn">ひらがなで正解。テストでは漢字で書けるように。</span>' : '');
+  h += '</div><div class="expl">' + (q.note ? esc(q.note) + '<br>' : '') + esc(q.ex || '') + '</div>';
+  return h;
+}
+function draw() {
+  var q = S.q, it = q.it, s = stat(it), h = topBar();
+  h += '<div class="card"><div class="qhead"><span class="un">' + UNITS[it.u] + '</span>' + (it.s ? '<span class="bd w">★ よく出る</span>' : '') + (s.need ? '<span class="bd n">やり直し あと' + s.need + '回</span>' : '') + '</div>' + qBody(q);
+  if (q.kind === 'cl' && !q.judged) h += '<div class="actions"><button class="btn big" data-act="judge">判定する</button><button class="btn ghost" data-act="giveup">わからない</button></div>';
+  if (q.judged) {
+    h += (q.kind === 'cl' ? '<div class="res ' + (q.ok ? 'ok' : 'ng') + '"><b>' + (q.ok ? '○ ぜんぶ正解' : '× ' + q.res.filter(function (x) { return !x; }).length + ' か所まちがい') + '</b></div>' : resultHtml(q));
+    var g = prog(S.pool);
+    h += '<div class="info ' + (q.ok ? 'ok' : 'ng') + (q.justM ? ' star' : '') + '">' + (q.ok ? (q.justM ? '★ この問題は「できた」になりました。（' + g.m + ' / ' + g.n + '）' : mastered(it) ? 'この問題は、もう「できた」です。' : s.need ? 'あと ' + s.need + ' 回続けて正解すると「できた」になります。少しあとでもう一度出ます。' : 'えらぶ形では正解。<b>自分で書けたら</b>「できた」になります。少しあとで書く形で出ます。') : (q.lostM ? '「できた」がいったん外れました。' : '') + 'この問題は、2回続けて正解するまで出ます。') + '</div>';
+    h += '<div class="actions"><button class="btn big" data-act="next">次の問題へ（Enter）</button></div>';
+  }
+  h += '</div><p class="keys">キーボード：○は <kbd>O</kbd> か <kbd>1</kbd>、×は <kbd>X</kbd> か <kbd>2</kbd>。記号は <kbd>1</kbd>〜<kbd>4</kbd>。次へは <kbd>Enter</kbd>。</p>';
+  app.innerHTML = h; window.scrollTo(0, 0);
+  var f = q.judged ? null : (document.getElementById('wr') || app.querySelector('.cloze input')); if (f) f.focus();
+}
+function readInputs(q, root) {
+  if (q.kind === 'wr') { var e = (root || app).querySelector('#wr'); if (e) q.ans = e.value; }
+  if (q.kind === 'cl') (root || app).querySelectorAll('[data-b]').forEach(function (e) { q.ans[+e.dataset.b] = q.form === 'sel' ? +e.value : e.value; });
+}
+function doJudge() {
+  var q = S.q; if (!q || q.judged) return;
+  readInputs(q); judge(q); record(q); S.done++; if (q.ok) S.right++;
+  if (!mastered(q.it)) { var at = Math.min(S.queue.length, 3 + Math.floor(Math.random() * 3)); S.queue.splice(at, 0, q.it); }
+  draw();
+}
+
+/* ---------- 記述 ---------- */
+function essay(i) {
+  var e = ESSAYS[i]; S.mode = 'essay'; S.q = null;
+  app.innerHTML = '<div class="top"><button class="btn ghost" data-act="home">← ホームへ</button><span class="mn">記述のれんしゅう</span></div><div class="card"><div class="qhead"><span class="un">' + UNITS[e.u] + '</span></div><div class="qt">' + esc(e.q) + '</div><textarea id="es" rows="6" placeholder="ここに書く"></textarea><div class="actions"><button class="btn big" data-act="escheck" data-i="' + i + '">見本とくらべる</button></div><div id="esres"></div></div>';
+  window.scrollTo(0, 0); document.getElementById('es').focus();
+}
+function essayCheck(i) {
+  var e = ESSAYS[i], v = norm(document.getElementById('es').value), miss = e.kw.filter(function (k) { return v.indexOf(norm(k)) < 0; }), h = '';
+  if (e.kw.length) h += miss.length ? '<div class="res ng"><b>使っていないことば：' + miss.map(function (k) { return '「' + esc(k) + '」'; }).join('') + '</b>　指定されたことばを使っていないと減点です。</div>' : '<div class="res ok"><b>指定のことばは ぜんぶ 入っています。</b>　内容を見本とくらべましょう。</div>';
+  document.getElementById('esres').innerHTML = h + '<div class="expl"><b>見本</b><br>' + esc(e.model) + '</div>';
+}
+
+/* ---------- 模擬テスト（前回のテストと同じ形） ---------- */
+function oxPool(u) { return ITEMS.filter(function (x) { return x.u === u && (x.k === 'o' || x.k === 't'); }); }
+function startTest() {
+  var secs = [], n = 0;
+  function sec(title, pts, qs) { secs.push({ title: title, pts: pts, qs: qs }); }
+  function oxs(u, k) { return shuffle(oxPool(u)).slice(0, k).map(function (it) { return makeQ(it, it.k === 't' ? 'o' : null); }); }
+  function cl(u) { var a = ITEMS.filter(function (x) { return x.u === u && x.k === 'l'; }); return [makeQ(pick(a), 'sel')]; }
+  sec('バスケットボール　正しいものには○を、間違っているものには×を書きなさい。［各2点］', 2, oxs(15, 8));
+  sec('バスケットボール　（　）に当てはまる語句を語群から選び、記号で答えなさい。［6点］', 6, cl(15));
+  sec('アルティメット　正しいものには○を、間違っているものには×を書きなさい。［各2点］', 2, oxs(16, 4));
+  sec('水泳　以下は、バタフライについての文章です。（　）に当てはまる語句を語群から選びなさい。［6点］', 6, cl(17));
+  sec('体育理論　正しいものには○を、間違っているものには×を書きなさい。［各2点］', 2, oxs(14, 5));
+  var hk = [], us = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13], cp = function (u) { return shuffle(ITEMS.filter(function (x) { return x.u === u && (x.k === 'c' || x.k === 't'); })); };
+  us.forEach(function (u) { hk.push(cp(u)[0]); });
+  shuffle(us).slice(0, 5).forEach(function (u) { var c = cp(u).filter(function (x) { return hk.indexOf(x) < 0; }); if (c.length) hk.push(c[0]); });
+  hk.sort(function (a, b) { return a.u - b.u; });
+  sec('保健　正しいものを選び、記号で答えなさい。［各3点］', 3, hk.map(function (it) { return makeQ(it, it.k === 't' ? 'd' : null); }));
+  S.mode = 'test'; S.test = { secs: secs, graded: false }; drawTest();
+}
+function allQ() { var a = []; S.test.secs.forEach(function (s) { s.qs.forEach(function (q) { a.push(q); }); }); return a; }
+function drawTest() {
+  var T2 = S.test, h = '<div class="top"><button class="btn ghost" data-act="tquit">← ' + (T2.graded ? 'ホームへ' : 'テストをやめる') + '</button><span class="mn">模擬テスト</span>' + (T2.graded ? '<span class="pg"><b class="sc">' + T2.score + '</b> 点 / 100点</span>' : '') + '</div>', k = 0, idx = 0;
+  if (T2.graded) h += '<div class="card"><div class="score"><b>' + T2.score + '</b> 点<span>（100点満点）</span></div><div class="actions">' + (needList().length ? '<button class="btn big" data-act="go" data-m="fix">まちがえた問題をやり直す</button>' : '') + '<button class="btn" data-act="home">ホームへ</button></div></div>';
+  T2.secs.forEach(function (s, si) {
+    h += '<div class="card tsec"><h3>' + (si + 1) + '　' + esc(s.title) + '</h3>';
+    s.qs.forEach(function (q) { k++; h += '<div class="tq' + (q.judged ? (q.ok ? ' o' : ' x') : '') + '"><div class="tnum">' + (s.qs.length > 1 ? '(' + k + ')' : '') + (q.judged ? '<b>' + (q.ok ? '○' : '×') + '</b>' : '') + '</div><div class="tbody">' + qBody(q, idx) + (q.judged ? (q.kind === 'cl' ? '' : resultHtml(q)) : '') + '</div></div>'; idx++; });
+    k = 0;
+    h += '</div>';
+  });
+  if (!T2.graded) h += '<div class="actions"><button class="btn big" data-act="grade">テストを終わって丸つけする</button></div>';
+  var y = window.scrollY; app.innerHTML = h; window.scrollTo(0, T2.keep ? y : 0); T2.keep = false;
+}
+function gradeTest() {
+  var T2 = S.test, score = 0;
+  app.querySelectorAll('.cloze[data-q]').forEach(function (c) { readInputs(allQ()[+c.dataset.q], c); });
+  T2.secs.forEach(function (s) { s.qs.forEach(function (q) { judge(q); record(q); score += s.pts * (q.kind === 'cl' ? q.frac : (q.ok ? 1 : 0)); }); });
+  T2.score = Math.round(score); T2.graded = true;
+  var d = new Date(); ST.tests.push({ date: (d.getMonth() + 1) + '/' + d.getDate() + ' ' + d.getHours() + ':' + ('0' + d.getMinutes()).slice(-2), score: T2.score }); save();
+  drawTest();
+}
+
+/* ---------- 知らせ（alert は使わない） ---------- */
+var MSG = [];
+function msg(title, body, btns) {
+  closeMsg(); MSG = btns.map(function (b) { return b[1]; });
+  var d = document.createElement('div'); d.id = 'ov';
+  d.innerHTML = '<div class="dlg"><h3>' + title + '</h3><p>' + body + '</p><div class="dbt">' + btns.map(function (b, i) { return '<button class="btn' + (i === 0 ? ' big' : '') + '" data-i="' + i + '">' + b[0] + '</button>'; }).join('') + '</div></div>';
+  d.addEventListener('click', function (e) { var t = e.target.closest('[data-i]'); if (!t) return; var fn = MSG[+t.dataset.i]; closeMsg(); if (fn) fn(); });
+  document.body.appendChild(d);
+}
+function closeMsg() { var o = document.getElementById('ov'); if (o) o.parentNode.removeChild(o); }
+
+/* ---------- 操作 ---------- */
+function answer(v) { var q = S.q; if (!q || q.judged) return; q.ans = v; doJudge(); }
+app.addEventListener('click', function (e) {
+  var t = e.target.closest('[data-ox],[data-o],[data-act]'); if (!t) return;
+  if (t.dataset.ox != null || t.dataset.o != null) {
+    var v = t.dataset.ox != null ? t.dataset.ox === '1' : +t.dataset.o, holder = t.closest('[data-q]');
+    if (S.mode === 'test') { if (S.test.graded || !holder) return; var q = allQ()[+holder.dataset.q]; app.querySelectorAll('.cloze[data-q]').forEach(function (c) { readInputs(allQ()[+c.dataset.q], c); }); q.ans = v; S.test.keep = true; drawTest(); return; }
+    answer(v); return;
+  }
+  var a = t.dataset.act;
+  if (a === 'go') start(t.dataset.m, +t.dataset.u || 0);
+  else if (a === 'home') home();
+  else if (a === 'judge') doJudge();
+  else if (a === 'giveup') { if (S.q.kind === 'wr') { var w = document.getElementById('wr'); if (w) w.value = ''; } doJudge(); }
+  else if (a === 'next') next();
+  else if (a === 'test') msg('模擬テストを始めます', '前回のテストと同じ形の問題が、1ページにならびます。ぜんぶ答えてから、いちばん下の「丸つけする」を押します。', [['始める', startTest], ['やめる', null]]);
+  else if (a === 'grade') gradeTest();
+  else if (a === 'tquit') { if (S.test.graded) home(); else msg('テストをやめますか', 'ここまでの答えは消えます。', [['テストをやめる', home], ['続ける', null]]); }
+  else if (a === 'essay') essay(+t.dataset.i);
+  else if (a === 'escheck') essayCheck(+t.dataset.i);
+  else if (a === 'reset') msg('記録をぜんぶ消しますか', '「できた」の記録・やり直し・模擬テストの記録がすべて消えます。元にもどせません。', [['消す', function () { ST = { it: {}, tests: [] }; save(); home(); }], ['やめる', null]]);
+});
+document.addEventListener('keydown', function (e) {
+  if (e.isComposing || e.keyCode === 229 || document.getElementById('ov')) return;
+  var q = S.q, tag = (e.target.tagName || '').toLowerCase(), typing = tag === 'input' || tag === 'textarea' || tag === 'select';
+  if (!q || S.mode === 'test' || S.mode === 'essay' || !S.mode) return;
+  if (e.key === 'Enter') { e.preventDefault(); if (q.judged) next(); else if (q.kind === 'wr' || q.kind === 'cl') doJudge(); return; }
+  if (typing || q.judged) return;
+  var k = e.key.toLowerCase();
+  if (q.kind === 'ox') { if (k === 'o' || k === '1') answer(true); else if (k === 'x' || k === '2') answer(false); }
+  else if (q.kind === 'ch') { var i = '1234'.indexOf(k); if (i >= 0 && i < q.opts.length) answer(i); }
+});
+home();
+
+</script>
+</body>
+</html>
